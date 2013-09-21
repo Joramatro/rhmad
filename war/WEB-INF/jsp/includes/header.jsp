@@ -224,30 +224,30 @@
 	</c:when>
 	<c:otherwise>
 		<title>Bienvenido a Comprar eBook Hoy</title> 
-		<meta name="description" content="Analizamos los mejores lectores de ebooks del mercado para que puedas comprar tu ebook reader preferido al mejor precio y online. Accede a la mejor información para comprar el mejor ebook de tinta electrónica"/>
-		<meta name="keywords" content="ebook, comprar lector ebook, comprar ebook reader, kindle, fundas ebook, comprar readers mejor precio, comprar kindle paperwhite, sony ebooks, mini ipad, comprar woxter ebooks, comprar ereader" />
-		<meta name="title" content="eReaders en Comprar eBook Hoy online" />
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="eBook Readers en Comprar eBook Hoy" />
+		<meta name="description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, integrables, con grill, además de baratos y muchas más posibilidades"/>
+		<meta name="keywords" content="comprar microondas, comprar microondas barato, que microondas comprar, comprar microondas online, microondas conveccion, cocina con microondas, mini microondas,microondas para camion,microondas portatil" />
+		<meta name="title" content="Microondas online en Comprar Microondas Hoy" />
+		<meta name="author" content="Comprar Microondas Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="Microondas en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="eReaders en Comprar eBook online"/>
-		<meta property="og:description" content="Analizamos los mejores lectores de ebooks del mercado para que puedas comprar tu ebook reader preferido al mejor precio y online. Accede a la mejor información para comprar el mejor ebook de tinta electrónica"/>
+		<meta property="og:title" content="eReaders en Comprar Microondas online"/>
+		<meta property="og:description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, integrables, con grill, además de baratos y muchas más posibilidades"/>
 		<meta property="og:type" content="principal"/>
-		<meta property="og:url" content="http://www.comprarebookhoy.com"/>
+		<meta property="og:url" content="http://www.comprarmicroondashoy.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="jorge.amat@comprarebookhoy.com"/>
+		<meta property="og:email" content="hola@comprarmicroondashoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprareBookHoy">
-		<meta name="twitter:creator" content="@ComprareBookHoy">
-		<meta name="twitter:title" content="eReaders en Comprar eBook Hoy online">
-		<meta name="twitter:description" content="Analizamos los mejores lectores de ebooks del mercado para que puedas comprar tu ebook reader preferido al mejor precio y online. Accede a la mejor información para comprar el mejor ebook de tinta electrónica">
+		<meta name="twitter:site" content="@ComprarMicroondasHoy">
+		<meta name="twitter:creator" content="@ComprarMicroondsaHoy">
+		<meta name="twitter:title" content="eReaders en Comprar Microondas Hoy online">
+		<meta name="twitter:description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, de convección, con grill, además de baratos y muchas más posibilidades">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarebookhoy.com">
+		<meta name="twitter:domain" content="comprarmicroondashoy.com">
 		<!-- end: Twitter tags -->				
-		<link rel=”canonical” href=”http://www.comprarebookhoy.com“/>
+		<link rel=”canonical” href=”http://www.comprarmicroondashoy.com“/>
 	</c:otherwise>		
 	</c:choose>
 	
@@ -320,14 +320,14 @@
 							<li id="menuInicio">
 	                			<a href="/">Inicio</a>
 	              			</li>
-	              			<li id="menuEbooks"><a href="/ebooks">eBooks</a></li>
+	              			<li id="menuEbooks"><a href="/microondas">Microondas</a></li>
 							<li class="dropdown">
 	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Destacados<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                				<c:forEach var="publicacion" items="${publicacionesDestacadas}" varStatus="status" end="5">
 										<c:choose>
 											<c:when test="${publicacion.tipo eq 'EB' }">
-												<li><a href="/ebooks/${publicacion.url}">${publicacion.titulo}</a></li>
+												<li><a href="/microondas/${publicacion.url}">${publicacion.titulo}</a></li>
 											</c:when>	
 											<c:otherwise>
 												<li><a href="/blog/${publicacion.url}">${publicacion.titulo}</a></li>
