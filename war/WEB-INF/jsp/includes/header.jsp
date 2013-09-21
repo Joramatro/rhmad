@@ -18,7 +18,7 @@
 	<!-- end: Mobile Specific -->
 	<c:choose>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
-		<title>${publicacion.titulo} en Comprar eBook Hoy</title> 
+		<title>${publicacion.titulo} en Comprar Microondas Hoy</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
 		<meta name="keywords" content="${publicacion.keywords}" />
 		<meta name="title" content="${publicacion.titulo} en Comprar eBook Hoy. - Comprar eBook Hoy - www.comprarebookhoy.com" />
@@ -314,7 +314,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-book-open circle"></i>Comprar eBook <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-book-open circle"></i>Comprar Microondas <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
