@@ -23,12 +23,12 @@
 		<meta name="keywords" content="${publicacion.keywords}" />
 		<meta name="title" content="${publicacion.titulo} en Comprar Microondas Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar eBook Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="${publicacion.titulo} en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="${publicacion.titulo}"/>
 		<meta property="og:description" content="${publicacion.descripcion}"/>
-		<meta property="og:type" content="ebooks"/>
+		<meta property="og:type" content="microondas"/>
 		<meta property="og:url" content="http://www.comprarmicroondashoy.com/microondas/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
 		<meta property="og:email" content="hola@comprarmicroondashoy.com"/>
@@ -45,13 +45,13 @@
 		<link rel=”canonical” href=”http://www.comprarmicroondashoy.com/microondas/${publicacion.url}“/>
 	</c:when>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
-		<title>${publicacion.titulo} en Comprar eBook Hoy</title> 
+		<title>${publicacion.titulo} en Comprar Microondas Hoy</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
 		<meta name="keywords" content="${publicacion.keywords}" />
-		<meta name="title" content="${publicacion.titulo} en Comprar eBook Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
+		<meta name="title" content="${publicacion.titulo} en Comprar Microondas Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar eBook Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="${publicacion.titulo} en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="${publicacion.titulo}"/>
 		<meta property="og:description" content="${publicacion.descripcion}"/>
@@ -72,70 +72,47 @@
 		<link rel=”canonical” href=”http://www.comprarmicroondashoy.com/blog/${publicacion.url}“/>
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
-		<title>Extras en Comprar eBook Hoy</title> 
-		<meta name="description" content="Accede a todos los extras para comprar online accesorios a tu ebook reader como fundas para protegerlo, adaptadores de corriente ó luces de lectura"/>
-		<meta name="keywords" content="extras ebook, accesorios ebook, comprar accesorio, comprar adaptador online, luz lectura, comprar funda kindle, comprar funda ebook, comprar funda lector ebook, comprar funda ereader" />
-		<meta name="title" content="Extras en Comprar eBook Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
+		<title>Extras en Comprar Microondas Hoy</title> 
+		<meta name="description" content="Accede a todos los extras para comprar online accesorios a tu microondas como un plato de microondas, plato crisp, tupperwares o agarres"/>
+		<meta name="keywords" content="comprar microondas, comprar tupperware, comprar tapper, comprar agarres microondas" />
+		<meta name="title" content="Extras en Comprar Microondas Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="Extras en Comprar eBook Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="Extras en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras en Comprar eBook Hoy"/>
-		<meta property="og:description" content="Accede a todos los extras para comprar online accesorios a tu ebook reader como fundas para protegerlo, adaptadores de corriente ó luces de lectura"/>
+		<meta property="og:title" content="Extras en Comprar Microondas Hoy"/>
+		<meta property="og:description" content="Accede a todos los extras para comprar online accesorios a tu microondas como un plato de microondas, plato crisp o tupperwares"/>
 		<meta property="og:type" content="extras"/>
 		<meta property="og:url" content="http://www.comprarmicroondashoy.com/extras"/>
-		<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
+		<c:if test="${!empty publicaciones}">
+			<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
+		</c:if>
 		<meta property="og:email" content="hola@comprarmicroondashoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Extras en Comprar eBook Hoy">
-		<meta name="twitter:description" content="Accede a todos los extras para comprar accesorios a tu ebook como fundas para protegerlo, adaptadores de corriente ó luces de lectura">
-		<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
+		<meta name="twitter:title" content="Extras en Comprar Microondas Hoy">
+		<meta name="twitter:description" content="Accede a todos los extras para comprar online accesorios a tu microondas como un plato de microondas, plato crisp ó tupperwares">
+		<c:if test="${!empty publicaciones}">
+			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
+		</c:if>
 		<meta name="twitter:domain" content="comprarmicroondashoy.com">
 		<!-- end: Twitter tags -->		
 		<link rel=”canonical” href=”http://www.comprarmicroondashoy.com/extras“/>
 	</c:when>
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
-		<title>Sobre Nosotros y Comprar eBook Hoy</title> 
-		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar eBook Hoy, su experiencia y valores profesionales"/>
-		<meta name="keywords" content="sobre nosotros ebooks, sobre ebooks, nosotros ebook, sobre kindle, sobre fundas ebook, sobre ereaders, sobre lectores de ebook" />
-		<meta name="title" content="Sobre Nosotros en Comprar eBooks Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="Sobre Nosotros en Comprar eBook Hoy" />
-		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Sobre Nosotros en Comprar eBook Hoy"/>
-		<meta property="og:description" content="Toda la información sobre los que trabajamos en Comprar eBook Hoy, su experiencia y valores profesionales"/>
-		<meta property="og:type" content="sobre"/>
-		<meta property="og:url" content="http://www.comprarmicroondashoy.com/sobre"/>
-		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmicroondashoy.com"/>
-		<!-- end: Facebook Open Graph -->
-		<!-- start: Twitter tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Sobre nosotros en Comprar eBook Hoy">
-		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar eBook Hoy, su experiencia y valores profesionales">
-		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmicroondashoy.com">
-		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmicroondashoy.com/sobre“/>	
-	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacto')}">
-		<title>Contacta con Comprar eBook Hoy</title> 
-		<meta name="description" content="Contacta con los que trabajamos en Comprar eBook Hoy"/>
-		<meta name="keywords" content="contacta nosotros ebooks, contacta ebooks, contacta ebook, contacta kindle, contacta fundas ebook, contacta ereaders, contacta lectores de ebook" />
-		<meta name="title" content="Contacta en Comprar eBooks Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
+		<title>Contacta con Comprar Microondas Hoy</title> 
+		<meta name="description" content="Contacta con los que trabajamos en Comprar Microondas Hoy"/>
+		<meta name="keywords" content="contacta microondas, comprar microondas" />
+		<meta name="title" content="Contacta en Comprar Microondas Hoy. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="Contacto en Comprar eBook Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="Contacto en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Contacta en Comprar eBook Hoy"/>
-		<meta property="og:description" content="Contacta con los que trabajamos en Comprar eBook Hoy"/>
+		<meta property="og:title" content="Contacta en Comprar Microondas Hoy"/>
+		<meta property="og:description" content="Contacta con los que trabajamos en Comprar Microondas Hoy"/>
 		<meta property="og:type" content="contacto"/>
 		<meta property="og:url" content="http://www.comprarmicroondashoy.com/contacto"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -145,25 +122,26 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Contacta con nosotros en Comprar eBook Hoy">
-		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar eBook Hoy">
+		<meta name="twitter:title" content="Contacta con nosotros en Comprar Microondas Hoy">
+		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar Microondas Hoy">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmicroondashoy.com">
 		<!-- end: Twitter tags -->
 		<link rel=”canonical” href=”http://www.comprarmicroondashoy.com/contacto“/>
+		<link rel="shortcut icon" href="http://www.comprarmicroondashoy.com/favicon.ico?v=2" />
 	</c:when>
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>eBooks y precios en Comprar eBook Hoy</title> 
-		<meta name="description" content="Análisis y precios de los mejores eBook readers en la actualidad para que puedas comprar tu ebook de tinta electrónica preferido y comparar online"/>
-		<meta name="keywords" content="análisis lectores ebooks, ebook readers, comprar lectores ereaders, comprar lectores de ebooks, análisis kindle, comprar kindle, comparar precios, lectores de ebook" />
-		<meta name="title" content="Análisis y precios de eBook readers para comprar tu ebook online. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'microondas')}">
+		<title>Microondas y precios en Comprar Microondas Hoy</title> 
+		<meta name="description" content="Análisis y precios de los mejores microondas en la actualidad para que puedas comprar tu microondas preferido y comparar online"/>
+		<meta name="keywords" content="análisis microondas, microondas, comprar microondas, comparar precios microondas" />
+		<meta name="title" content="Análisis y precios de microondas para poder comprarlo online. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="eBooks en Comprar eBook Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="Microondas en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Análisis de eBooks para comprar tu ebook online"/>
-		<meta property="og:description" content="Análisis y precios de los mejores eBook readers en la actualidad para que puedas comprar tu ebook de tinta electrónica preferido y comparar online"/>
-		<meta property="og:type" content="ebook"/>
+		<meta property="og:title" content="Análisis y precios de microondas para poder comprarlo online en Comprar Microondas Hoy"/>
+		<meta property="og:description" content="Análisis y precios de los mejores microondas en la actualidad para que puedas comprarlo online"/>
+		<meta property="og:type" content="microondas"/>
 		<meta property="og:url" content="http://www.comprarmicroondashoy.com/microondas"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
@@ -176,8 +154,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Análisis y precios de eBooks para comprar tu ebook favorito en Comprar eBook Hoy">
-		<meta name="twitter:description" content="Análisis y precios de los mejores lectores de ebooks en la actualidad para que puedas comprar tu ebook preferido">
+		<meta name="twitter:title" content="Análisis y precios de microondas para poder comprarlo online en Comprar Microondas Hoy">
+		<meta name="twitter:description" content="Análisis y precios de los mejores microondas en la actualidad para que puedas comprarlo online">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -188,16 +166,16 @@
 		<!-- end: Twitter tags -->		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos sobre eBooks en Comprar eBook Hoy</title> 
-		<meta name="description" content="Opinión y artículos en nuestro blog de los mejores eBook readers en la actualidad para que puedas comprar tu ebook de tinta electrónica online"/>
-		<meta name="keywords" content="opinion ebook readers, artículos lectores ebooks, comprar ebook online, artículos kindle, blog ereaders, comprar ereader, lectores ebooks" />
-		<meta name="title" content="Opinión y artículos sobre eBook readers para comprar tu ebook online. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
+		<title>Artículos sobre Microondas en Comprar Microondas Hoy</title> 
+		<meta name="description" content="Opinión y artículos en nuestro blog de los mejores microondas en la actualidad para que puedas comprarlo online"/>
+		<meta name="keywords" content="detalles microondas, artículos microondas, comprar microondas online, artículos microondas, blog microondas" />
+		<meta name="title" content="Opinión y artículos sobre microondas para poder comprarlo online. - Comprar Microondas Hoy - www.comprarmicroondashoy.com" />
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar eBook Hoy" />
-		<meta name="application-name" content="Blog en Comprar eBook Hoy" />
+		<meta name="copyright" content="Comprar Microondas Hoy" />
+		<meta name="application-name" content="Blog en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Opinión sobre ebook reader para comprar tu ebook online"/>
-		<meta property="og:description" content="Opinión y artículos en nuestro blog de los mejores eBook readers en la actualidad para que puedas comprar tu ebook de tinta electrónica online"/>
+		<meta property="og:title" content="Opinión y detalles sobre microondas para comprar poder comprarlo online"/>
+		<meta property="og:description" content="Opinión y artículos en nuestro blog de los mejores microondas en la actualidad para que puedas comprarlo online"/>
 		<meta property="og:type" content="articulo"/>
 		<meta property="og:url" content="http://www.comprarmicroondashoy.com/blog"/>
 		<c:if test="${!empty publicaciones}">
@@ -211,8 +189,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Opinión y artículos sobre ereaders para comprar tu ebook preferido en Comprar eBook Hoy">
-		<meta name="twitter:description" content="Opinión y artículos en nuestro blog de los mejores lectores de eBooks en la actualidad para que puedas comprar tu ebook favorito">
+		<meta name="twitter:title" content="Opinión y artículos sobre microondas para comprar tu microondas preferido en Comprar Microondas Hoy">
+		<meta name="twitter:description" content="Opinión y artículos en nuestro blog de los mejores microondas en la actualidad para que puedas comprarlo online">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -224,15 +202,15 @@
 	</c:when>
 	<c:otherwise>
 		<title>Bienvenido a Comprar eBook Hoy</title> 
-		<meta name="description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, integrables, con grill, además de baratos y muchas más posibilidades"/>
-		<meta name="keywords" content="comprar microondas, comprar microondas barato, que microondas comprar, comprar microondas online, microondas conveccion, cocina con microondas, mini microondas,microondas para camion,microondas portatil" />
+		<meta name="description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, con grill, y tupperwares, además de baratos y muchas más posibilidades"/>
+		<meta name="keywords" content="comprar microondas, comprar microondas barato, que microondas comprar, comprar microondas online, microondas conveccion, comprar tupperware, cocina microondas, mini microondas,microondas para camion,microondas portatil" />
 		<meta name="title" content="Microondas online en Comprar Microondas Hoy" />
 		<meta name="author" content="Comprar Microondas Hoy" />
 		<meta name="copyright" content="Comprar Microondas Hoy" />
 		<meta name="application-name" content="Microondas en Comprar Microondas Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="eReaders en Comprar Microondas online"/>
-		<meta property="og:description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, integrables, con grill, además de baratos y muchas más posibilidades"/>
+		<meta property="og:description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, tupperwares, con grill, además de baratos y muchas más posibilidades"/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.comprarmicroondashoy.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -243,7 +221,7 @@
 		<meta name="twitter:site" content="@ComprarMicroondasHoy">
 		<meta name="twitter:creator" content="@ComprarMicroondsaHoy">
 		<meta name="twitter:title" content="eReaders en Comprar Microondas Hoy online">
-		<meta name="twitter:description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, de convección, con grill, además de baratos y muchas más posibilidades">
+		<meta name="twitter:description" content="Información para que puedas comprar microondas adecuado a tus necesidades, microondas para coche, para casa, para camion, con horno, tupperwares, con grill, además de baratos y muchas más posibilidades">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmicroondashoy.com">
 		<!-- end: Twitter tags -->				

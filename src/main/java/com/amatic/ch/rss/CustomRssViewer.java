@@ -23,7 +23,7 @@ public class CustomRssViewer extends AbstractRssFeedView {
 
 	feed.setTitle("Comprar Microondas Hoy");
 	feed.setDescription("Toda la información para que puedas comprar un microondas adecuado a tus necesidades, microondas para coche, para camion, integrables, con grill y muchas más posibilidades");
-	feed.setLink("http://www.comprarebookhoy.com");
+	feed.setLink("http://www.comprarmicroondashoy.com");
 
 	super.buildFeedMetadata(model, feed, request);
     }

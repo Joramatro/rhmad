@@ -34,8 +34,8 @@
     	<div class="container">
 	
 			<!-- start: Flexslider -->
-			<div style="width: 550px;height: 435px; margin: 0 auto;" class="slider" >
-				<div id="flex1" class="flexslider home">
+			<div style="width: 440px;height: 320px; margin-left: 280px;" class="slider" >
+				<div id="flex1" style="margin-top:80px" class="flexslider home">
 					<c:if test="${publicacion.script ne '#' }">
 						<a target="_blank" href="/venta/principal/${publicacion.url}">
 					</c:if>
@@ -43,7 +43,7 @@
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 						<c:if test="${status.count ne 3}">
 							<li>
-								<img style="width: 420px;height: 420px;" src="${imagen}"  alt="${publicacion.titulo}" />
+								<img style="width: 420px;height: 300px;" src="${imagen}"  alt="${publicacion.titulo}" />
 								<c:if test="${status.count < 2}">
 									<div class="slide-caption n">
 										<h3>${publicacion.titulo2}</h3>
@@ -96,7 +96,7 @@
 					<g:plusone href="/blog/${publicacion.url}" align="right" size="medium"></g:plusone>
 					</div>
 					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509ce3d140135566"></script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
 					<!-- AddThis Button END -->
 					<!-- Botón +1. -->
 					<script type="text/javascript">
@@ -387,7 +387,7 @@
 	
 	<%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
 
-	<div id="banGoogle" style="position: absolute;top: 310px;right: 44px;">
+	<div id="banGoogle" style="position: absolute;top: 270px;right: 40px;">
 		<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- rec grande recomendado ch -->
 		<ins class="adsbygoogle"
@@ -406,8 +406,8 @@
 			$("#banGoogle").hide();
 		}
 	</script>
-	<div id="banAmazonHorizontal" style="position: absolute;top: 1000px;left: 55px;">
-		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarebookh-21&o=30&p=14&l=ur1&category=kindle&banner=1XW3YZKJD421WHFJ1Q02&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+	<div id="banAmazonHorizontal" style="position: absolute;top: 1000px;left: 54px;">
+		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=14&l=ur1&category=hogar&banner=1ESFST6P8W0JNG6Z4G02&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 	</div>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -418,8 +418,8 @@
 		}
 	</script>
 	
-	<div id="banAmazonEsquina" style="position: absolute;top: 198px;right: 260px;">
-	<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarebookh-21&o=30&p=20&l=ur1&category=kindlestore&banner=0J2HENEFERESCPS25YR2&f=ifr" width="120" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+	<div id="banAmazonEsquina" style="position: absolute;top: 155px; left: 393px;">
+		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=13&l=ur1&category=hogar&banner=1GW6MNKWMET3XVJB7302&f=ifr" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 	</div>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

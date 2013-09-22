@@ -113,7 +113,7 @@
 			<hr>
 			
 			<div style="width: 60%;margin: 0 auto;">
-			<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarebookh-21&o=30&p=48&l=ur1&category=kindle_paperwhite&banner=0W27XP9ZXV3SP6ZQN4R2&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+			<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=48&l=ur1&category=hogar&banner=02EHMJ8M1XQ7RDH9GQ02&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 			</div>
 		
 		<hr>			
@@ -127,7 +127,7 @@
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicacionesEbooks}" varStatus="status" end="8">				
 				<div class="span4 portfolio-item nature people">
-					<div class="picture"><a href="/ebooks/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/microondas/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -135,7 +135,7 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a href="/ebooks/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a href="/microondas/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>

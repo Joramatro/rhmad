@@ -52,7 +52,7 @@ public class EbooksController extends PublicacionAbstract {
 	guardarComentarioPub(request, url, nombre, email, puntos, comentario,
 		web, nbrComment, WebConstants.SessionConstants.EBOOK);
 
-	response.sendRedirect("/ebooks/" + url);
+	response.sendRedirect("/microondas/" + url);
 
     }
 

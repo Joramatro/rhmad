@@ -455,13 +455,14 @@ html[xmlns] .slides {display: block;}
 }
 
 .flex-direction-nav .flex-next {
+	margin-right: -86px;
 	background-image: url(../img/slider-control-right.png);
 	background-repeat: no-repeat;
 	background-position: 52% 50%;
 }
 
 .flex-direction-nav .flex-prev {
-	margin-right: 36px;
+	margin-right: -50px;
 	background-image: url(../img/slider-control-left.png);
 	background-repeat: no-repeat;
 	background-position: 48% 50%;

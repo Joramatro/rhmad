@@ -10,12 +10,12 @@
 <div id="content">
 
   <div class="logo">
-		<h1><a title="Comprar eBook Hoy" href="www.comprarebookhoy.com"><span class="red">Comprar eBook Hoy</span></a></h1>
-		<input type="image" src="/img/logo.png" width="95px" height="40px" class="button-sel" alt="www.comprarebookhoy.com" title="www.comprarebookhoy.com"/>
+		<h1><a title="Comprar Microondas Hoy" href="www.comprarmicroondashoy.com"><span class="red">Comprar eBook Hoy</span></a></h1>
+		<input type="image" src="/img/logo.png" width="95px" height="40px" class="button-sel" alt="www.comprarmicroondashoy.com" title="www.comprarmicroondashoy.com"/>
   </div>            
 
 <div class="subheader" style="margin-left:20px">
-    <h2>Log In</h2> para editar en Comprar eBook Hoy
+    <h2>Log In</h2> para editar en Comprar Microondas Hoy
 </div>
 <div id="mainbar">
 
@@ -29,7 +29,7 @@
 
             <!-- Simple OpenID Selector -->
             <div id="openid_choice" style="">
-	            <p style="margin-right: 250px;">Tu cuenta no será publicada ni utilizada para ningún otro propósito que no sea parte de Comprar eBook Hoy. Recuerda que debes estar dado de alta en el sistema. Por favor, clicka en logo para <b>logarte</b> con una de tus cuentas de abajo:
+	            <p style="margin-right: 250px;">Tu cuenta no será publicada ni utilizada para ningún otro propósito que no sea parte de Comprar Hoy. Recuerda que debes estar dado de alta en el sistema. Por favor, clicka en logo para <b>logarte</b> con una de tus cuentas de abajo:
                 </p>
 	            <div id="openid_btns" class=".login-page .openid_large_btn">
 	            <span title="log in with Google" onclick="javascript:sendToLogin('https://www.google.com/accounts/o8/id');" style="background: #fff url(http://cdn.sstatic.net/Img/openid/openid-logos.png?v=8); background-position: -1px -1px;cursor:pointer;" class="google openid_large_btn"></span>

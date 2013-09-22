@@ -197,7 +197,6 @@
 			<div class="span12">
 			
 				<p>
-				<a style="margin-right: 35px;" href="http://feeds.feedburner.com/ComprarMicroondasHoy"><img src="http://feeds.feedburner.com/~fc/ComprarEbookHoy?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
 				<a style="margin-right: 35px;" href="http://www.comprarmicroondashoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
 				&copy; 2013, <a target="_blank" rel="publisher" href="https://plus.google.com/b/103298424982329605824/103298424982329605824/posts"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 <span itemprop="name">Comprar Microondas Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
