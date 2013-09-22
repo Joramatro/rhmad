@@ -26,7 +26,7 @@
         <!-- Fav and touch icons -->
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="/css/apprise-v2.css" type="text/css" />
-    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar eBook Hoy">
+    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar Microondas Hoy">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			.ui-autocomplete-loading { background: white url('/img/fancybox_loading.gif') right center no-repeat; }
@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-book-open circle"></i>Comprar eBook <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-wifi-alt circle"></i>Comprar Microondas <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -118,7 +118,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CE<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">CM<span>HOY</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -132,7 +132,7 @@
 
 							<li><a href="/">Inicio</a></li>
 
-							<li><a href="/ebooks">eBooks</a></li>
+							<li><a href="/microondas">Microondas</a></li>
 
 							<li><a href="/sobre">Sobre nosotros</a></li>
 							
@@ -289,7 +289,7 @@
 		
 			<div class="span12">
 				<p>
-					&copy; 2013, <a href="/">Compra eBook Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2013, <a href="/">Compra Microondas Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

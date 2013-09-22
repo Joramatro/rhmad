@@ -17,7 +17,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1 id="_name2" itemprop="name"><i class="ico-book ico-white"></i>${publicacion.titulo}</h1>
+				<h1 id="_name2" itemprop="name"><i class="ico-fire ico-white"></i>${publicacion.titulo}</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -29,14 +29,16 @@
 	
 	<!--start: Wrapper -->
 	<div itemscope itemtype="http://schema.org/Article" itemref="_author3 _datePublished5 _image6 _articleBody7 _publisher8 _aggregateRating9" id="wrapper">
-		<div style="display:none"><span  itemprop="url">http://www.comprarebookhoy.com/ebooks/${publicacion.url}</span></div>		
+		<div style="display:none"><span  itemprop="url">http://www.comprarmicroondashoy.com/microondas/${publicacion.url}</span></div>		
 		<!--start: Container -->
     	<div class="container">
 	
 			<!-- start: Flexslider -->
-			<div style="width: 550px;height: 435px; margin: 0 auto;" class="slider" >
+			<div style="width: 440px;height: 300px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
-					<a target="_blank" href="/venta/principal/${publicacion.url}">
+					<c:if test="${publicacion.script ne '#' }">
+						<a target="_blank" href="/venta/principal/${publicacion.url}">
+					</c:if>
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 						<c:if test="${status.count ne 3}">
@@ -91,7 +93,7 @@
 					<a class="addthis_button_tweet"></a>
 					<a class="addthis_button_pinterest_pinit"></a>
 					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
-					<g:plusone href="/ebooks/${publicacion.url}" align="right" size="medium"></g:plusone>
+					<g:plusone href="/microondas/${publicacion.url}" align="right" size="medium"></g:plusone>
 					</div>
 					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509ce3d140135566"></script>
@@ -127,7 +129,7 @@
 						<c:forEach var="publicacionRel" items="${publicaciones}" varStatus="status" end="2">	
 						<div class="span3">	
 							<div class="picture">
-								<a href="/ebooks/${publicacionRel.url}" title="${publicacionRel.titulo}">
+								<a href="/microondas/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
 									<img style="width: 270px;height: 240px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
@@ -135,7 +137,7 @@
 								</a>
 							</div>
 							<div class="item-description">
-								<h4><a href="/ebooks/${publicacionRel.url}">${publicacionRel.titulo}</a></h4>
+								<h4><a href="/microondas/${publicacionRel.url}">${publicacionRel.titulo}</a></h4>
 								<p>
 									${fn:replace(publicacionRel.descripcion, newLineChar, "<p/><p>")}
 								</p>
@@ -165,7 +167,7 @@
 										<div class="testimonials-bg"></div>
 										<c:choose>
 										<c:when test="${comentario.publicacion.tipo eq 'EB' }">
-											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/ebooks/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
+											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/microondas/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
 										</c:when>	
 										<c:otherwise>
 											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/blog/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
@@ -299,7 +301,7 @@
 				
 				<!-- Form -->
 				<div id="comments-form">
-					<form action="/ebooks/${publicacion.url}/nuevoComentario" id="formComment" method="post">
+					<form action="/microondas/${publicacion.url}/nuevoComentario" id="formComment" method="post">
 						<input id="nbrComment" name="nbrComment" type="hidden"/>
 						<div class="field">
 							<label>Nombre: <span>*</span></label>

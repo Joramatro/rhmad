@@ -27,7 +27,7 @@ public class EbooksController extends PublicacionAbstract {
     @Resource(name = "OIdUserBean")
     OpenIdUser oIdUserBean;
 
-    @RequestMapping(value = { "/ebooks/{url}" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/microondas/{url}" }, method = RequestMethod.GET)
     public String cargarPublicacion(ModelMap model, @PathVariable String url,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
@@ -37,7 +37,7 @@ public class EbooksController extends PublicacionAbstract {
 	return "ebook";
     }
 
-    @RequestMapping(value = { "/ebooks/{url}/nuevoComentario" }, method = { RequestMethod.POST })
+    @RequestMapping(value = { "/microondas/{url}/nuevoComentario" }, method = { RequestMethod.POST })
     public void guardarComentario(ModelMap model,
 	    @RequestParam("url") String url,
 	    @RequestParam("nombre") String nombre,
@@ -56,7 +56,7 @@ public class EbooksController extends PublicacionAbstract {
 
     }
 
-    @RequestMapping(value = { "/ebooks" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/microondas" }, method = { RequestMethod.GET })
     public String getPublicaciones(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
 

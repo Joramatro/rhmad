@@ -29,7 +29,7 @@
 	          .append(port);
 	  }
 	 %>
-		<br><br><span>Tipo Ebooks</span><br><br>
+		<br><br><span>Tipo Microondas</span><br><br>
 		<table>
 		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
 		<tr>

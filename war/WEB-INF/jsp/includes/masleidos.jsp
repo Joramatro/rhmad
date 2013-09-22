@@ -7,14 +7,14 @@
 
 			<div class="row">	
 				<div class="span9">					
-					<div class="title"><h3>Los eBooks más vistos...</h3></div>
+					<div class="title"><h3>Los Microondas más vistos...</h3></div>
 					
 					<!-- start: Row -->
 		      		<div class="row">
 						<c:forEach var="publicacionMVE" items="${publicacionesMVE}" varStatus="status" end="2">	
 						<div class="span3">	
 							<div class="picture">
-								<a href="/ebooks/${publicacionMVE.url}" title="${publicacionMVE.titulo}">
+								<a href="/microondas/${publicacionMVE.url}" title="${publicacionMVE.titulo}">
 									<c:if test="${!empty publicacionMVE.lImages }">
 									<img style="width: 270px;height: 240px;" src="${publicacionMVE.lImages[1]}" alt="${publicacionMVE.titulo}"/>
 									</c:if>
@@ -22,7 +22,7 @@
 								</a>
 							</div>
 							<div class="item-description">
-								<h4><a href="/ebooks/${publicacionMVE.url}">${publicacionMVE.titulo}</a></h4>
+								<h4><a href="/microondas/${publicacionMVE.url}">${publicacionMVE.titulo}</a></h4>
 								<p>
 									${fn:replace(publicacionMVE.descripcion, newLineChar, "<p/><p>")}
 								</p>
@@ -59,7 +59,7 @@
 										<div class="testimonials-bg"></div>
 										<c:choose>
 										<c:when test="${comentario.publicacion.tipo eq 'EB' }">
-											<div class="testimonials-author">${comentario.nombre}, en <a href="/ebooks/${comentario.publicacion.url }">${comentario.publicacion.titulo}</a></div>
+											<div class="testimonials-author">${comentario.nombre}, en <a href="/microondas/${comentario.publicacion.url }">${comentario.publicacion.titulo}</a></div>
 										</c:when>	
 										<c:otherwise>
 											<div class="testimonials-author">${comentario.nombre}, en <a href="/blog/${comentario.publicacion.url }">${comentario.publicacion.titulo}</a></div>

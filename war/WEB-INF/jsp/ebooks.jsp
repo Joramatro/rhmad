@@ -15,7 +15,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1><i class="ico-lightbulb ico-white"></i>eBooks</h1>
+				<h1><i class="ico-lightbulb ico-white"></i>Microondas</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -50,12 +50,12 @@
 		
 		<!--start: Container -->
     	<div class="container">
-			<!-- start: ebooks -->
+			<!-- start: microondas -->
 			<div id="portfolio-wrapper" class="row">
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicaciones}" varStatus="status" >				
 				<div class='span4 portfolio-item ${fn:replace(publicacion.clase1, " ", separadorClase)} ${fn:replace(publicacion.clase2, " ", separadorClase)} ${fn:replace(publicacion.clase3, " ", separadorClase)} ${fn:replace(publicacion.clase4, " ", separadorClase)} ${fn:replace(publicacion.clase5, " ", separadorClase)} ${fn:replace(publicacion.clase6, " ", separadorClase)}'>
-					<div class="picture"><a href="/ebooks/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/microondas/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -63,17 +63,17 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a title="${publicacion.titulo}" href="/ebooks/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/microondas/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="#">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/ebooks/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="#">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/microondas/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
 				</div>
 				</c:forEach>
 			</div>
-			<!-- end: ebooks -->
+			<!-- end: microondas -->
 			
 			<div class="clear" style="padding-top: 25px;"></div>
 			

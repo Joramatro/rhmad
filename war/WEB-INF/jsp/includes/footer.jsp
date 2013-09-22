@@ -13,7 +13,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="http://www.comprarebookhoy.com/">CE<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="http://www.comprarmicroondashoy.com/">CM<span>HOY</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -25,9 +25,9 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="http://www.comprarebookhoy.com/">Inicio</a></li>
+							<li><a href="http://www.comprarmicroondashoy.com/">Inicio</a></li>
 
-							<li><a href="/ebooks">eBooks</a></li>
+							<li><a href="/microondas">eBooks</a></li>
 
 							<li><a href="/sobre">Sobre nosotros</a></li>
 							
@@ -44,7 +44,7 @@
 				<div class="span1">
 						
 					<div id="footer-menu-back-to-top">
-						<a href="http://www.comprarebookhoy.com/"></a>
+						<a href="http://www.comprarmicroondashoy.com/"></a>
 					</div>
 				
 				</div>
@@ -83,7 +83,7 @@
 					
 					<h3>Sobre nosotros</h3>
 					<p>
-						Somos un equipo de personas con gran formación tecnológica y apasionados por el mundo de la informática. Queremos ofrecerte la mejor información sobre eBooks, tablets y nuevos gadgets tecnológicos.
+						Somos un equipo de personas con gran formación tecnológica y conocimientos técnicos sobre microondas. Queremos ofrecerte la mejor información sobre todos los detalles que necesitas saber sobre el microondas que quieres comprar.
 					</p>
 						
 				</div>
@@ -111,10 +111,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-twitter">
-											<a target="_blank" href="https://twitter.com/ComprareBookHoy"></a>
+											<a target="_blank" href="https://twitter.com/ComprarHoy"></a>
 										</div>
 										<div class="social-info-back social-twitter-hover">
-											<a target="_blank" href="https://twitter.com/ComprareBookHoy"></a>
+											<a target="_blank" href="https://twitter.com/ComprarHoy"></a>
 										</div>	
 									</div>
 								</div>
@@ -125,10 +125,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-facebook">
-											<a target="_blank" href="https://www.facebook.com/comprarebookhoy"></a>
+											<a target="_blank" href="https://www.facebook.com/comprarhoy"></a>
 										</div>
 										<div class="social-info-back social-facebook-hover">
-											<a target="_blank" href="https://www.facebook.com/comprarebookhoy"></a>
+											<a target="_blank" href="https://www.facebook.com/comprarhoy"></a>
 										</div>
 									</div>
 								</div>
@@ -166,7 +166,7 @@
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarEbookHoy', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
+					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarMicroondasHoy', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
 						<h3>Suscríbete! &nbsp; <a href="http://www.comprarebookhoy.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
 						<p>Por favor, dejanos tu email</p>
 						<label for="newsletter_input">@:</label>
@@ -200,7 +200,7 @@
 				<a style="margin-right: 35px;" href="http://feeds.feedburner.com/ComprarEbookHoy"><img src="http://feeds.feedburner.com/~fc/ComprarEbookHoy?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
 				<a style="margin-right: 35px;" href="http://www.comprarebookhoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
 				&copy; 2013, <a target="_blank" rel="publisher" href="https://plus.google.com/b/103298424982329605824/103298424982329605824/posts"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-<span itemprop="name">Comprar eBook Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+<span itemprop="name">Comprar Microondas Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				<a style="margin-left: 19px;" href="/politica-de-privacidad">Política de privacidad</a>					
 				</p>
 			</div>

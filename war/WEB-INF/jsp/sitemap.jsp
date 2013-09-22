@@ -11,42 +11,42 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.comprarebookhoy.com/</loc>
+  <loc>http://www.comprarmicroondashoy.com/</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarebookhoy.com/ebooks</loc>
+  <loc>http://www.comprarmicroondashoy.com/microondas</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarebookhoy.com/extras</loc>
+  <loc>http://www.comprarmicroondashoy.com/extras</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarebookhoy.com/blog</loc>
+  <loc>http://www.comprarmicroondashoy.com/blog</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarebookhoy.com/sobre</loc>
+  <loc>http://www.comprarmicroondashoy.com/sobre</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarebookhoy.com/contacto</loc>
+  <loc>http://www.comprarmicroondashoy.com/contacto</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarebookhoy.com/politica-de-privacidad</loc>
+  <loc>http://www.comprarmicroondashoy.com/politica-de-privacidad</loc>
   <changefreq>yearly</changefreq>
 </url>
 <c:forEach var="publicacion" items="${publicacionesEbooks}">	
 	<url>
-	  <loc>http://www.comprarebookhoy.com/ebooks/${publicacion.url}</loc>
+	  <loc>http://www.comprarmicroondashoy.com/microondas/${publicacion.url}</loc>
 	  <changefreq>weekly</changefreq>
 	</url>
 </c:forEach>
 <c:forEach var="publicacion" items="${publicacionesBlog}">	
 	<url>
-	  <loc>http://www.comprarebookhoy.com/blog/${publicacion.url}</loc>
+	  <loc>http://www.comprarmicroondashoy.com/blog/${publicacion.url}</loc>
 	  <changefreq>weekly</changefreq>
 	</url>
 </c:forEach>

@@ -314,13 +314,13 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-book-open circle"></i>Comprar Microondas <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-wifi-alt circle"></i>Comprar Microondas <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
 	                			<a href="/">Inicio</a>
 	              			</li>
-	              			<li id="menuEbooks"><a href="/microondas">Microondas</a></li>
+	              			<li id="menuMicroondas"><a href="/microondas">Microondas</a></li>
 							<li class="dropdown">
 	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Destacados<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
@@ -338,7 +338,6 @@
 	              			</li>
 	              			<li id="menuExtras"><a href="/extras">Extras</a></li>
 	              			<li id="menuBlog"><a href="/blog">Blog</a></li>	              																			
-							<li id="menuSobre"><a href="/sobre">Sobre nosotros</a></li>
 	              			<li id="menuContacto"><a href="/contacto">Contacto</a></li>
 	              			<li style="margin-top: -8px;"><a href="#newsletter" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></li>
 	            		</ul>

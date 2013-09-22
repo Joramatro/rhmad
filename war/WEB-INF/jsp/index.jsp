@@ -12,7 +12,7 @@
 	<div class="slider-wrapper">
 
 		<div id="da-slider" class="da-slider">
-			<c:forEach var="publicacion" items="${publicacionesPortada}" varStatus="status" end="3">
+			<c:forEach var="publicacion" items="${publicacionesPortada}" varStatus="status" end="4">
 				<div class="da-slide">
 					<h2>${publicacion.tituloPortada}</h2>
 					<p>${publicacion.descPortada}</p>
@@ -20,14 +20,14 @@
 					<div class="da-img">
 						<c:choose>
 							<c:when test="${publicacion.tipo eq 'EB' }">
-								<a href="/ebooks/${publicacion.url}">
+								<a href="/microondas/${publicacion.url}">
 							</c:when>	
 							<c:otherwise>
 								<a href="/blog/${publicacion.url}">
 							</c:otherwise>
 						</c:choose>
-						<c:if test="${!empty publicacion.lImages }">
-							<img src="${publicacion.lImages[3]}" style="width: 370px;height:340px;" alt="${publicacion.titulo}" /></a>
+						<c:if test="${!empty publicacion.lImages && fn:length(publicacion.lImages) gt 3}">
+							<img src="${publicacion.lImages[3]}" style="width: 450px;height:290px;" alt="${publicacion.titulo}" /></a>
 						</c:if>
 					</div>
 				</div>							
@@ -52,9 +52,9 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Los e-books están siendo cada vez más y más populares, gracias a lo fácil que es llevarlos contigo y transferirlos. Aquí te ayudaremos a compar el ebook con pantalla de tinta electrónica que más se ajuste a tus necesidades.
+					Desde que el horno microondas ha llegado a nuestras vidas y cocinas , nuestra forma de vida y la de muchas de personas ha cambiado completamente de tal forma que a muchos nos cuesta imaginarnos una vida sin este aparato. Hace tiempo que dejó de ser una novedad.
 				</h3>
-        		<p><a class="btn btn-primary btn-large" href="/blog">ver Blog</a> &nbsp;&nbsp;<a class="btn btn-primary btn-large" href="/ebooks">ver eBooks</a></p>
+        		<p><a class="btn btn-primary btn-large" href="/blog">ver Blog</a> &nbsp;&nbsp;<a class="btn btn-primary btn-large" href="/ebooks">ver Microondas</a></p>
       		</div>
 			<!-- end: Hero Unit -->
       		
@@ -70,8 +70,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Promueve la lectura</h3>
-								<p>Los usuarios de eBooks tienden a leer más que antes y permiten incorporar contenido multimedia.</p>
+								<h3>Rapidez</h3>
+								<p>El microondas permite que los alimentos se descongelen de manera muy rápida a la vez que las radiaciones eliminan los gérmenes.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -83,8 +83,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Desafía el tiempo </h3>
-								<p>Con el desarrollo de las tecnologías, los eBooks pueden entregarse casi de manera instantánea, cuestión de segundos.</p>
+								<h3>Comodidad</h3>
+								<p>Puedes cocinar en el mismo recipiente que usarás después para comer y para limpiar el microondas sólo necesitas pasar por las paredes un paño limpio y húmedo.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -96,8 +96,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Más Barato</h3>
-								<p>En Comprar eBook Hoy te aninamos a que te conectes a las bibliotecas en línea ya que te permitirán la lectura de clásicos sin ningún coste.</p>
+								<h3>Seguro</h3>
+								<p>Haciendo un uso adecuado del mismo,  los microondas no representan ningún riesgo para la salud.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
