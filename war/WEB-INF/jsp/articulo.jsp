@@ -43,7 +43,7 @@
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 						<c:if test="${status.count ne 3}">
 							<li>
-								<img style="width: 420px;height: 300px;" src="${imagen}"  alt="${publicacion.titulo}" />
+								<img style="width: 420px;height: 500px;" src="${imagen}"  alt="${publicacion.titulo}" />
 								<c:if test="${status.count < 2}">
 									<div class="slide-caption n">
 										<h3>${publicacion.titulo2}</h3>
