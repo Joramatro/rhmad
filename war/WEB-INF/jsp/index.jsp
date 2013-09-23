@@ -27,7 +27,7 @@
 							</c:otherwise>
 						</c:choose>
 						<c:if test="${!empty publicacion.lImages}">
-							<img src="${publicacion.lImages[0]}" style="width: 450px;height:290px;" alt="${publicacion.titulo}" /></a>
+							<img src="${publicacion.lImages[0]}" style="width: 345px;height:360px;" alt="${publicacion.titulo}" /></a>
 						</c:if>
 					</div>
 				</div>							
