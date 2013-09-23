@@ -26,8 +26,8 @@
 								<a href="/blog/${publicacion.url}">
 							</c:otherwise>
 						</c:choose>
-						<c:if test="${!empty publicacion.lImages && fn:length(publicacion.lImages) gt 3}">
-							<img src="${publicacion.lImages[3]}" style="width: 450px;height:290px;" alt="${publicacion.titulo}" /></a>
+						<c:if test="${!empty publicacion.lImages}">
+							<img src="${publicacion.lImages[0]}" style="width: 450px;height:290px;" alt="${publicacion.titulo}" /></a>
 						</c:if>
 					</div>
 				</div>							
