@@ -10,12 +10,12 @@
 <div id="content">
 
   <div class="logo">
-		<h1><a title="Comprar Microondas Hoy" href="www.comprarmicroondashoy.com"><span class="red">Comprar eBook Hoy</span></a></h1>
-		<input type="image" src="/img/logo.png" width="95px" height="40px" class="button-sel" alt="www.comprarmicroondashoy.com" title="www.comprarmicroondashoy.com"/>
+		<h1><a title="Comprar Cafetera Express" href="www.comprarcafeteraexpress.com"><span class="red">Comprar Cafetera Express</span></a></h1>
+		<input type="image" src="/img/logo.png" width="95px" height="40px" class="button-sel" alt="www.comprarcafeteraexpress.com" title="www.comprarcafeteraexpress.com"/>
   </div>            
 
 <div class="subheader" style="margin-left:20px">
-    <h2>Log In</h2> para editar en Comprar Microondas Hoy
+    <h2>Log In</h2> para editar en Comprar Cafetera Express
 </div>
 <div id="mainbar">
 

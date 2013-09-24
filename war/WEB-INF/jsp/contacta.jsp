@@ -52,7 +52,7 @@
 				<div class="span3">
 					<div class="title"><h3>Información de Contacto</h3></div>
 					<p>
-						<b>Comprar Microondas Hoy</b>
+						<b>Comprar Cafetera Express</b>
 					</p>
 					<p>
 						The Triangle, Ranelagh
@@ -61,7 +61,7 @@
 						Dublin 6, Dublin, Irlanda
 					</p>	
 					<p>
-						Email: hola@comprarmicroondashoy.com
+						Email: hola@comprarcafeteraexpress.com
 					</p>
 				</div>
 				<!-- end: Contact Info -->		

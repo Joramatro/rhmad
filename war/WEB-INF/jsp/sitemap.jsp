@@ -11,42 +11,38 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.comprarmicroondashoy.com/</loc>
+  <loc>http://www.comprarcafeteraexpress.com/</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmicroondashoy.com/microondas</loc>
+  <loc>http://www.comprarcafeteraexpress.com/cafeteras</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmicroondashoy.com/extras</loc>
+  <loc>http://www.comprarcafeteraexpress.com/extras</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmicroondashoy.com/blog</loc>
+  <loc>http://www.comprarcafeteraexpress.com/blog</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmicroondashoy.com/sobre</loc>
+  <loc>http://www.comprarcafeteraexpress.com/contacto</loc>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://www.comprarmicroondashoy.com/contacto</loc>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://www.comprarmicroondashoy.com/politica-de-privacidad</loc>
+  <loc>http://www.comprarcafeteraexpress.com/politica-de-privacidad</loc>
   <changefreq>yearly</changefreq>
 </url>
 <c:forEach var="publicacion" items="${publicacionesEbooks}">	
 	<url>
-	  <loc>http://www.comprarmicroondashoy.com/microondas/${publicacion.url}</loc>
+	  <loc>http://www.comprarcafeteraexpress.com/cafeteras/${publicacion.url}</loc>
 	  <changefreq>weekly</changefreq>
 	</url>
 </c:forEach>
 <c:forEach var="publicacion" items="${publicacionesBlog}">	
 	<url>
-	  <loc>http://www.comprarmicroondashoy.com/blog/${publicacion.url}</loc>
+	  <loc>http://www.comprarcafeteraexpress.com/blog/${publicacion.url}</loc>
 	  <changefreq>weekly</changefreq>
 	</url>
 </c:forEach>

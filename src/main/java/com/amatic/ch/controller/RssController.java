@@ -38,7 +38,7 @@ public class RssController {
 	    SampleContent content = new SampleContent();
 	    content.setTitle(publicacionEbook.getTitulo());
 	    content.setAuthor(publicacionEbook.getAutor());
-	    content.setUrl("http://www.comprarmicroondashoy.com/microondas/"
+	    content.setUrl("http://www.comprarcafeteraexpress.com/cafeteras/"
 		    + publicacionEbook.getUrl());
 	    content.setSummary(Jsoup.parse(publicacionEbook.getArticulo())
 		    .text());
@@ -52,7 +52,7 @@ public class RssController {
 		content.getCategories().add(category2);
 	    }
 	    content.setDescription(publicacionEbook.getDescripcion());
-	    content.setComments("http://www.comprarmicroondashoy.com/microondas/"
+	    content.setComments("http://www.comprarcafeteraexpress.com/cafeteras/"
 		    + publicacionEbook.getUrl() + "/#comments");
 	    content.setCreatedDate(publicacionEbook.getFechaCreacion());
 	    items.add(content);
@@ -61,7 +61,7 @@ public class RssController {
 	    SampleContent content = new SampleContent();
 	    content.setTitle(publicacionArticulo.getTitulo());
 	    content.setAuthor(publicacionArticulo.getAutor());
-	    content.setUrl("http://www.comprarmicroondashoy.com/blog/"
+	    content.setUrl("http://www.comprarcafeteraexpress.com/blog/"
 		    + publicacionArticulo.getUrl());
 	    content.setSummary(Jsoup.parse(publicacionArticulo.getArticulo())
 		    .text());
@@ -75,7 +75,7 @@ public class RssController {
 		content.getCategories().add(category2);
 	    }
 	    content.setDescription(publicacionArticulo.getDescripcion());
-	    content.setComments("http://www.comprarmicroondashoy.com/blog/"
+	    content.setComments("http://www.comprarcafeteraexpress.com/blog/"
 		    + publicacionArticulo.getUrl() + "/#comments");
 	    content.setCreatedDate(publicacionArticulo.getFechaCreacion());
 	    items.add(content);

@@ -24,9 +24,9 @@ public class Mail {
 	try {
 	    Message msg = new MimeMessage(session);
 	    msg.setFrom(new InternetAddress("jorge.amatro@gmail.com",
-		    "Jorge Combrar Microondas Hoy News"));
+		    "Jorge Combrar Cafetera Express News"));
 	    msg.addRecipient(Message.RecipientType.TO, new InternetAddress(
-		    "hola@comprarmicroondashoy.com", "Jorge Amat"));
+		    "hola@comprarcafeteraexpress.com", "Jorge Amat"));
 	    msg.setSubject(subject);
 	    msg.setText(msgBody);
 	    Transport.send(msg);

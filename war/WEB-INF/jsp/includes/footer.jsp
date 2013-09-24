@@ -13,7 +13,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="http://www.comprarmicroondashoy.com/">CM<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="http://www.comprarcafeteraexpress.com/">CM<span>HOY</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -25,11 +25,9 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="http://www.comprarmicroondashoy.com/">Inicio</a></li>
+							<li><a href="http://www.comprarcafeteraexpress.com/">Inicio</a></li>
 
-							<li><a href="/microondas">eBooks</a></li>
-
-							<li><a href="/sobre">Sobre nosotros</a></li>
+							<li><a href="/cafeteras">Cafeteras</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 
@@ -44,7 +42,7 @@
 				<div class="span1">
 						
 					<div id="footer-menu-back-to-top">
-						<a href="http://www.comprarmicroondashoy.com/"></a>
+						<a href="http://www.comprarcafeteraexpress.com/"></a>
 					</div>
 				
 				</div>
@@ -83,7 +81,7 @@
 					
 					<h3>Sobre nosotros</h3>
 					<p>
-						Somos un equipo de personas con gran formación tecnológica y conocimientos técnicos sobre microondas. Queremos ofrecerte la mejor información sobre todos los detalles que necesitas saber sobre el microondas que quieres comprar.
+						Somos un equipo de personas amantes del cafe y que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre la cafetera que quieres comprar.
 					</p>
 						
 				</div>
@@ -166,13 +164,13 @@
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarMicroondasHoy', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
-						<h3>Suscríbete! &nbsp; <a href="http://www.comprarmicroondashoy.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
+					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarCafeteraExpress&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
+						<h3>Suscríbete! &nbsp; <a href="http://www.comprarcafeteraexpress.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
 						<p>Por favor, dejanos tu email</p>
 						<label for="newsletter_input">@:</label>
 						<input style="border: 1px solid #29a9df;" type="text" name="email" id="newsletter_input">
 						<input type="submit" id="btnSuscripcion" value="Enviar">			
-						<input type="hidden" value="ComprarMicroondasHoy" name="uri"/>
+						<input type="hidden" value="ComprarCafeteraExpress" name="uri"/>
 						<input type="hidden" name="loc" value="es_ES"/>						
 					</form>
 					<!-- end: Newsletter -->
@@ -197,9 +195,9 @@
 			<div class="span12">
 			
 				<p>
-				<a style="margin-right: 35px;" href="http://www.comprarmicroondashoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
+				<a style="margin-right: 35px;" href="http://www.comprarcafeteraexpress.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
 				&copy; 2013, <a target="_blank" rel="publisher" href="https://plus.google.com/b/103298424982329605824/103298424982329605824/posts"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-<span itemprop="name">Comprar Microondas Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+<span itemprop="name">Comprar Cafetera Express</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				<a style="margin-left: 19px;" href="/politica-de-privacidad">Política de privacidad</a>					
 				</p>
 			</div>
@@ -240,14 +238,12 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/fancybox.css
 	$("#menuSuperior > li").removeClass('active');
 	if(parts[1] == 'contacto'){		
 		$("#menuContacto").addClass('active');
-	}else if(parts[1] == 'sobre'){	
-		$("#menuSobre").addClass('active');
 	}else if(parts[1] == 'blog'){	
 		$("#menuBlog").addClass('active');
 	}else if(parts[1] == 'extras'){	
 		$("#menuExtras").addClass('active');
-	}else if(parts[1] == 'ebooks'){	
-		$("#menuEbooks").addClass('active');
+	}else if(parts[1] == 'cafeteras'){	
+		$("#menuCafeteras").addClass('active');
 	}else{
 		$("#menuInicio").addClass('active');
 	}

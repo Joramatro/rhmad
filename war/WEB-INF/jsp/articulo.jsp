@@ -17,7 +17,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1 id="_name2" itemprop="name"><i class="ico-fire ico-white"></i>${publicacion.titulo}</h1>
+				<h1 id="_name2" itemprop="name"><i class="ico-coffe-cup ico-white"></i>${publicacion.titulo}</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -29,7 +29,7 @@
 	
 	<!--start: Wrapper -->
 	<div itemscope itemtype="http://schema.org/Article" itemref="_author3 _datePublished5 _image6 _articleBody7 _publisher8 _aggregateRating9" id="wrapper">
-		<div style="display:none"><span  itemprop="url">http://www.comprarmicroondashoy.com/blog/${publicacion.url}</span></div>		
+		<div style="display:none"><span  itemprop="url">http://www.comprarcafeteraexpress.com/blog/${publicacion.url}</span></div>		
 		<!--start: Container -->
     	<div class="container">
 	
@@ -167,7 +167,7 @@
 										<div class="testimonials-bg"></div>
 										<c:choose>
 										<c:when test="${comentario.publicacion.tipo eq 'EB' }">
-											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/microondas/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
+											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/cafeteras/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
 										</c:when>	
 										<c:otherwise>
 											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/blog/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>

@@ -20,7 +20,7 @@
 					<div class="da-img">
 						<c:choose>
 							<c:when test="${publicacion.tipo eq 'EB' }">
-								<a href="/microondas/${publicacion.url}">
+								<a href="/cafeteras/${publicacion.url}">
 							</c:when>	
 							<c:otherwise>
 								<a href="/blog/${publicacion.url}">
@@ -52,9 +52,9 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Desde que el horno microondas ha llegado a nuestras vidas y cocinas , nuestra forma de vida y la de muchas de personas ha cambiado completamente de tal forma que a muchos nos cuesta imaginarnos una vida sin este aparato. Hace tiempo que dejó de ser una novedad.
+					Si lo que te gusta es tomarte un buen café en cualquier momento del día, existe una cafetera para ti y para cada tipo de cafe que desees: Comprar una cafetera puede ayudarte a conseguir saborear el mejor café en cápsulas en tu cafetera express italiana y en tu propia casa. 
 				</h3>
-        		<p><a class="btn btn-primary btn-large" href="/blog">ver Blog</a> &nbsp;&nbsp;<a class="btn btn-primary btn-large" href="/ebooks">ver Microondas</a></p>
+        		<p><a class="btn btn-primary btn-large" href="/blog">ver Blog</a> &nbsp;&nbsp;<a class="btn btn-primary btn-large" href="/cafeteras">ver Cafeteras</a></p>
       		</div>
 			<!-- end: Hero Unit -->
       		
@@ -70,8 +70,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Rapidez</h3>
-								<p>El microondas permite que los alimentos se descongelen de manera muy rápida a la vez que las radiaciones eliminan los gérmenes.</p>
+								<h3>Concentración</h3>
+								<p>El cafe te ayuda a conseguir un mayor estado de concentración. Al incrementar la actividad mental podría quitarte el sueño, aunque a otras personas les provoca somnolencia.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -83,8 +83,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Comodidad</h3>
-								<p>Puedes cocinar en el mismo recipiente que usarás después para comer y para limpiar el microondas sólo necesitas pasar por las paredes un paño limpio y húmedo.</p>
+								<h3>Cabeza despejada</h3>
+								<p>Tomar una taza de café disminuye ó incluse elimina el dolor de cabeza, ya que el mismo es debido a la tensión de los vasos sanguíneos del cerebro y el café puede dilatarlos, reduciendo así el dolor.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -96,8 +96,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Seguro</h3>
-								<p>Haciendo un uso adecuado del mismo,  los microondas no representan ningún riesgo para la salud.</p>
+								<h3>Energía</h3>
+								<p>Tomado con moderación, diversos estudios han concluido que la cafeína estimula al sistema nervioso, facilita la coordinación y mejora tu estado de ánimo y motivación.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -127,7 +127,7 @@
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicacionesEbooks}" varStatus="status" end="8">				
 				<div class="span4 portfolio-item nature people">
-					<div class="picture"><a href="/microondas/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/cafeteras/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -135,12 +135,12 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a href="/microondas/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/ebooks/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/ebooks/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/cafeteras/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/cafeteras/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
 				</div>
 				</c:forEach>

@@ -17,7 +17,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1 id="_name2" itemprop="name"><i class="ico-fire ico-white"></i>${publicacion.titulo}</h1>
+				<h1 id="_name2" itemprop="name"><i class="ico-coffe-cup ico-white"></i>${publicacion.titulo}</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -29,7 +29,7 @@
 	
 	<!--start: Wrapper -->
 	<div itemscope itemtype="http://schema.org/Article" itemref="_author3 _datePublished5 _image6 _articleBody7 _publisher8 _aggregateRating9" id="wrapper">
-		<div style="display:none"><span  itemprop="url">http://www.comprarmicroondashoy.com/microondas/${publicacion.url}</span></div>		
+		<div style="display:none"><span  itemprop="url">http://www.comprarcafeteraexpress.com/cafeteras/${publicacion.url}</span></div>		
 		<!--start: Container -->
     	<div class="container">
 	
@@ -93,7 +93,7 @@
 					<a class="addthis_button_tweet"></a>
 					<a class="addthis_button_pinterest_pinit"></a>
 					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
-					<g:plusone href="/microondas/${publicacion.url}" align="right" size="medium"></g:plusone>
+					<g:plusone href="/cafeteras/${publicacion.url}" align="right" size="medium"></g:plusone>
 					</div>
 					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
@@ -129,15 +129,15 @@
 						<c:forEach var="publicacionRel" items="${publicaciones}" varStatus="status" end="2">	
 						<div class="span3">	
 							<div class="picture">
-								<a href="/microondas/${publicacionRel.url}" title="${publicacionRel.titulo}">
+								<a href="/cafeteras/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
-									<img style="width: 270px;height: 240px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
+									<img style="width: 270px;height: 200px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
 									<div class="image-overlay-link"></div>
 								</a>
 							</div>
 							<div class="item-description">
-								<h4><a href="/microondas/${publicacionRel.url}">${publicacionRel.titulo}</a></h4>
+								<h4><a href="/cafeteras/${publicacionRel.url}">${publicacionRel.titulo}</a></h4>
 								<p>
 									${fn:replace(publicacionRel.descripcion, newLineChar, "<p/><p>")}
 								</p>
@@ -167,7 +167,7 @@
 										<div class="testimonials-bg"></div>
 										<c:choose>
 										<c:when test="${comentario.publicacion.tipo eq 'EB' }">
-											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/microondas/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
+											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/cafeteras/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
 										</c:when>	
 										<c:otherwise>
 											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a href="/blog/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
@@ -301,7 +301,7 @@
 				
 				<!-- Form -->
 				<div id="comments-form">
-					<form action="/microondas/${publicacion.url}/nuevoComentario" id="formComment" method="post">
+					<form action="/cafeteras/${publicacion.url}/nuevoComentario" id="formComment" method="post">
 						<input id="nbrComment" name="nbrComment" type="hidden"/>
 						<div class="field">
 							<label>Nombre: <span>*</span></label>
@@ -360,13 +360,13 @@
 						<c:forEach var="publicacionRel" items="${publicaciones}" varStatus="status" end="6">
 							<c:if test="${publicacionRel.titulo ne publicacion.titulo }">				
 							<div class="span4 portfolio-item nature people">
-								<div class="picture"><a href="/ebooks/${publicacionRel.url}" title="${publicacionRel.titulo}">
+								<div class="picture"><a href="/cafeteras/${publicacionRel.url}" title="${publicacionRel.titulo}">
 								<c:if test="${!empty publicacionRel.lImages }">
 									<img src="${publicacionRel.lImages[0]}" alt="Detalle"/>
 								</c:if>
 								<div class="image-overlay-link"></div></a>
 									<div class="item-description alt">
-										<h5><a title="${publicacionRel.titulo}" href="/ebooks/${publicacionRel.url}">${publicacionRel.titulo}</a></h5>
+										<h5><a title="${publicacionRel.titulo}" href="/cafeteras/${publicacionRel.url}">${publicacionRel.titulo}</a></h5>
 										<p>
 											${fn:replace(publicacionRel.resumen, newLineChar, "<p/><p>")}
 										</p>

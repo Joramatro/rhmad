@@ -29,12 +29,12 @@
 	          .append(port);
 	  }
 	 %>
-		<br><br><span>Tipo Microondas</span><br><br>
+		<br><br><span>Tipo Cafetera</span><br><br>
 		<table>
 		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
 		<tr>
 			<td>
-				<%=result.toString()%>/ebooks/${publicacion.url}
+				<%=result.toString()%>/cafeteras/${publicacion.url}
 			</td>
 			<td>
 				${publicacion.titulo}
@@ -139,7 +139,7 @@
 		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
 		<tr>
 			<td>
-				<%=result.toString()%>/ebooks/${publicacion.url}
+				<%=result.toString()%>/cafeteras/${publicacion.url}
 			</td>
 		</tr>
 		</c:forEach>

@@ -26,7 +26,7 @@
         <!-- Fav and touch icons -->
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="/css/apprise-v2.css" type="text/css" />
-    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar Microondas Hoy">
+    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar Cafetera Express">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			.ui-autocomplete-loading { background: white url('/img/fancybox_loading.gif') right center no-repeat; }
@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-wifi-alt circle"></i>Comprar Microondas <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Cafetera <span>Express</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -82,7 +82,7 @@
     	<h2><i class="ico-keynote ico-white"></i><a id="logout" href="#" class="btn logout">Logout</a></h2>
  Tipo: <select name="tipo" id="tipo">
 				  <option value="AR">Articulo</option>
-				  <option value="EB">Microondas</option>
+				  <option value="EB">Cafetera</option>
 				  <option value="AC">Accesorio</option>
 				</select><br><br>
  Portada: <select name="portada" id="portada">
@@ -320,9 +320,7 @@ Script2: <input type="text" style="width: 600px;" id="script2" name="script2" si
 
 							<li><a href="/">Inicio</a></li>
 
-							<li><a href="/microondas">Microondas</a></li>
-
-							<li><a href="/sobre">Sobre nosotros</a></li>
+							<li><a href="/cafeteras">Cafeteras</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 
@@ -477,7 +475,7 @@ Script2: <input type="text" style="width: 600px;" id="script2" name="script2" si
 		
 			<div class="span12">
 				<p>
-					&copy; 2013, <a href="/">Compra Microondas Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2013, <a href="/">Compra Cafetera Express</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	
