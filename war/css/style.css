@@ -519,9 +519,9 @@ html[xmlns] .slides {display: block;}
 /* Caption
 =================================================================== */
 .slide-caption {
-	width: 46%;
-	padding: 10px 20px;
-	margin-left: -310px;
+	width: 60%;
+	padding: 6px 19px;
+	margin-left: -350px;
 	position: absolute;
 	display: block;
 	bottom: 0px;

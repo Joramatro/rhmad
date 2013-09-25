@@ -52,7 +52,7 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Si lo que te gusta es tomarte un buen café en cualquier momento del día, existe una cafetera para ti y para cada tipo de cafe que desees: Comprar una cafetera puede ayudarte a conseguir saborear el mejor café en cápsulas en tu cafetera express italiana y en tu propia casa. 
+					Si lo que te gusta es tomarte un buen café en cualquier momento del día, existe una cafetera para ti y para cada tipo de cafe que desees: Comprar una cafetera puede ayudarte a conseguir saborear el mejor café en cápsulas ó molido en tu cafetera express italiana y en tu propia casa. 
 				</h3>
         		<p><a class="btn btn-primary btn-large" href="/blog">ver Blog</a> &nbsp;&nbsp;<a class="btn btn-primary btn-large" href="/cafeteras">ver Cafeteras</a></p>
       		</div>

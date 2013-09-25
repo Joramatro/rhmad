@@ -34,7 +34,7 @@
     	<div class="container">
 	
 			<!-- start: Flexslider -->
-			<div style="width: 440px;height: 320px; margin-left: 280px;" class="slider" >
+			<div style="width: 365px;height: 385px; margin-left: 355px;" class="slider" >
 				<div id="flex1" style="margin-top:80px" class="flexslider home">
 					<c:if test="${publicacion.script ne '#' }">
 						<a target="_blank" href="/venta/principal/${publicacion.url}">
@@ -43,7 +43,7 @@
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 						<c:if test="${status.count ne 3}">
 							<li>
-								<img style="width: 420px;height: 500px;" src="${imagen}"  alt="${publicacion.titulo}" />
+								<img style="width: 300px;height: 380px;" src="${imagen}"  alt="${publicacion.titulo}" />
 								<c:if test="${status.count < 2}">
 									<div class="slide-caption n">
 										<h3>${publicacion.titulo2}</h3>
@@ -131,7 +131,7 @@
 							<div class="picture">
 								<a href="/cafeteras/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
-									<img style="width: 270px;height: 200px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
+									<img style="width: 220px;height: 300px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
 									<div class="image-overlay-link"></div>
 								</a>

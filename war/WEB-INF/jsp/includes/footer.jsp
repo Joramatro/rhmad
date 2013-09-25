@@ -13,7 +13,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="http://www.comprarcafeteraexpress.com/">CM<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="http://www.comprarcafeteraexpress.com/">CC<span>HOY</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->

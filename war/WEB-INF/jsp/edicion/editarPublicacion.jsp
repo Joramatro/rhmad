@@ -324,7 +324,7 @@ Script2: <input type="text" style="width: 600px;" id="script2" name="script2" si
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CM<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">CC<span>HOY</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->

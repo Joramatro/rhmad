@@ -77,7 +77,7 @@ public class OtherController {
 	Email emailObj = new Email(email);
 	publicacionService.saveEmail(emailObj);
 	Mail.sendMail("Nueva suscribcion de: " + email,
-		"Nueva Suscripcion CMHoy");
+		"Nueva Suscripcion CCHoy");
 	return;
     }
 
@@ -93,7 +93,7 @@ public class OtherController {
 	contacto.setName(name);
 	publicacionService.saveContacto(contacto);
 	Mail.sendMail("Nuevo contacto de: " + email + "\n Nombre: " + name
-		+ "\n Mensaje:" + message, "Nuevo Contacto CEHOY");
+		+ "\n Mensaje:" + message, "Nuevo Contacto CCHOY");
 	return;
     }
 

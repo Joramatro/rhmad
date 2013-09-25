@@ -134,7 +134,7 @@ public class FileResource {
 		    + url
 		    + "\" alt=\""
 		    + publicacion.getDescripcion()
-		    + "\" style=\"width:400px; height:250px; margin-left: 28%;\"/>";
+		    + "\" style=\"width:320px; height:375px; margin-left: 28%;\"/>";
 	    if (!publicacion.getScript().equals("#")) {
 		replaceimg += "</a>";
 	    }
