@@ -16,7 +16,9 @@
 				<div class="da-slide">
 					<h2>${publicacion.tituloPortada}</h2>
 					<p>${publicacion.descPortada}</p>
-					<a href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
+					<c:if test="${publicacion.script ne '#' }">
+						<a href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
+					</c:if>
 					<div class="da-img">
 						<c:choose>
 							<c:when test="${publicacion.tipo eq 'EB' }">
@@ -84,7 +86,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>Cabeza despejada</h3>
-								<p>Tomar una taza de café disminuye ó incluse elimina el dolor de cabeza, ya que el mismo es debido a la tensión de los vasos sanguíneos del cerebro y el café puede dilatarlos, reduciendo así el dolor.</p>
+								<p>Tomar una taza de café disminuye ó incluso elimina el dolor de cabeza, ya que el mismo es debido a la tensión de los vasos sanguíneos del cerebro y el café puede dilatarlos, reduciendo así el dolor.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
