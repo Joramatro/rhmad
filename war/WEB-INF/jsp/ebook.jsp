@@ -131,7 +131,7 @@
 							<div class="picture">
 								<a href="/cafeteras/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
-									<img style="width: 220px;height: 300px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
+									<img style="width: 270px;height: 340px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
 									<div class="image-overlay-link"></div>
 								</a>

@@ -3,17 +3,12 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/main/test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/activation-1.1.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/aopalliance-1.0.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/aopalliance-alpha1.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-3.3.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/aspectjrt-1.6.9.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/aspectjweaver-1.6.8.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/avro-tools-1.6.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/datanucleus-core-1.1.5.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-core-asl-1.9.2.jar"/>
@@ -34,7 +29,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/mail-1.4.4.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/mimepull-1.3.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/mockito-all-1.9.5.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/objectify-4.0b2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/objectify-4.0b2-javadoc.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/objectify-4.0b2-sources.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/rome-1.0.jar"/>
@@ -53,5 +47,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jgravatar-1.0.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-web-3.2.0.M2.jar"/>
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/appengine-java-sdk-1.8.4"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/objectify-4.0b2.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
