@@ -25,5 +25,10 @@
         <property name="tipo" direction="asc"/>
         <property name="numVisitas" direction="desc"/>
     </datastore-index>
+    
+    <datastore-index kind="Comentario" ancestor="false" source="manual">
+        <property name="publicado" direction="asc"/>
+        <property name="fecha" direction="desc"/>
+    </datastore-index>
 
 </datastore-indexes>
