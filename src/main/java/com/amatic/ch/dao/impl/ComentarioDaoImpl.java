@@ -24,7 +24,8 @@ public class ComentarioDaoImpl implements ComentarioDao {
     public List<Comentario> getUltimosComentarios() {
 
 	List<Comentario> ultimosComentarios = ofy().load()
-		.type(Comentario.class).order("-fecha").list();
+		.type(Comentario.class).filter("publicado !=", "N")
+		.order("-fecha").list();
 
 	if (ultimosComentarios.size() > 40) {
 	    ultimosComentarios = ultimosComentarios.subList(0, 40);
