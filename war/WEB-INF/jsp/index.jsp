@@ -18,15 +18,15 @@
 					<p>${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.script ne '#' }">
-						<a href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
+						<a title="${publicacion.titulo}" href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
 					</c:when>
 					<c:otherwise>
 						<c:choose>
 						<c:when test="${publicacion.tipo eq 'EB' }">
-							<a href="/cafeteras/${publicacion.url}" class="da-link">LEER MÁS</a>
+							<a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}" class="da-link">LEER MÁS</a>
 						</c:when>
 						<c:otherwise>
-							<a href="/blog/${publicacion.url}" class="da-link">LEER MÁS</a>
+							<a title="${publicacion.titulo}" href="/blog/${publicacion.url}" class="da-link">LEER MÁS</a>
 						</c:otherwise>
 						</c:choose>	
 					</c:otherwise>
@@ -34,10 +34,10 @@
 					<div class="da-img">
 						<c:choose>
 							<c:when test="${publicacion.tipo eq 'EB' }">
-								<a href="/cafeteras/${publicacion.url}">
+								<a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">
 							</c:when>	
 							<c:otherwise>
-								<a href="/blog/${publicacion.url}">
+								<a title="${publicacion.titulo}" href="/blog/${publicacion.url}">
 							</c:otherwise>
 						</c:choose>
 						<c:if test="${!empty publicacion.lImages}">
@@ -68,7 +68,7 @@
 				<h3>
 					Si lo que te gusta es tomarte un buen café en cualquier momento del día, existe una cafetera para ti y para cada tipo de cafe que desees: Comprar una cafetera puede ayudarte a conseguir saborear el mejor café en cápsulas ó molido en tu cafetera express italiana y en tu propia casa. 
 				</h3>
-        		<p><a class="btn btn-primary btn-large" href="/blog">ver Blog</a> &nbsp;&nbsp;<a class="btn btn-primary btn-large" href="/cafeteras">ver Cafeteras</a></p>
+        		<p><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Cafeteras" class="btn btn-primary btn-large" href="/cafeteras">ver Cafeteras</a></p>
       		</div>
 			<!-- end: Hero Unit -->
       		
@@ -149,7 +149,7 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
@@ -168,7 +168,7 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a href="/blog/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/blog/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
