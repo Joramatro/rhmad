@@ -102,7 +102,7 @@
 		<!-- end: Twitter tags -->		
 		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/extras“/>
 	</c:when>
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacto')}">
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
 		<title>Contacta con Comprar Cafetera Express</title> 
 		<meta name="description" content="Contacta con los que trabajamos en Comprar Cafetera Express"/>
 		<meta name="keywords" content="contacta cafetera express, comprar cafetera express" />
@@ -128,9 +128,8 @@
 		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
 		<!-- end: Twitter tags -->
 		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/contacto“/>
-		<link rel="shortcut icon" href="http://www.comprarcafeteraexpress.com/favicon.ico?v=2" />
 	</c:when>
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'cafeteras')}">
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
 		<title>Cafeteras y precios en Comprar Cafetera Express</title> 
 		<meta name="description" content="Análisis y precios de las mejores cafeteras express en la actualidad para que puedas comprar tu cafetera express preferida y comparar online"/>
 		<meta name="keywords" content="análisis cafetera express, cafetera express, comprar cafetera express, comparar precios cafetera express" />
