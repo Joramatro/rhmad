@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import net.sf.akismet.Akismet;
 
@@ -36,7 +37,8 @@ public abstract class PublicacionAbstract {
 
     void guardarComentarioPub(HttpServletRequest request, String url,
 	    String nombre, String email, String puntos, String comentario,
-	    String web, String nbrComment, String tipo) throws IOException,
+	    String web, String nbrComment, String tipo,
+	    HttpServletResponse response) throws IOException,
 	    NoSuchAlgorithmException {
 	Akismet akismet = new Akismet("49f8a3bfb431",
 		"http://www.comprarcafeteraexpress.com");
@@ -57,7 +59,7 @@ public abstract class PublicacionAbstract {
 			    + "\n Comentario:" + comentario + "\n Web:" + web
 			    + "\n Puntos:" + puntos + "\n Nombre:" + nombre,
 		    "Spam Akimet comentario en Comprar Cafetera Express");
-	    return;
+	    response.sendRedirect("/");
 	} else {
 	    String key = WebUtils.SHA1(url.replaceAll("-", " "));
 	    Publicacion publicacion = publicacionService.getPublicacion(key,
