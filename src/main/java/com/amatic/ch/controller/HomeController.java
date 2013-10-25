@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,6 +24,7 @@ import com.amatic.ch.dto.Publicacion;
 import com.amatic.ch.exception.UnknownResourceException;
 import com.amatic.ch.service.ComentarioService;
 import com.amatic.ch.service.PublicacionService;
+import com.amatic.ch.utils.Mail;
 import com.amatic.ch.utils.WebUtils;
 
 @Controller
@@ -164,6 +166,17 @@ public class HomeController {
 		    + uri);
 	    // return "channelNotFound";
 	}
+
+	StringBuffer mensaje = new StringBuffer();
+	Enumeration<String> headerNames = request.getHeaderNames();
+	while (headerNames.hasMoreElements()) {
+	    String headerName = headerNames.nextElement();
+	    mensaje.append(headerName);
+	    String headerValue = request.getHeader(headerName);
+	    mensaje.append(", " + headerValue);
+	    mensaje.append("\n");
+	}
+	Mail.sendMail(mensaje.toString(), "CCH " + request.getRequestURI());
 
 	model.addAttribute("publicacion", publicacion);
 
