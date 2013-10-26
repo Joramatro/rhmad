@@ -1,6 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@ page isELIgnored="false"%>
 
+	<div id="banGoogleFooter" class="iframe_wrap" style="width: 72%; margin:0 auto;">
+		<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- includes ch -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:970px;height:90px"
+		     data-ad-client="ca-pub-3168560600423825"
+		     data-ad-slot="2942822544"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
     <!-- start: Footer Menu -->
 	<div id="footer-menu" class="hidden-tablet hidden-phone">
 
@@ -61,18 +72,7 @@
 	<div id="footer">
 		
 		<!-- start: Container -->
-		<div class="container">
-			<div id="banGoogleFooter" class="iframe_wrap" style="margin-left:99px">
-				<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- includes ch -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:970px;height:90px"
-				     data-ad-client="ca-pub-3168560600423825"
-				     data-ad-slot="2942822544"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>			
+		<div class="container">			
 			<!-- start: Row -->
 			<div class="row" style="margin-top: 20px;">
 
