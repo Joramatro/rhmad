@@ -7,8 +7,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<%@ include file="/WEB-INF/jsp/includes/header.jsp"%>
-	
+	<%@ include file="/WEB-INF/jsp/includes/header.jsp"%>	
 	<!-- start: Page Title -->
 	<div id="page-title">
 
@@ -32,10 +31,20 @@
 		<div style="display:none"><span  itemprop="url">http://www.comprarcafeteraexpress.com/cafeteras/${publicacion.url}</span></div>		
 		<!--start: Container -->
     	<div class="container">
-	
+	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 830px;">
+				<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- rec grande recomendado ch -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:336px;height:280px"
+				     data-ad-client="ca-pub-3168560600423825"
+				     data-ad-slot="5882295745"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>	
 			<!-- start: Flexslider -->
 			<div style="width: 365px;height: 385px; margin-left: 355px;" class="slider" >
-				<div id="flex1" style="margin-top:80px" class="flexslider home">
+				<div id="flex1" class="flexslider home">
 					<c:if test="${publicacion.script ne '#' }">
 						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
 					</c:if>
@@ -44,11 +53,10 @@
 						<c:if test="${status.count ne 3}">
 							<li>
 								<img style="width: 300px;height: 380px;" src="${imagen}"  alt="${publicacion.titulo}" />
-								<c:if test="${status.count < 2}">
 									<div class="slide-caption n">
 										<h3>${publicacion.titulo2}</h3>
 									</div>
-								</c:if>
+
 							</li>
 						</c:if>
 						</c:forEach>
@@ -57,7 +65,6 @@
 				</div>
 			</div>
 			<!-- end: Flexslider -->
-
 			<hr>
 			
 			<% pageContext.setAttribute("newLineChar", "\n"); %>
@@ -84,7 +91,7 @@
 					${publicacion.articulo}				
 					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo Hoy');" class="button color launch">Cómpralo Hoy!</a></h2>
+						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo Hoy');" class="button color launch">¡ Cómprala Hoy!</a></h2>
 					</c:if>					
 					<br>
 					<!-- AddThis Button BEGIN -->
@@ -132,7 +139,7 @@
 	
 				<div class="span9">
 					
-					<div class="title"><h3>También te puede interesar...</h3></div>
+					<div id="ttpi" class="title"><h3>También te puede interesar...</h3></div>
 					
 					<!-- start: Row -->
 		      		<div class="row">
@@ -398,17 +405,6 @@
 	
 	<%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
 
-	<div id="banGoogle" class="iframe_wrap" style="position: absolute;top: 270px;right: 40px;">
-		<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- rec grande recomendado ch -->
-		<ins class="adsbygoogle"
-		     style="display:inline-block;width:336px;height:280px"
-		     data-ad-client="ca-pub-3168560600423825"
-		     data-ad-slot="5882295745"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$("#banGoogle").hide();
@@ -417,8 +413,28 @@
 			$("#banGoogle").hide();
 		}
 	</script>
-	<div id="banAmazonHorizontal" class="iframe_wrap" style="position: absolute;top: 1000px;left: 54px;">
-		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=14&l=ur1&category=hogar&banner=1ESFST6P8W0JNG6Z4G02&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+	<div id="banAmazonHorizontal" style="position: fixed;left: 54px;">
+		<div style="margin-left: 33px; margin-bottom: 12px;"><b>OFERTAS</b></div>
+			<%-- <div id="Amazon1" class="iframe_wrap">
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=EBF7F9&IS2=1&bg1=EBF7F9&fc1=666666&lc1=005580&t=comprarmicroh-21&o=30&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B007HMLEAY" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>   		   		
+	    	</div>
+			--%>
+			<div id="Amazon2prod" class="iframe_wrap">
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=8&l=as1&asins=B0058U1PL0&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+	    	</div>
+
+			<div id="Amazon3prod" class="iframe_wrap">
+				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=8&l=as1&asins=B005DER236&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+	    	</div>
+	    	<%--
+			<div id="Amazon4prod" class="iframe_wrap">
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=8&l=as1&asins=B007TVJSGA&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>	   		
+	    	</div>
+	    	
+			<div id="Amazon5prod" class="iframe_wrap">
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=8&l=as1&asins=B0055ZOY7K&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>	   		
+	    	</div>	
+	    	  --%>  		    	
 	</div>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -430,7 +446,7 @@
 	</script>
 	
 	<div id="banAmazonEsquina" class="iframe_wrap" style="position: absolute;top: 155px;left: 393px;">
-		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=13&l=ur1&category=hogar&banner=1GW6MNKWMET3XVJB7302&f=ifr" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+		<%-- <iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=13&l=ur1&category=hogar&banner=1GW6MNKWMET3XVJB7302&f=ifr" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>--%>
 	</div>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -462,6 +478,15 @@
 			$(".slide-caption").show();
 		}
 	});
+	
+	$(window).scroll(function(){
+	    $("#banAmazonHorizontal").css("top",Math.max(0,850-$(this).scrollTop()));
+	    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top){
+	    	$("#banAmazonHorizontal").hide();
+	    }else{
+	    	$("#banAmazonHorizontal").show();
+	    }
+	});	
 	</script>
 	<script>
 	jQuery(document).ready(function($){
