@@ -60,6 +60,7 @@ public abstract class PublicacionAbstract {
 			    + "\n Puntos:" + puntos + "\n Nombre:" + nombre,
 		    "Spam Akimet comentario en Comprar Cafetera Express");
 	    response.sendRedirect("/");
+	    response.flushBuffer();
 	} else {
 	    String key = WebUtils.SHA1(url.replaceAll("-", " "));
 	    Publicacion publicacion = publicacionService.getPublicacion(key,
@@ -175,8 +176,7 @@ public abstract class PublicacionAbstract {
 	Publicacion publicacion = publicacionService.getPublicacion(key, tipo);
 	if (publicacion == null) {
 	    String uri = request.getRequestURI();
-	    throw new UnknownResourceException("No existe la publicacion: "
-		    + uri);
+	    throw new UnknownResourceException("No existe el recurso: " + uri);
 	    // return "channelNotFound";
 	}
 	// incremeanting number viewers

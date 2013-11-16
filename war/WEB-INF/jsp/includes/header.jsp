@@ -329,11 +329,11 @@ ga('send', 'pageview');
 		<!--end: Container-->			
 	<div id="banGooHeader" class="iframe_wrap" style="width: 72%; margin:0 auto;">
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- index medio horizontal -->
+		<!-- superior 1 skyscraper cafetera -->
 		<ins class="adsbygoogle"
-		     style="display:inline-block;width:970px;height:90px"
+		     style="display:inline-block;width:728px;height:90px"
 		     data-ad-client="ca-pub-3168560600423825"
-		     data-ad-slot="2942822544"></ins>
+		     data-ad-slot="8273478147"></ins>
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
