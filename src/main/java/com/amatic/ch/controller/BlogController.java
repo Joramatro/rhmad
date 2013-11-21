@@ -2,8 +2,6 @@ package com.amatic.ch.controller;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,8 +17,6 @@ import com.amatic.ch.constants.WebConstants;
 
 @Controller
 public class BlogController extends PublicacionAbstract {
-
-    List<Integer> sessions = new ArrayList<Integer>();
 
     @RequestMapping(value = { "/blog/{url}" }, method = RequestMethod.GET)
     public String cargarPublicacion(ModelMap model, @PathVariable String url,
@@ -60,6 +56,53 @@ public class BlogController extends PublicacionAbstract {
 	setPublicaciones(model, WebConstants.SessionConstants.ARTICULO);
 
 	return "blog";
+    }
+
+    @RequestMapping(value = { "/cafeteras/{url}" }, method = RequestMethod.GET)
+    public String cargarPublicacione(ModelMap model, @PathVariable String url,
+	    HttpServletRequest request, HttpServletResponse response)
+	    throws IOException, NoSuchAlgorithmException {
+
+	setPublicacion(url, request, model, WebConstants.SessionConstants.EBOOK);
+
+	return "ebook";
+    }
+
+    @RequestMapping(value = { "/cafeteras/{url}/nuevoComentario" }, method = { RequestMethod.POST })
+    public void guardarComentarioe(ModelMap model,
+	    @RequestParam("url") String url,
+	    @RequestParam("nombre") String nombre,
+	    @RequestParam("email") String email,
+	    @RequestParam("puntos") String puntos,
+	    @RequestParam("comentario") String comentario,
+	    @RequestParam("web") String web,
+	    @RequestParam("nbrComment") String nbrComment,
+	    HttpServletRequest request, HttpServletResponse response)
+	    throws IOException, NoSuchAlgorithmException {
+
+	guardarComentarioPub(request, url, nombre, email, puntos, comentario,
+		web, nbrComment, WebConstants.SessionConstants.EBOOK, response);
+
+	response.sendRedirect("/cafeteras/" + url);
+
+    }
+
+    @RequestMapping(value = { "/cafeteras" }, method = { RequestMethod.GET })
+    public String getPublicacionese(ModelMap model, HttpServletRequest request,
+	    HttpServletResponse response) throws IOException {
+
+	setPublicaciones(model, WebConstants.SessionConstants.EBOOK);
+
+	return "ebooks";
+    }
+
+    @RequestMapping(value = { "/extras" }, method = { RequestMethod.GET })
+    public String getAccesorios(ModelMap model, HttpServletRequest request,
+	    HttpServletResponse response) throws IOException {
+
+	setPublicaciones(model, WebConstants.SessionConstants.ACCESORIO);
+
+	return "extras";
     }
 
 }

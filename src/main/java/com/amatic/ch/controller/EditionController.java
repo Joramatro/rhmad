@@ -63,6 +63,7 @@ public class EditionController {
 	    @RequestParam("clase2") String clase2,
 	    @RequestParam("clase3") String clase3,
 	    @RequestParam("clase4") String clase4,
+	    @RequestParam("clase7") String clase7,
 	    @RequestParam("tipo") String tipo,
 	    @RequestParam("autor") String autor,
 	    @RequestParam("googleAutor") String googleAutor,
@@ -143,6 +144,7 @@ public class EditionController {
 	    publicacion.setClase2(clase2);
 	    publicacion.setClase3(clase3);
 	    publicacion.setClase4(clase4);
+	    publicacion.setClase7(clase7);
 	    publicacion.setTipo(tipo);
 	    publicacion.setAutor(autor);
 	    publicacion.setGoogleAutor(googleAutor);
@@ -256,6 +258,7 @@ public class EditionController {
 	    @RequestParam("clase2") String clase2,
 	    @RequestParam("clase3") String clase3,
 	    @RequestParam("clase4") String clase4,
+	    @RequestParam("clase7") String clase7,
 	    @RequestParam("script") String script,
 	    @RequestParam("script2") String script2,
 	    @RequestParam("disponible") String disponible,
@@ -289,6 +292,7 @@ public class EditionController {
 	    publicacion.setClase2(clase2);
 	    publicacion.setClase3(clase3);
 	    publicacion.setClase4(clase4);
+	    publicacion.setClase7(clase7);
 	    publicacion.setScript(script);
 	    publicacion.setScript2(script2);
 	    publicacion.setDisponible(disponible);
@@ -322,6 +326,7 @@ public class EditionController {
 	    @RequestParam("clase2") String clase2,
 	    @RequestParam("clase3") String clase3,
 	    @RequestParam("clase4") String clase4,
+	    @RequestParam("clase7") String clase7,
 	    @RequestParam("script") String script,
 	    @RequestParam("script2") String script2,
 	    @RequestParam("disponible") String disponible,
@@ -354,6 +359,7 @@ public class EditionController {
 	    publicacion.setClase2(clase2);
 	    publicacion.setClase3(clase3);
 	    publicacion.setClase4(clase4);
+	    publicacion.setClase7(clase7);
 	    publicacion.setScript(script);
 	    publicacion.setScript2(script2);
 	    publicacion.setDisponible(disponible);
@@ -485,6 +491,9 @@ public class EditionController {
 	for (Publicacion publicacion : publicaciones) {
 	    publicacion.setKey(WebUtils.SHA1(WebUtils.cleanTildes(publicacion
 		    .getTitulo())));
+	    if (publicacion.getClase7() == null) {
+		publicacion.setClase7("");
+	    }
 	    // if (publicacion.getClase3() == null) {
 	    // publicacion.setClase3("");
 	    // }
@@ -525,6 +534,9 @@ public class EditionController {
 	for (Publicacion publicacion : publicacionesblog) {
 	    publicacion.setKey(WebUtils.SHA1(WebUtils.cleanTildes(publicacion
 		    .getTitulo())));
+	    if (publicacion.getClase7() == null) {
+		publicacion.setClase7("");
+	    }
 	    // if (publicacion.getClase3() == null) {
 	    // publicacion.setClase3("");
 	    // }
@@ -565,6 +577,9 @@ public class EditionController {
 	for (Publicacion publicacion : publicacionesExtras) {
 	    publicacion.setKey(WebUtils.SHA1(WebUtils.cleanTildes(publicacion
 		    .getTitulo())));
+	    if (publicacion.getClase7() == null) {
+		publicacion.setClase7("");
+	    }
 	    // if (publicacion.getClase3() == null) {
 	    // publicacion.setClase3("");
 	    // }

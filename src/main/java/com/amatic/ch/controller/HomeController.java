@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -30,8 +34,8 @@ import com.amatic.ch.utils.WebUtils;
 @Controller
 public class HomeController {
 
-    List<Integer> sessions = new ArrayList<Integer>();
-
+    private static final Logger log = LoggerFactory
+	    .getLogger(HomeController.class);
     @Autowired
     private PublicacionService publicacionService;
 
@@ -86,8 +90,14 @@ public class HomeController {
 
 	List<Comentario> comentarios = comentarioService
 		.getUltimosComentarios();
-
-	model.addAttribute("comentarios", comentarios);
+	List<Comentario> ultimosComentarios = new ArrayList<Comentario>();
+	for (Comentario comentario : comentarios) {
+	    Comentario ultimoComentario = new Comentario();
+	    ultimoComentario.setComentario(Jsoup.clean(
+		    comentario.getComentario(), Whitelist.simpleText()));
+	    ultimosComentarios.add(ultimoComentario);
+	}
+	model.addAttribute("comentarios", ultimosComentarios);
 
 	model.addAttribute("publicacionesMVE", publicacionesMVE);
 
@@ -168,19 +178,63 @@ public class HomeController {
 
 	StringBuffer mensaje = new StringBuffer();
 	Enumeration<String> headerNames = request.getHeaderNames();
+	boolean existsAccept = false;
+	boolean condition1 = false;
+	boolean condition2 = false;
+	boolean condition3 = false;
 	while (headerNames.hasMoreElements()) {
 	    String headerName = headerNames.nextElement();
+	    if (headerName.equals("Accept")) {
+		existsAccept = true;
+	    }
 	    mensaje.append(headerName);
 	    String headerValue = request.getHeader(headerName);
+	    if (headerName.equals("X-AppEngine-Country")
+		    && headerValue.equals("US")) {
+		condition1 = true;
+	    }
+	    if (headerName.equals("X-AppEngine-Region")
+		    && headerValue.equals("?")) {
+		condition2 = true;
+	    }
+	    if (headerName.equals("X-AppEngine-City")
+		    && headerValue.equals("?")) {
+		condition3 = true;
+	    }
 	    mensaje.append(", " + headerValue);
 	    mensaje.append("\n");
 	}
-	Mail.sendMail(mensaje.toString(), "CCH " + request.getRequestURI());
+	mensaje.append("ip: " + WebUtils.getClienAddress(request) + "\n");
+	if (condition1 && condition2 && condition3) {
+	    // mensaje.append("NO ENVIADO A VENTAS");
+	    // Mail.sendMail(mensaje.toString(), "CEH " +
+	    // request.getRequestURI());
+	    return null;
+	} else if (existsAccept) {
+	    Mail.sendMail(mensaje.toString(), "CCH " + request.getRequestURI());
+	    model.addAttribute("publicacion", publicacion);
 
-	model.addAttribute("publicacion", publicacion);
+	    return "venta/venta";
+	} else {
+	    // mensaje.append("NO ENVIADO A VENTAS POR NO TENER ACCEPT");
+	    // Mail.sendMail(mensaje.toString(), "CMH " +
+	    // request.getRequestURI());
 
-	return "venta/venta";
+	    return null;
+	}
 
+    }
+
+    @RequestMapping("/**")
+    public void unmappedRequest(HttpServletRequest request) {
+	String uri = request.getRequestURI();
+
+	UnknownResourceException urexc = new UnknownResourceException(
+		"No existe esta ruta: " + uri);
+	log.error("error Bad Request", urexc);
+
+	throw urexc;
+	// return "errors/error";
     }
 
 }

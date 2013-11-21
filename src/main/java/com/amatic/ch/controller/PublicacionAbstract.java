@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import net.sf.akismet.Akismet;
 
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 
@@ -89,7 +91,9 @@ public abstract class PublicacionAbstract {
 	    nuevoComentario.setMail(email);
 	    nuevoComentario.setNombre(nombre);
 	    nuevoComentario.setPuntos(Integer.parseInt(puntos));
-	    nuevoComentario.setComentario(comentario);
+	    String safeComentario = Jsoup.clean(comentario, Whitelist.basic());
+	    safeComentario = safeComentario.replaceAll("\n", "");
+	    nuevoComentario.setComentario(safeComentario);
 	    nuevoComentario.setWeb(web);
 	    nuevoComentario.setGravatar(WebUtils.getGravatar80pxUrl(email));
 	    nuevoComentario.setIpAddress(WebUtils.getClienAddress(request));
@@ -126,6 +130,10 @@ public abstract class PublicacionAbstract {
 		    && !categorias.contains(publicacion.getClase2())) {
 		categorias.add(publicacion.getClase2());
 	    }
+	    if (!publicacion.getClase7().equals("")
+		    && !categorias.contains(publicacion.getClase7())) {
+		categorias.add(publicacion.getClase7());
+	    }
 	}
 	Collections.sort(categorias);
 
@@ -147,6 +155,10 @@ public abstract class PublicacionAbstract {
 		    publicacion.setClase6(publicacion.getClase2()
 			    + publicacion.getClase3());
 		}
+		if (!publicacion.getClase7().equals("")) {
+		    publicacion.setClase8(publicacion.getClase7()
+			    + publicacion.getClase3());
+		}
 	    }
 	}
 	Collections.sort(categoriasPrecio);
@@ -159,8 +171,14 @@ public abstract class PublicacionAbstract {
 
 	List<Comentario> comentarios = comentarioService
 		.getUltimosComentarios();
-
-	model.addAttribute("comentarios", comentarios);
+	List<Comentario> ultimosComentarios = new ArrayList<Comentario>();
+	for (Comentario comentario : comentarios) {
+	    Comentario ultimoComentario = new Comentario();
+	    ultimoComentario.setComentario(Jsoup.clean(
+		    comentario.getComentario(), Whitelist.simpleText()));
+	    ultimosComentarios.add(ultimoComentario);
+	}
+	model.addAttribute("comentarios", ultimosComentarios);
 	model.addAttribute("publicacionesMVE", publicacionesMVE);
 	model.addAttribute("publicacionesMVA", publicacionesMVA);
 	model.addAttribute("categorias", categorias);
@@ -203,8 +221,14 @@ public abstract class PublicacionAbstract {
 
 	List<Comentario> comentarios = comentarioService
 		.getUltimosComentarios();
-
-	model.addAttribute("comentarios", comentarios);
+	List<Comentario> ultimosComentarios = new ArrayList<Comentario>();
+	for (Comentario comentario : comentarios) {
+	    Comentario ultimoComentario = new Comentario();
+	    ultimoComentario.setComentario(Jsoup.clean(
+		    comentario.getComentario(), Whitelist.simpleText()));
+	    ultimosComentarios.add(ultimoComentario);
+	}
+	model.addAttribute("comentarios", ultimosComentarios);
 
 	model.addAttribute("publicacionesMVE", publicacionesMVE);
 
