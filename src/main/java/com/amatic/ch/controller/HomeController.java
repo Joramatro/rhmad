@@ -95,20 +95,16 @@ public class HomeController {
 	    Comentario ultimoComentario = new Comentario();
 	    ultimoComentario.setComentario(Jsoup.clean(
 		    comentario.getComentario(), Whitelist.simpleText()));
+	    ultimoComentario.setNombre(comentario.getNombre());
+	    ultimoComentario.setPublicacion(comentario.getPublicacion());
 	    ultimosComentarios.add(ultimoComentario);
 	}
 	model.addAttribute("comentarios", ultimosComentarios);
-
 	model.addAttribute("publicacionesMVE", publicacionesMVE);
-
 	model.addAttribute("publicacionesMVA", publicacionesMVA);
-
 	model.addAttribute("publicacionesEbooks", publicacionesEbooks);
-
 	model.addAttribute("publicacionesBlog", publicacionesBlog);
-
 	model.addAttribute("publicacionesDestacadas", publicacionesDestacadas);
-
 	model.addAttribute("publicacionesPortada", publicacionesPortada);
 
 	return "index";
@@ -179,13 +175,22 @@ public class HomeController {
 	StringBuffer mensaje = new StringBuffer();
 	Enumeration<String> headerNames = request.getHeaderNames();
 	boolean existsAccept = false;
+	boolean existsCookie = false;
+	boolean existsReferer = false;
 	boolean condition1 = false;
 	boolean condition2 = false;
 	boolean condition3 = false;
+	boolean condition4 = false;
 	while (headerNames.hasMoreElements()) {
 	    String headerName = headerNames.nextElement();
 	    if (headerName.equals("Accept")) {
 		existsAccept = true;
+	    }
+	    if (headerName.equals("Cookie")) {
+		existsCookie = true;
+	    }
+	    if (headerName.equals("Referer")) {
+		existsReferer = true;
 	    }
 	    mensaje.append(headerName);
 	    String headerValue = request.getHeader(headerName);
@@ -201,14 +206,24 @@ public class HomeController {
 		    && headerValue.equals("?")) {
 		condition3 = true;
 	    }
+	    if (headerName.equals("X-AppEngine-Country")
+		    && headerValue.equals("ZZ")) {
+		condition4 = true;
+	    }
 	    mensaje.append(", " + headerValue);
 	    mensaje.append("\n");
 	}
 	mensaje.append("ip: " + WebUtils.getClienAddress(request) + "\n");
-	if (condition1 && condition2 && condition3) {
+	if (condition1 && condition2 && condition3 && !existsCookie) {
 	    // mensaje.append("NO ENVIADO A VENTAS");
 	    // Mail.sendMail(mensaje.toString(), "CEH " +
 	    // request.getRequestURI());
+	    return null;
+	} else if (existsAccept && !existsCookie && !existsReferer
+		&& condition4) {
+	    // bot chungo
+	    mensaje.append("NO ENVIADO Blue Coat");
+	    Mail.sendMail(mensaje.toString(), "CCH " + request.getRequestURI());
 	    return null;
 	} else if (existsAccept) {
 	    Mail.sendMail(mensaje.toString(), "CCH " + request.getRequestURI());

@@ -20,8 +20,7 @@
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
 		<title>${publicacion.titulo} en Comprar Cafetera Express</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="keywords" content="${publicacion.keywords}" />
-		<meta name="title" content="${publicacion.titulo} en Comprar Cafetera Express. - Comprar Cafetera Express - www.comprarcafeteraexpress.com" />
+		<meta name="title" content="${publicacion.titulo} en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="${publicacion.titulo} en Comprar Cafetera Express" />
@@ -47,8 +46,7 @@
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
 		<title>${publicacion.titulo} en Comprar Cafetera Express</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="keywords" content="${publicacion.keywords}" />
-		<meta name="title" content="${publicacion.titulo} en Comprar Cafetera Express. - Comprar Cafetera Express - www.comprarcafeteraexpress.com" />
+		<meta name="title" content="${publicacion.titulo} en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="${publicacion.titulo} en Comprar Cafetera Express" />
@@ -73,14 +71,13 @@
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
 		<title>Extras en Comprar Cafetera Express</title> 
-		<meta name="description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
-		<meta name="keywords" content="comprar filtros cafe, comprar dispensador cafetera, comprar cafe capsulas" />
-		<meta name="title" content="Extras en Comprar Cafetera Express. - Comprar Cafetera Express - www.comprarcafeteraexpress.com" />
+		<meta name="description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express, automática, de cápsulas o de café molido como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
+		<meta name="title" content="Extras y accesorios para cafeteras en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Extras en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Extras y accesorios en Comprar Cafetera Express"/>
 		<meta property="og:description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
 		<meta property="og:type" content="extras"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/extras"/>
@@ -93,7 +90,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Extras en Comprar Cafetera Express">
+		<meta name="twitter:title" content="Extras y accesorios para cafeteras en Comprar Cafetera Express">
 		<meta name="twitter:description" content="Accede a todos los extras para comprar online accesorios a tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café">
 		<c:if test="${!empty publicaciones}">
 			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -105,8 +102,7 @@
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
 		<title>Contacta con Comprar Cafetera Express</title> 
 		<meta name="description" content="Contacta con los que trabajamos en Comprar Cafetera Express"/>
-		<meta name="keywords" content="contacta cafetera express, comprar cafetera express" />
-		<meta name="title" content="Contacta en Comprar Cafetera Express. - Comprar Cafetera Express - www.comprarcafeteraexpress.com" />
+		<meta name="title" content="Contacta en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Contacto en Comprar Cafetera Express" />
@@ -131,15 +127,14 @@
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
 		<title>Cafeteras y precios en Comprar Cafetera Express</title> 
-		<meta name="description" content="Análisis y precios de las mejores cafeteras express en la actualidad para que puedas comprar tu cafetera express preferida y comparar online"/>
-		<meta name="keywords" content="análisis cafetera express, cafetera express, comprar cafetera express, comparar precios cafetera express" />
-		<meta name="title" content="Análisis y precios de cafeteras express para poder comprar online. - Comprar Cafetera Express - www.comprarcafeteraexpress.com" />
+		<meta name="description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
+		<meta name="title" content="Análisis y precios de cafeteras express, automáticas, de cápsulas o de cafe molido" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Cafeteras en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Análisis y precios de cafetera express para poder comprarlo online en Comprar Cafetera Express"/>
-		<meta property="og:description" content="Análisis y precios de las mejores cafeteras express en la actualidad para que puedas comprar online"/>
+		<meta property="og:title" content="Análisis y precios de cafetera express, máquinas de cafe automáticas, de cápsulas, de café molido para poder comprar y comparar online online en Comprar Cafetera Express"/>
+		<meta property="og:description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
 		<meta property="og:type" content="cafetera"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/cafeteras"/>
 		<c:if test="${!empty publicaciones}">
@@ -153,8 +148,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Análisis y precios de cafeteras express para poder comprar online en Comprar Cafetera Express">
-		<meta name="twitter:description" content="Análisis y precios de las mejores cafeteras express en la actualidad para que puedas comprar online">
+		<meta name="twitter:title" content="Análisis y precios de cafeteras express, automáticas, de cápsulas y de cafe molido">
+		<meta name="twitter:description" content="Análisis y precios de las mejores cafeteras express, máquinas de café automáticas, de cápsulas o de café molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -166,15 +161,14 @@
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
 		<title>Artículos sobre cafeteras express en Comprar Cafetera Express</title> 
-		<meta name="description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express en la actualidad para que puedas comprar online"/>
-		<meta name="keywords" content="detalles cafetera express, artículos cafetera express, comprar cafetera express online, artículos cafetera express, blog cafetera express" />
-		<meta name="title" content="Opinión y artículos sobre cafeteras express para poder comprarlo online. - Comprar Cafetera Express - www.comprarcafeteraexpress.com" />
+		<meta name="description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
+		<meta name="title" content="Cafeteras express, automáticas, de cápsulas y de café mólido para comprar tu máquina de café online" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Blog en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Opinión y detalles sobre cafeteras express para comprar poder comprar online"/>
-		<meta property="og:description" content="Opinión y artículos en nuestro blog de las mejores cafetera express en la actualidad para que puedas comprarlo online"/>
+		<meta property="og:title" content="Opinión y detalles sobre cafeteras express para comprar tu maquina de cafe online"/>
+		<meta property="og:description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
 		<meta property="og:type" content="articulo"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/blog"/>
 		<c:if test="${!empty publicaciones}">
@@ -188,8 +182,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Opinión y artículos sobre cafeteras express para comprar tu cafetera express preferida en Comprar Cafetera Express">
-		<meta name="twitter:description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express en la actualidad para que puedas comprar online">
+		<meta name="twitter:title" content="Opinión y artículos sobre cafeteras express para comprar tu cafetera express preferida">
+		<meta name="twitter:description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -199,17 +193,39 @@
 		<!-- end: Twitter tags -->
 		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/blog“/>		
 	</c:when>
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
+		<title>Política de privacidad de Comprar Cafetera Express</title> 
+		<meta name="description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express"/>
+		<meta name="title" content="Política de privacidad de Comprar Cafetera Express" />
+		<meta name="author" content="Jorge Amat" />
+		<meta name="copyright" content="Comprar Cafetera Express" />
+		<meta name="application-name" content="Política privacidad Comprar Cafetera Express" />
+		<!-- start: Facebook Open Graph -->
+		<meta property="og:title" content="Política de privacidad de Comprar Cafetera Express"/>
+		<meta property="og:description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express"/>
+		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/politica-de-privacidad"/>
+		<meta property="og:email" content="hola@comprarcafeteraexpress.com/"/>
+		<!-- end: Facebook Open Graph -->
+		<!-- start: Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@ComprarHoy">
+		<meta name="twitter:creator" content="@ComprarHoy">
+		<meta name="twitter:title" content="Política de privacidad de Comprar Cafetera Express">
+		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express">
+		<meta name="twitter:domain" content="comprarcafeteraexpress.com/">
+		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/politica-de-privacidad“/>
+		<!-- end: Twitter tags -->		
+	</c:when>	
 	<c:otherwise>
 		<title>Bienvenido a Comprar Cafetera Express</title> 
-		<meta name="description" content="Información para que puedas comprar cafetera express online adecuada a lo que necesitas, así como dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
-		<meta name="keywords" content="comprar cafetera, comprar cafetera express, comprar cafetera capsulas, comprar cafetera italiana" />
-		<meta name="title" content="Cafeteras express online, dispensadores, filtros y cápsulas en Comprar Cafetera Express" />
+		<meta name="description" content="Información para que puedas comprar online tu cafetera express, automática, de cápsulas o de café molido adecuada y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe ya sean dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
+		<meta name="title" content="Cafeteras express online, máquinas de café automáticas, de cápsulas, de cafe molido en Comprar Cafetera Express" />
 		<meta name="author" content="Comprar Cafetera Express" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="cafetera express en Comprar Cafetera Express" />
+		<meta name="application-name" content="cafeteras express en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Cafeteras express online, dispensadores, filtros y cápsulas en Comprar Cafetera Express"/>
-		<meta property="og:description" content="Información para que puedas comprar cafetera express online adecuada a lo que necesitas, así como dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
+		<meta property="og:title" content="Cafeteras express online, cafeteras automaticas, de cápsulas en Comprar Cafetera Express"/>
+		<meta property="og:description" content="Información para que puedas comprar tu cafetera express online de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -219,8 +235,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Cafeteras express online, dispensadores, filtros y cápsulas en Comprar Cafetera Express">
-		<meta name="twitter:description" content="Información para que puedas comprar cafetera express online adecuada a lo que necesitas, así como dispensadores de cápsulas, paquetes de cápsulas o filtros de café">
+		<meta name="twitter:title" content="Cafeteras express online, cafeteras automaticas, de cápsulas o de café molido en Comprar Cafetera Express">
+		<meta name="twitter:description" content="Información para que puedas comprar tu cafetera express online adecuada a lo que necesitas, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
 		<!-- end: Twitter tags -->				
@@ -228,7 +244,7 @@
 	</c:otherwise>		
 	</c:choose>
 	<link rel="alternate" type="application/rss+xml" title="Comprar Cafetera Express RSS Feed" href="http://www.comprarcafeteraexpress.com/rssfeed" />
-	<link rel="author" href="https://plus.google.com/108657243775074009859" />
+	<link rel="author" href="https://plus.google.com/+JorgeAmat" />
 	<link rel="publisher" href="https://www.google.com/+Comprarebookhoy" />
 	<style>
 	@font-face {
