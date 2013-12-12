@@ -17,7 +17,7 @@
 					<h2 class="titPortada">${publicacion.tituloPortada}</h2>
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
-					<c:when test="${publicacion.script ne '#' }">
+					<c:when test="${publicacion.disponible eq 'S' }">
 						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Comprar Hoy');" href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
 					</c:when>
 					<c:otherwise>
@@ -180,16 +180,16 @@
 						
 		<hr>	
 		<div class="title"><h3>Últimas Publicaciones</h3></div>			
-    	<div class="container">
 			<!-- start: Portfolio -->
+		<div class="container">
 			<div id="portfolio-wrapper" class="row">
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicacionesEbooks}" varStatus="status" end="8">				
-				<div class="span4 portfolio-item nature people">
+				<div class="span4 portfolio-item">
 					<div class="picture"><a href="/cafeteras/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
-					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
+					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
 					</c:if>
 					
 					<div class="image-overlay-link"></div></a>
@@ -204,11 +204,11 @@
 				</div>
 				</c:forEach>
 				<c:forEach var="publicacion" items="${publicacionesBlog}" varStatus="status" end="8">				
-				<div class="span4 portfolio-item nature people">
+				<div class="span4 portfolio-item">
 					<div class="picture"><a href="/blog/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
-					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
+					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
 					</c:if>
 					
 					<div class="image-overlay-link"></div></a>
@@ -223,9 +223,8 @@
 				</div>
 				</c:forEach>				
 			</div>
-			<!-- end: Portfolio -->     	
-		</div>
-		<!--end: Container-->
+			<!-- end: Portfolio -->
+		</div>     	
 		<hr>			
 						
 			<%@ include file="/WEB-INF/jsp/includes/carrusel.jsp"%>
@@ -252,6 +251,7 @@
 	        },
 	        _overId: null
 	    });
+
 	});
 	
 	if($('#footer').width() < 1345){

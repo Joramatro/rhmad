@@ -11,11 +11,8 @@ import javax.mail.internet.MimeMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.amatic.ch.fileupload.controller.FileResource;
-
 public class Mail {
-    private static final Logger log = LoggerFactory
-	    .getLogger(FileResource.class);
+    private static final Logger log = LoggerFactory.getLogger(Mail.class);
 
     static Properties props = new Properties();
     static Session session = Session.getDefaultInstance(props, null);

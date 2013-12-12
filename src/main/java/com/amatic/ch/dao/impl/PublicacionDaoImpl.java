@@ -121,6 +121,10 @@ public class PublicacionDaoImpl implements PublicacionDao {
 	updatePublicacion.setScript(publicacion.getScript());
 	updatePublicacion.setScript2(publicacion.getScript2());
 	updatePublicacion.setDisponible(publicacion.getDisponible());
+	updatePublicacion.setScript21(publicacion.getScript21());
+	updatePublicacion.setScript22(publicacion.getScript22());
+	updatePublicacion.setScript31(publicacion.getScript31());
+	updatePublicacion.setScript32(publicacion.getScript32());
     }
 
     @Override

@@ -75,6 +75,10 @@ public class EditionController {
 	    @RequestParam("titulo2") String titulo2,
 	    @RequestParam("script") String script,
 	    @RequestParam("script2") String script2,
+	    @RequestParam("script21") String script21,
+	    @RequestParam("script22") String script22,
+	    @RequestParam("script31") String script31,
+	    @RequestParam("script32") String script32,
 	    @RequestParam("disponible") String disponible,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
@@ -122,8 +126,15 @@ public class EditionController {
 	    articulo = articulo.concat("</p>");
 
 	    articulo = articulo.replaceAll("<a>",
-		    "<a target=\"_blank\" href=\"/venta/principal/"
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
 			    + publicacion.getUrl() + "\">");
+	    articulo = articulo.replaceAll("<a2>",
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+			    + publicacion.getUrl() + "-2\">");
+	    articulo = articulo.replaceAll("<a3>",
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+			    + publicacion.getUrl() + "-3\">");
+
 	    articulo = articulo.replaceAll("<href *",
 		    "<a target=\"_blank\" href=");
 	    articulo = articulo.replaceAll("</href>", "</a>");
@@ -157,6 +168,10 @@ public class EditionController {
 	    publicacion.setScript(script);
 	    publicacion.setScript2(script2);
 	    publicacion.setDisponible(disponible);
+	    publicacion.setScript21(script21);
+	    publicacion.setScript22(script22);
+	    publicacion.setScript31(script31);
+	    publicacion.setScript32(script32);
 
 	    publicacionService.crearPublicacion(publicacion);
 	} catch (Exception e) {
@@ -262,6 +277,10 @@ public class EditionController {
 	    @RequestParam("clase7") String clase7,
 	    @RequestParam("script") String script,
 	    @RequestParam("script2") String script2,
+	    @RequestParam("script21") String script21,
+	    @RequestParam("script22") String script22,
+	    @RequestParam("script31") String script31,
+	    @RequestParam("script32") String script32,
 	    @RequestParam("disponible") String disponible,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
@@ -297,6 +316,10 @@ public class EditionController {
 	    publicacion.setScript(script);
 	    publicacion.setScript2(script2);
 	    publicacion.setDisponible(disponible);
+	    publicacion.setScript21(script21);
+	    publicacion.setScript22(script22);
+	    publicacion.setScript31(script31);
+	    publicacion.setScript32(script32);
 
 	    publicacionService.update(publicacion);
 	} catch (Exception e) {

@@ -18,15 +18,14 @@
 	<!-- end: Mobile Specific -->
 	<c:choose>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
-		<title>${publicacion.titulo} en Comprar Cafetera Express</title> 
-		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="title" content="${publicacion.titulo} en Comprar Cafetera Express" />
+		<title>${publicacion.titulo} en análisis y online en Comprar Cafetera Express</title> 
+		<meta name="description" content="${publicacion.descripcion} en Comprar Cafetera Express"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="${publicacion.titulo} en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="${publicacion.titulo}"/>
-		<meta property="og:description" content="${publicacion.descripcion}"/>
+		<meta property="og:title" content="${publicacion.titulo} en análisis y online en Comprar Cafetera Express"/>
+		<meta property="og:description" content="${publicacion.descripcion} en Comprar Cafetera Express"/>
 		<meta property="og:type" content="cafetera"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/cafeteras/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
@@ -46,7 +45,6 @@
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
 		<title>${publicacion.titulo} en Comprar Cafetera Express</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="title" content="${publicacion.titulo} en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="${publicacion.titulo} en Comprar Cafetera Express" />
@@ -70,14 +68,13 @@
 		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/blog/${publicacion.url}“/>
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
-		<title>Extras en Comprar Cafetera Express</title> 
+		<title>Extras y accesorios online para tu cafetera en Comprar Cafetera Express</title> 
 		<meta name="description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express, automática, de cápsulas o de café molido como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
-		<meta name="title" content="Extras y accesorios para cafeteras en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Extras en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras y accesorios en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Extras y accesorios online para tu cafetera en Comprar Cafetera Express"/>
 		<meta property="og:description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
 		<meta property="og:type" content="extras"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/extras"/>
@@ -99,10 +96,34 @@
 		<!-- end: Twitter tags -->		
 		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/extras“/>
 	</c:when>
+		<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
+		<title>Sobre Nosotros y Comprar Cafetera Express</title> 
+		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar Cafetera Express, su experiencia y valores profesionales"/>
+		<meta name="author" content="Jorge Amat" />
+		<meta name="copyright" content="Comprar Cafetera Express" />
+		<meta name="application-name" content="Sobre Nosotros en Comprar Cafetera Express" />
+		<!-- start: Facebook Open Graph -->
+		<meta property="og:title" content="Sobre Nosotros en Comprar Cafetera Express"/>
+		<meta property="og:description" content="Toda la información sobre los que trabajamos en Comprar Cafetera Express, su experiencia y valores profesionales"/>
+		<meta property="og:type" content="sobre"/>
+		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/sobre"/>
+		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
+		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<!-- end: Facebook Open Graph -->
+		<!-- start: Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@ComprarHoy">
+		<meta name="twitter:creator" content="@Jorge_Amat1">
+		<meta name="twitter:title" content="Sobre nosotros en Comprar Cafetera Express">
+		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar Cafetera Express, su experiencia y valores profesionales">
+		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
+		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<!-- end: Twitter tags -->
+		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/sobre“/>	
+	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
 		<title>Contacta con Comprar Cafetera Express</title> 
 		<meta name="description" content="Contacta con los que trabajamos en Comprar Cafetera Express"/>
-		<meta name="title" content="Contacta en Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Contacto en Comprar Cafetera Express" />
@@ -126,14 +147,13 @@
 		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/contacto“/>
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Cafeteras y precios en Comprar Cafetera Express</title> 
+		<title>Cafeteras, precios y análisis en Comprar Cafetera Express</title> 
 		<meta name="description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
-		<meta name="title" content="Análisis y precios de cafeteras express, automáticas, de cápsulas o de cafe molido" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Cafeteras en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Análisis y precios de cafetera express, máquinas de cafe automáticas, de cápsulas, de café molido para poder comprar y comparar online online en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Cafeteras, precios y análisis en Comprar Cafetera Express"/>
 		<meta property="og:description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
 		<meta property="og:type" content="cafetera"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/cafeteras"/>
@@ -160,9 +180,8 @@
 		<!-- end: Twitter tags -->		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos sobre cafeteras express en Comprar Cafetera Express</title> 
+		<title>Artículos y opinión sobre cafeteras express en Comprar Cafetera Express</title> 
 		<meta name="description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
-		<meta name="title" content="Cafeteras express, automáticas, de cápsulas y de café mólido para comprar tu máquina de café online" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Blog en Comprar Cafetera Express" />
@@ -196,7 +215,6 @@
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
 		<title>Política de privacidad de Comprar Cafetera Express</title> 
 		<meta name="description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express"/>
-		<meta name="title" content="Política de privacidad de Comprar Cafetera Express" />
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="Política privacidad Comprar Cafetera Express" />
@@ -217,14 +235,13 @@
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Comprar Cafetera Express</title> 
+		<title>Bienvenido a Comprar Cafetera Express - Análisis y opinión sobre las mejores cafeteras para comprar online</title> 
 		<meta name="description" content="Información para que puedas comprar online tu cafetera express, automática, de cápsulas o de café molido adecuada y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe ya sean dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
-		<meta name="title" content="Cafeteras express online, máquinas de café automáticas, de cápsulas, de cafe molido en Comprar Cafetera Express" />
 		<meta name="author" content="Comprar Cafetera Express" />
 		<meta name="copyright" content="Comprar Cafetera Express" />
 		<meta name="application-name" content="cafeteras express en Comprar Cafetera Express" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Cafeteras express online, cafeteras automaticas, de cápsulas en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Bienvenido a Comprar Cafetera Express - Análisis y opinión sobre las mejores cafeteras para comprar online"/>
 		<meta property="og:description" content="Información para que puedas comprar tu cafetera express online de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.comprarcafeteraexpress.com"/>
@@ -313,28 +330,29 @@ ga('send', 'pageview');
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
-	                			<a href="/">Inicio</a>
+	                			<a onClick="ga('send', 'event', 'Menu Superior', 'Menu Inicio', 'Inicio');" href="/">Inicio</a>
 	              			</li>
-	              			<li id="menuCafeteras"><a title="Cafeteras" href="/cafeteras">Cafeteras</a></li>
+	              			<li id="menuCafeteras"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Cafeteras', 'Cafeteras');" title="Cafeteras" href="/cafeteras">Cafeteras</a></li>
 							<li class="dropdown">
 	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Destacados<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                				<c:forEach var="publicacion" items="${publicacionesDestacadas}" varStatus="status" end="5">
 										<c:choose>
 											<c:when test="${publicacion.tipo eq 'EB' }">
-												<li><a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></li>
+												<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Destacados');" title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></li>
 											</c:when>	
 											<c:otherwise>
-												<li><a title="${publicacion.titulo}" href="/blog/${publicacion.url}">${publicacion.titulo}</a></li>
+												<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Destacados');" title="${publicacion.titulo}" href="/blog/${publicacion.url}">${publicacion.titulo}</a></li>
 											</c:otherwise>
 										</c:choose>										
 	                  				</c:forEach>	                					                  				
 								</ul>
 	              			</li>
-	              			<li id="menuExtras"><a title="Extras" href="/extras">Extras</a></li>
-	              			<li id="menuBlog"><a title="Blog" href="/blog">Blog</a></li>	              																			
-	              			<li id="menuContacto"><a title="Contacto" href="/contacto">Contacto</a></li>
-	              			<li style="margin-top: -8px;"><a href="#newsletter" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></li>
+	              			<li id="menuExtras"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Extras', 'Extras');" title="Extras" href="/extras">Extras</a></li>
+	              			<li id="menuBlog"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Blog', 'Blog');" title="Blog" href="/blog">Blog</a></li>	              																			
+	              			<li id="menuSobre"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Sobre', 'Sobre');" title="Sobre Nosotros" href="/sobre">Acerca de</a></li>
+	              			<li id="menuContacto"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Contacto', 'Contacto');" title="Contacto" href="/contacto">Contacto</a></li>
+	              			<li style="margin-top: -8px;"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu RSS', 'RSS');" href="#newsletter" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></li>
 	            		</ul>
 	          		</div>
 	        	</div>

@@ -45,7 +45,7 @@
 			<!-- start: Flexslider -->
 			<div style="width: 365px;height: 385px; margin-left: 355px;" class="slider" >
 				<div id="flex1" class="flexslider home">
-					<c:if test="${publicacion.script ne '#' }">
+					<c:if test="${publicacion.disponible eq 'S' }">
 						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
 					</c:if>
 					<ul class="slides">
@@ -61,7 +61,9 @@
 						</c:if>
 						</c:forEach>
 					</ul>
-					</a>
+					<c:if test="${publicacion.disponible eq 'S' }">
+						</a>
+					</c:if>
 				</div>
 			</div>
 			<!-- end: Flexslider -->
@@ -507,6 +509,14 @@
 	    
 	    $('#_image6').click(function() {
 	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Medio');  
+	    });
+	    
+	    $('.imageContextual').click(function() {
+	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen ebook');  
+	    });
+	    
+	    $('.linkContextual').click(function() {
+	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Link Contextual');  
 	    });
 	});
 	</script>	

@@ -90,6 +90,14 @@ public class Publicacion implements Serializable {
     List<Ref<Comentario>> lComentarios = new ArrayList<Ref<Comentario>>();
     @Index
     String disponible;
+    @Index
+    String script21;
+    @Index
+    String script22;
+    @Index
+    String script31;
+    @Index
+    String script32;
 
     public String getAutor() {
 	return autor;
@@ -415,6 +423,38 @@ public class Publicacion implements Serializable {
 
     public void setClase8(String clase8) {
 	this.clase8 = clase8;
+    }
+
+    public String getScript21() {
+	return script21;
+    }
+
+    public void setScript21(String script21) {
+	this.script21 = script21;
+    }
+
+    public String getScript22() {
+	return script22;
+    }
+
+    public void setScript22(String script22) {
+	this.script22 = script22;
+    }
+
+    public String getScript31() {
+	return script31;
+    }
+
+    public void setScript31(String script31) {
+	this.script31 = script31;
+    }
+
+    public String getScript32() {
+	return script32;
+    }
+
+    public void setScript32(String script32) {
+	this.script32 = script32;
     }
 
 }

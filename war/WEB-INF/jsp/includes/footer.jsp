@@ -228,6 +228,8 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/fancybox.css
 	$("#menuSuperior > li").removeClass('active');
 	if(parts[1] == 'contacto'){		
 		$("#menuContacto").addClass('active');
+	}else if(parts[1] == 'sobre'){	
+		$("#menuSobre").addClass('active');
 	}else if(parts[1] == 'blog'){	
 		$("#menuBlog").addClass('active');
 	}else if(parts[1] == 'extras'){	

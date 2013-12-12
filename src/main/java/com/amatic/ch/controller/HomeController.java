@@ -115,9 +115,14 @@ public class HomeController {
 	    @PathVariable String tipo, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException,
 	    NoSuchAlgorithmException {
-	HttpSession session = request.getSession();
-
-	String key = WebUtils.SHA1(url.replaceAll("-", " "));
+	String originalUrl = url;
+	if (url.endsWith("-2")) {
+	    originalUrl = originalUrl.replace("-2", "");
+	}
+	if (url.endsWith("-3")) {
+	    originalUrl = originalUrl.replace("-3", "");
+	}
+	String key = WebUtils.SHA1(originalUrl.replaceAll("-", " "));
 	Publicacion publicacion = null;
 	if (tipo.equals("principal")) {
 	    publicacion = publicacionService.getPublicacion(key,
@@ -210,6 +215,10 @@ public class HomeController {
 		    && headerValue.equals("ZZ")) {
 		condition4 = true;
 	    }
+	    if (headerName.equals("User-Agent")
+		    && headerValue.contains("Zookabot")) {
+		existsAccept = false;
+	    }
 	    mensaje.append(", " + headerValue);
 	    mensaje.append("\n");
 	}
@@ -228,8 +237,13 @@ public class HomeController {
 	} else if (existsAccept) {
 	    Mail.sendMail(mensaje.toString(), "CCH " + request.getRequestURI());
 	    model.addAttribute("publicacion", publicacion);
-
-	    return "venta/venta";
+	    if (url.endsWith("-2")) {
+		return "venta/venta2";
+	    } else if (url.endsWith("-3")) {
+		return "venta/venta3";
+	    } else {
+		return "venta/venta";
+	    }
 	} else {
 	    // mensaje.append("NO ENVIADO A VENTAS POR NO TENER ACCEPT");
 	    // Mail.sendMail(mensaje.toString(), "CMH " +
