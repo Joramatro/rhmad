@@ -192,14 +192,16 @@ public abstract class PublicacionAbstract {
 
     }
 
-    void setPublicacion(String url, HttpServletRequest request, ModelMap model)
+    String setPublicacion(String url, HttpServletRequest request, ModelMap model)
 	    throws NoSuchAlgorithmException, UnsupportedEncodingException {
 	String key = WebUtils.SHA1(url.replaceAll("-", " "));
+	String view = "ebook";
 	Publicacion publicacion = publicacionService.getPublicacion(key,
 		WebConstants.SessionConstants.EBOOK);
 	if (publicacion == null) {
 	    publicacion = publicacionService.getPublicacion(key,
 		    WebConstants.SessionConstants.ARTICULO);
+	    view = "articulo";
 	}
 	if (publicacion == null) {
 	    String uri = request.getRequestURI();
@@ -247,5 +249,7 @@ public abstract class PublicacionAbstract {
 	model.addAttribute("publicacionesMVA", publicacionesMVA);
 
 	model.addAttribute("publicaciones", publicacionesInteresantes);
+
+	return view;
     }
 }

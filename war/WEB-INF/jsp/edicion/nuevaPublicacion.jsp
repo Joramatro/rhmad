@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Cafetera <span>Express</span>.</a>
+					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Móviles <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -81,15 +81,15 @@
     	<div class="container">
     	<h2><i class="ico-keynote ico-white"></i><a id="logout" href="#" class="btn logout">Logout</a></h2>
  Tipo: <select name="tipo" id="tipo">
-				  <option value="AR">Articulo</option>
-				  <option value="EB">Cafetera</option>
+				  <option value="AR">Artículo</option>
+				  <option value="EB">Móvil</option>
 				  <option value="AC">Accesorio</option>
 				</select><br><br>
  Portada: <select name="portada" id="portada">
  				  <option value="N">No</option>
 				  <option value="S">Si</option>
 				</select><br><br>
-Titulo Portada: <input type="text" id="tituloPortada" name="tituloPortada" size="100" maxlength="100" /><br><br>				
+Título Portada: <input type="text" id="tituloPortada" name="tituloPortada" size="100" maxlength="100" /><br><br>				
 Desc Portada: <input type="text" style="width: 433px;" id="descPortada" name="descPortada" size="150" maxlength="150"/><br><br>
 
 Destacado: <select name="destacado" id="destacado">
@@ -313,7 +313,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CC<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">CMs<span>H</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -482,7 +482,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 		
 			<div class="span12">
 				<p>
-					&copy; 2013, <a href="/">Compra Cafetera Express</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2013, <a href="/">r Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

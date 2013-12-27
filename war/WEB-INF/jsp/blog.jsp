@@ -125,6 +125,16 @@
 	        },
 	        _overId: null
 	    });
+	    
+	    function getURLParameter(name) {
+	        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+	    }
+	    
+	    if (getURLParameter("filtro")!=null){
+	    	$('#optionSet1 .selected').removeClass('selected');
+	    	$('#optionSet1 .'+getURLParameter("filtro")).addClass('selected');
+	    	$('#portfolio-wrapper').isotope({ filter: '.'+ getURLParameter("filtro")});
+	    }
 	});
 </script>
 

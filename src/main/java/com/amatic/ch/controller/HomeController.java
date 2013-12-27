@@ -118,9 +118,12 @@ public class HomeController {
 	String originalUrl = url;
 	if (url.endsWith("-2")) {
 	    originalUrl = originalUrl.replace("-2", "");
-	}
-	if (url.endsWith("-3")) {
+	} else if (url.endsWith("-3")) {
 	    originalUrl = originalUrl.replace("-3", "");
+	} else if (url.endsWith("-4")) {
+	    originalUrl = originalUrl.replace("-4", "");
+	} else if (url.endsWith("-5")) {
+	    originalUrl = originalUrl.replace("-5", "");
 	}
 	String key = WebUtils.SHA1(originalUrl.replaceAll("-", " "));
 	Publicacion publicacion = null;
@@ -242,6 +245,10 @@ public class HomeController {
 		return "venta/venta2";
 	    } else if (url.endsWith("-3")) {
 		return "venta/venta3";
+	    } else if (url.endsWith("-4")) {
+		return "venta/venta4";
+	    } else if (url.endsWith("-5")) {
+		return "venta/venta5";
 	    } else {
 		return "venta/venta";
 	    }

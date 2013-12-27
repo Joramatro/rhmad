@@ -232,11 +232,11 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' 
 		$("#menuContacto").addClass('active');
 	}else if(parts[1] == 'sobre'){	
 		$("#menuSobre").addClass('active');
-	}else if(${publicacion.tipo} == 'AR'){	
+	}else if('${publicacion.tipo}' == 'AR'){	
 		$("#menuBlog").addClass('active');
 	}else if(parts[1] == 'extras'){	
 		$("#menuExtras").addClass('active');
-	}else if(${publicacion.tipo} == 'EB'){	
+	}else if('${publicacion.tipo}' == 'EB'){	
 		$("#menuMoviles").addClass('active');
 	}else{
 		$("#menuInicio").addClass('active');

@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Cafetera <span>Express</span>.</a>
+					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Móviles <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -90,11 +90,11 @@
 
 <form method="POST" action="/edicion/guardarEdicionPublicacion">
 Tipo: <select name="tipo" id="tipo">
-				  <option value="AR" ${publicacion.tipo == 'AR' ? 'selected' : ''}>Articulo</option>
-				  <option value="EB" ${publicacion.tipo == 'EB' ? 'selected' : ''}>Cafetera</option>
+				  <option value="AR" ${publicacion.tipo == 'AR' ? 'selected' : ''}>Artículo</option>
+				  <option value="EB" ${publicacion.tipo == 'EB' ? 'selected' : ''}>Móvil</option>
 				  <option value="AC" ${publicacion.tipo == 'AC' ? 'selected' : ''}>Accesorio</option>
 				</select><br><br>			
-Titulo: <input type="text" style="width: 350px;" id="titulo" name="titulo" size="70" maxlength="70" value="${publicacion.titulo}"/><br><br>
+Título: <input type="text" style="width: 350px;" id="titulo" name="titulo" size="70" maxlength="70" value="${publicacion.titulo}"/><br><br>
 
  Portada: <select name="portada" id="portada">
  				  <option value="N" ${publicacion.portada == 'N' ? 'selected' : ''}>No</option>
@@ -333,7 +333,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CC<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">CMs<span>H</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -502,7 +502,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 		
 			<div class="span12">
 				<p>
-					&copy; 2013, <a href="/">Compra Cafetera Express</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2013, <a href="/">Comprar Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

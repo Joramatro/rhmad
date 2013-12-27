@@ -23,9 +23,7 @@ public class BlogController extends PublicacionAbstract {
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
 
-	setPublicacion(url, request, model);
-
-	return "articulo";
+	return setPublicacion(url, request, model);
     }
 
     @RequestMapping(value = { "/{url}/nuevoComentario" }, method = { RequestMethod.POST })

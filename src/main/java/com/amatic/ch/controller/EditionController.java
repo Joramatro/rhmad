@@ -58,7 +58,6 @@ public class EditionController {
 	    @RequestParam("descripcion") String descripcion,
 	    @RequestParam("resumen") String resumen,
 	    @RequestParam("articulo") String articulo,
-	    @RequestParam("keywords") String keywords,
 	    @RequestParam("clase1") String clase1,
 	    @RequestParam("clase2") String clase2,
 	    @RequestParam("clase3") String clase3,
@@ -138,6 +137,12 @@ public class EditionController {
 	    articulo = articulo.replaceAll("<a3>",
 		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
 			    + publicacion.getUrl() + "-3\">");
+	    articulo = articulo.replaceAll("<a4>",
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+			    + publicacion.getUrl() + "-4\">");
+	    articulo = articulo.replaceAll("<a5>",
+		    "<a class=\"linkContextual\" target=\"_blank\" href=\"/venta/principal/"
+			    + publicacion.getUrl() + "-5\">");
 
 	    articulo = articulo.replaceAll("<href *",
 		    "<a target=\"_blank\" href=");
@@ -155,7 +160,6 @@ public class EditionController {
 	    }
 
 	    publicacion.setArticulo(articulo);
-	    publicacion.setKeywords(keywords);
 	    publicacion.setClase1(clase1);
 	    publicacion.setClase2(clase2);
 	    publicacion.setClase3(clase3);
@@ -227,13 +231,12 @@ public class EditionController {
 
     }
 
-    @RequestMapping(value = { "/{tipoedit}/{url}/editar" }, method = {
-	    RequestMethod.GET, RequestMethod.POST })
+    @RequestMapping(value = { "/{url}/editar" }, method = { RequestMethod.GET,
+	    RequestMethod.POST })
     public String editarPublicacion(ModelMap model,
-	    @PathVariable("url") String url,
-	    @PathVariable("tipoedit") String tipoedit,
-	    HttpServletRequest request, HttpServletResponse response)
-	    throws IOException, NoSuchAlgorithmException {
+	    @PathVariable("url") String url, HttpServletRequest request,
+	    HttpServletResponse response) throws IOException,
+	    NoSuchAlgorithmException {
 	HttpSession session = request.getSession();
 	User user = (User) session
 		.getAttribute(WebConstants.SessionConstants.RC_USER);
@@ -241,17 +244,18 @@ public class EditionController {
 	    response.sendRedirect("/editar");
 	}
 
-	String tipo = "";
-	if (tipoedit.equals(WebConstants.SessionConstants.tipo1)) {
-	    tipo = WebConstants.SessionConstants.EBOOK;
-
-	} else if (tipoedit.equals(WebConstants.SessionConstants.tipo2)) {
-	    tipo = WebConstants.SessionConstants.ARTICULO;
-	} else if (tipoedit.equals(WebConstants.SessionConstants.tipo3)) {
-	    tipo = WebConstants.SessionConstants.ACCESORIO;
-	}
 	String key = WebUtils.SHA1(url.replaceAll("-", " "));
-	Publicacion publicacion = publicacionService.getPublicacion(key, tipo);
+	Publicacion publicacion = publicacionService.getPublicacion(key,
+		WebConstants.SessionConstants.EBOOK);
+	if (publicacion == null) {
+	    publicacion = publicacionService.getPublicacion(key,
+		    WebConstants.SessionConstants.ARTICULO);
+	}
+	if (publicacion == null) {
+	    publicacion = publicacionService.getPublicacion(key,
+		    WebConstants.SessionConstants.ACCESORIO);
+	}
+
 	if (publicacion == null) {
 	    String uri = request.getRequestURI();
 	    throw new UnknownResourceException("No existe el recurso: " + uri);

@@ -2421,4 +2421,7 @@ z-index: 4;
 
 a.ancla_referencia {
 padding: 0 2px;
-}	
+}
+
+
+.breadcrumbs{margin-bottom:10px;padding:0 10px;overflow:hidden;height:17px}.breadcrumbs .boxRelated{float:right}.breadcrumbs .buttonLeft{background-position:-187px -24px;margin-right:5px;display:inline-block;height:7px;width:4px}.breadcrumbs .buttonRight{background-position:-203px -24px;margin-left:5px;display:inline-block;height:7px;width:4px}.breadcrumbs ul{float:left}.breadcrumbs li{float:left;margin-right:5px}

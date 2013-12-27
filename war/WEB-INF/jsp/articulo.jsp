@@ -31,6 +31,31 @@
 		<div style="display:none"><span  itemprop="url">http://www.comprarmovileshoy.com/${publicacion.url}</span></div>		
 		<!--start: Container -->
     	<div class="container">
+    				<% 
+				int port = request.getServerPort();
+				StringBuilder result = new StringBuilder();
+				result.append(request.getScheme())
+				      .append("://")
+				      .append(request.getServerName());
+				
+				if (port != 80) {
+				  result.append(':')
+				        .append(port);
+				}
+				
+				pageContext.setAttribute("separador", "-");
+			%>
+    		<ul class="breadcrumbs"><li class="home"><a name="header.breadcrumb.1" href="<%=result.toString()%>" title="Página principal">Página principal</a></li>
+				<li class="crumb0"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.2" href="<%=result.toString()%>/blog" title="Blog Móviles">Blog</a></li>
+				<li class="crumb1"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.3" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase1, " ", separador)}" title="${publicacion.clase1}">${publicacion.clase1}</a></li>
+				<c:if test="${not empty publicacion.clase2}">
+					<li class="crumb2"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.4" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase2, " ", separador)}" title="${publicacion.clase2}">${publicacion.clase2}</a></li>				
+				</c:if>
+				<c:if test="${not empty publicacion.clase7}">
+					<li class="crumb3"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.5" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase7, " ", separador)}" title="${publicacion.clase3}">${publicacion.clase7}</a></li>				
+				</c:if>
+				<li class="crumbF"><span>&nbsp;&gt;&nbsp;</span>${publicacion.titulo}</li>
+			</ul>
 	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 830px;">
 				<%-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- articulo superior recuadro cafetera -->
@@ -43,7 +68,7 @@
 				</script> --%>
 			</div>	
 			<!-- start: Flexslider -->
-			<div style="width: 365px;height: 385px; margin-left: 355px;" class="slider" >
+			<div style="width: 550px;height: 435px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
 					<c:if test="${publicacion.disponible eq 'S' }">
 						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
@@ -52,7 +77,7 @@
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 						<c:if test="${status.count ne 3}">
 							<li>
-								<img style="width: 350px;height: 380px;" src="${imagen}"  alt="${publicacion.titulo}" />								
+								<img style="width: 420px;height: 420px;" src="${imagen}"  alt="${publicacion.titulo}" />								
 									<div class="slide-caption n">
 										<h3>${publicacion.titulo2}</h3>
 									</div>							
@@ -93,7 +118,7 @@
 					${publicacion.articulo}				
 					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo Hoy');" class="button color launch">¡ Cómprala Hoy!</a></h2>
+						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo Hoy');" class="button color launch">¡ Cómpralo Hoy!</a></h2>
 					</c:if>					
 					<br>
 					<!-- AddThis Button BEGIN -->
