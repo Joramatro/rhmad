@@ -79,6 +79,10 @@ public class EditionController {
 	    @RequestParam("script22") String script22,
 	    @RequestParam("script31") String script31,
 	    @RequestParam("script32") String script32,
+	    @RequestParam("script41") String script41,
+	    @RequestParam("script42") String script42,
+	    @RequestParam("script51") String script51,
+	    @RequestParam("script52") String script52,
 	    @RequestParam("disponible") String disponible,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
@@ -172,6 +176,10 @@ public class EditionController {
 	    publicacion.setScript22(script22);
 	    publicacion.setScript31(script31);
 	    publicacion.setScript32(script32);
+	    publicacion.setScript41(script41);
+	    publicacion.setScript42(script42);
+	    publicacion.setScript51(script51);
+	    publicacion.setScript52(script52);
 
 	    publicacionService.crearPublicacion(publicacion);
 	} catch (Exception e) {
@@ -281,6 +289,10 @@ public class EditionController {
 	    @RequestParam("script22") String script22,
 	    @RequestParam("script31") String script31,
 	    @RequestParam("script32") String script32,
+	    @RequestParam("script41") String script41,
+	    @RequestParam("script42") String script42,
+	    @RequestParam("script51") String script51,
+	    @RequestParam("script52") String script52,
 	    @RequestParam("disponible") String disponible,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
@@ -320,6 +332,10 @@ public class EditionController {
 	    publicacion.setScript22(script22);
 	    publicacion.setScript31(script31);
 	    publicacion.setScript32(script32);
+	    publicacion.setScript41(script41);
+	    publicacion.setScript42(script42);
+	    publicacion.setScript51(script51);
+	    publicacion.setScript52(script52);
 
 	    publicacionService.update(publicacion);
 	} catch (Exception e) {
@@ -660,12 +676,11 @@ public class EditionController {
 	return "edicion/pubUrlTitulo";
     }
 
-    @RequestMapping(value = { "/{tipoedit}/{url}/infoFotos" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/{url}/infoFotos" }, method = { RequestMethod.GET })
     public String verNombreFotos(ModelMap model,
-	    @PathVariable("url") String url,
-	    @PathVariable("tipoedit") String tipoedit,
-	    HttpServletRequest request, HttpServletResponse response)
-	    throws IOException, NoSuchAlgorithmException {
+	    @PathVariable("url") String url, HttpServletRequest request,
+	    HttpServletResponse response) throws IOException,
+	    NoSuchAlgorithmException {
 	HttpSession session = request.getSession();
 	User user = (User) session
 		.getAttribute(WebConstants.SessionConstants.RC_USER);
@@ -673,17 +688,23 @@ public class EditionController {
 	    response.sendRedirect("/editar");
 	}
 
-	String tipo = "";
-	if (tipoedit.equals(WebConstants.SessionConstants.tipo1)) {
-	    tipo = WebConstants.SessionConstants.EBOOK;
-	} else if (tipoedit.equals(WebConstants.SessionConstants.tipo2)) {
-	    tipo = WebConstants.SessionConstants.ARTICULO;
-	} else if (tipoedit.equals(WebConstants.SessionConstants.tipo3)) {
-	    tipo = WebConstants.SessionConstants.ACCESORIO;
+	String key = WebUtils.SHA1(url.replaceAll("-", " "));
+	Publicacion publicacion = publicacionService.getPublicacion(key,
+		WebConstants.SessionConstants.EBOOK);
+	if (publicacion == null) {
+	    publicacion = publicacionService.getPublicacion(key,
+		    WebConstants.SessionConstants.ARTICULO);
+	    if (publicacion == null) {
+		publicacion = publicacionService.getPublicacion(key,
+			WebConstants.SessionConstants.ACCESORIO);
+	    }
 	}
 
-	String key = WebUtils.SHA1(url.replaceAll("-", " "));
-	Publicacion publicacion = publicacionService.getPublicacion(key, tipo);
+	if (publicacion == null) {
+	    String uri = request.getRequestURI();
+	    throw new UnknownResourceException("No existe el recurso: " + uri);
+	    // return "channelNotFound";
+	}
 
 	model.addAttribute("pubNombresFotos", publicacion.getlImagesNames());
 	model.addAttribute("pubUrlsFotos", publicacion.getlImages());

@@ -29,12 +29,12 @@
 	          .append(port);
 	  }
 	 %>
-		<br><br><span>Tipo Cafetera</span><br><br>
+		<br><br><span>Tipo Moviles</span><br><br>
 		<table>
 		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
 		<tr>
 			<td>
-				<%=result.toString()%>/cafeteras/${publicacion.url}
+				<%=result.toString()%>/${publicacion.url}
 			</td>
 			<td>
 				${publicacion.titulo}
@@ -50,7 +50,7 @@
 		<c:forEach var="publicacion" items="${publicacionesBlog}" varStatus="status">
 		<tr>
 			<td>
-				<%=result.toString()%>/blog/${publicacion.url}
+				<%=result.toString()%>/${publicacion.url}
 			</td>
 			<td>
 				${publicacion.titulo}
@@ -112,41 +112,21 @@
 		</tr>
 		</c:forEach>		
 		</table>
-		
-		
-		<br><br><span>Todas las keywords</span><br><br>
-		<table>
-		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
-		<tr>
-			<td>
-				${publicacion.keywords}
-			</td>
-		</tr>
-		</c:forEach>
-		<c:forEach var="publicacion" items="${publicacionesBlog}" varStatus="status">
-		<tr>
-			<td>
-				${publicacion.keywords}
-			</td>
-		</tr>
-		</c:forEach>		
-		</table>
-		
-		
+				
 			
 		<br><br><span>Todos las Urls
 		<table>
 		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
 		<tr>
 			<td>
-				<%=result.toString()%>/cafeteras/${publicacion.url}
+				<%=result.toString()%>/${publicacion.url}
 			</td>
 		</tr>
 		</c:forEach>
 		<c:forEach var="publicacion" items="${publicacionesBlog}" varStatus="status">
 		<tr>
 			<td>
-				<%=result.toString()%>/blog/${publicacion.url}
+				<%=result.toString()%>/${publicacion.url}
 			</td>
 		</tr>
 		</c:forEach>

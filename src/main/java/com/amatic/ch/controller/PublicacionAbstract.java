@@ -39,11 +39,10 @@ public abstract class PublicacionAbstract {
 
     void guardarComentarioPub(HttpServletRequest request, String url,
 	    String nombre, String email, String puntos, String comentario,
-	    String web, String nbrComment, String tipo,
-	    HttpServletResponse response) throws IOException,
-	    NoSuchAlgorithmException {
+	    String web, String nbrComment, HttpServletResponse response)
+	    throws IOException, NoSuchAlgorithmException {
 	Akismet akismet = new Akismet("49f8a3bfb431",
-		"http://www.comprarcafeteraexpress.com");
+		"http://www.comprarmovileshoy.com");
 	boolean isSpam = akismet.commentCheck(request.getRemoteAddr(),
 		request.getHeader("User-agent"), request.getHeader("referer"),
 		"", // permalink
@@ -57,16 +56,20 @@ public abstract class PublicacionAbstract {
 	    Mail.sendMail(
 		    "Comentario Spam Akimet con ip "
 			    + WebUtils.getClienAddress(request) + " y email: "
-			    + email + "\n Dejado en:" + url + "\n Tipo:" + tipo
-			    + "\n Comentario:" + comentario + "\n Web:" + web
-			    + "\n Puntos:" + puntos + "\n Nombre:" + nombre,
-		    "Spam Akimet comentario en Comprar Cafetera Express");
+			    + email + "\n Dejado en:" + url + "\n Comentario:"
+			    + comentario + "\n Web:" + web + "\n Puntos:"
+			    + puntos + "\n Nombre:" + nombre,
+		    "Spam Akimet comentario en Comprar Moviles Hoy");
 	    response.sendRedirect("/");
 	    response.flushBuffer();
 	} else {
 	    String key = WebUtils.SHA1(url.replaceAll("-", " "));
 	    Publicacion publicacion = publicacionService.getPublicacion(key,
-		    tipo);
+		    WebConstants.SessionConstants.EBOOK);
+	    if (publicacion == null) {
+		publicacion = publicacionService.getPublicacion(key,
+			WebConstants.SessionConstants.ARTICULO);
+	    }
 	    if (publicacion == null || Integer.parseInt(puntos) < 0
 		    || Integer.parseInt(puntos) > 5 || email == null
 		    || (email != null && email.trim().equals(""))) {
@@ -91,6 +94,7 @@ public abstract class PublicacionAbstract {
 	    nuevoComentario.setMail(email);
 	    nuevoComentario.setNombre(nombre);
 	    nuevoComentario.setPuntos(Integer.parseInt(puntos));
+	    comentario = comentario.replaceAll("\r\n", "<br>");
 	    String safeComentario = Jsoup.clean(comentario, Whitelist.basic());
 	    safeComentario = safeComentario.replaceAll("\n", "");
 	    nuevoComentario.setComentario(safeComentario);
@@ -108,10 +112,9 @@ public abstract class PublicacionAbstract {
 	    Mail.sendMail(
 		    "Comentario con ip " + WebUtils.getClienAddress(request)
 			    + " y email: " + email + "\n Dejado en:" + url
-			    + "\n Tipo:" + tipo + "\n Comentario:" + comentario
-			    + "\n Web:" + web + "\n Puntos:" + puntos
-			    + "\n Nombre:" + nombre,
-		    "Nuevo Comentario Comprar Cafetera Express");
+			    + "\n Comentario:" + comentario + "\n Web:" + web
+			    + "\n Puntos:" + puntos + "\n Nombre:" + nombre,
+		    "Nuevo Comentario Comprar Moviles Hoy");
 	}
 
     }
@@ -189,11 +192,15 @@ public abstract class PublicacionAbstract {
 
     }
 
-    void setPublicacion(String url, HttpServletRequest request, ModelMap model,
-	    String tipo) throws NoSuchAlgorithmException,
-	    UnsupportedEncodingException {
+    void setPublicacion(String url, HttpServletRequest request, ModelMap model)
+	    throws NoSuchAlgorithmException, UnsupportedEncodingException {
 	String key = WebUtils.SHA1(url.replaceAll("-", " "));
-	Publicacion publicacion = publicacionService.getPublicacion(key, tipo);
+	Publicacion publicacion = publicacionService.getPublicacion(key,
+		WebConstants.SessionConstants.EBOOK);
+	if (publicacion == null) {
+	    publicacion = publicacionService.getPublicacion(key,
+		    WebConstants.SessionConstants.ARTICULO);
+	}
 	if (publicacion == null) {
 	    String uri = request.getRequestURI();
 	    throw new UnknownResourceException("No existe el recurso: " + uri);
@@ -206,7 +213,7 @@ public abstract class PublicacionAbstract {
 	model.addAttribute("publicacion", publicacion);
 
 	List<Publicacion> publicaciones = publicacionService
-		.getUltimasPublicaciones(tipo);
+		.getUltimasPublicaciones(publicacion.getTipo());
 
 	List<Publicacion> publicacionesInteresantes = new ArrayList<Publicacion>();
 	for (Publicacion publicacionNoRep : publicaciones) {
@@ -226,8 +233,9 @@ public abstract class PublicacionAbstract {
 	List<Comentario> ultimosComentarios = new ArrayList<Comentario>();
 	for (Comentario comentario : comentarios) {
 	    Comentario ultimoComentario = new Comentario();
-	    ultimoComentario.setComentario(Jsoup.clean(
-		    comentario.getComentario(), Whitelist.simpleText()));
+	    ultimoComentario.setComentario(Jsoup.clean(comentario
+		    .getComentario().replaceAll("<br />", " "), Whitelist
+		    .simpleText()));
 	    ultimoComentario.setNombre(comentario.getNombre());
 	    ultimoComentario.setPublicacion(comentario.getPublicacion());
 	    ultimosComentarios.add(ultimoComentario);

@@ -36,6 +36,10 @@ $(function(){
 	        	  "script22": $("#script22").val(),
 	        	  "script31": $("#script31").val(),
 	        	  "script32": $("#script32").val(),
+	        	  "script41": $("#script41").val(),
+	        	  "script42": $("#script42").val(),
+	        	  "script51": $("#script51").val(),
+	        	  "script52": $("#script52").val(),
 	        	  "disponible": $("#disponible").val()
 	          },
 		      success: function(text){
@@ -85,6 +89,10 @@ $(function(){
 	        	  "script22": $("#script22").val(),
 	        	  "script31": $("#script31").val(),
 	        	  "script32": $("#script32").val(),
+	        	  "script41": $("#script41").val(),
+	        	  "script42": $("#script42").val(),
+	        	  "script51": $("#script51").val(),
+	        	  "script52": $("#script52").val(),
 	        	  "disponible": $("#disponible").val()
 	          },
 		      success: function(text){

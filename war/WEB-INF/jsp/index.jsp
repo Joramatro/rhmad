@@ -21,25 +21,11 @@
 						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Comprar Hoy');" href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
 					</c:when>
 					<c:otherwise>
-						<c:choose>
-						<c:when test="${publicacion.tipo eq 'EB' }">
-							<a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}" class="da-link">LEER MÁS</a>
-						</c:when>
-						<c:otherwise>
-							<a title="${publicacion.titulo}" href="/blog/${publicacion.url}" class="da-link">LEER MÁS</a>
-						</c:otherwise>
-						</c:choose>	
+						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
 					</c:otherwise>
 					</c:choose>
-					<div class="da-img">
-						<c:choose>
-							<c:when test="${publicacion.tipo eq 'EB' }">
-								<a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">
-							</c:when>	
-							<c:otherwise>
-								<a title="${publicacion.titulo}" href="/blog/${publicacion.url}">
-							</c:otherwise>
-						</c:choose>
+					<div class="da-img">						
+						<a title="${publicacion.titulo}" href="/${publicacion.url}">							
 						<c:if test="${!empty publicacion.lImages}">
 							<img src="${publicacion.lImages[0]}" style="width: 345px;height:360px;" alt="${publicacion.titulo}" />
 						</c:if>
@@ -75,6 +61,7 @@
 	    	</td>
 	    	<td>
 			<div id="googleRecIndex1" class="iframe_wrap">
+				<%-- 
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- rectangulo index izquierda cafetera -->
 				<ins class="adsbygoogle"
@@ -84,10 +71,12 @@
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
+				--%>
 			</div>
 			</td>
 			<td>
 			<div id="googleRecIndex2" class="iframe_wrap">
+				<%--
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- rectangulo index derecha cafetera -->
 				<ins class="adsbygoogle"
@@ -97,6 +86,7 @@
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
+				--%>
 			</div>
 			</td>
 			<td>
@@ -119,7 +109,7 @@
 					Si lo que te gusta es tomarte un buen café en cualquier momento del día, existe una cafetera para ti y para cada tipo de cafe que desees: Comprar una cafetera puede ayudarte a conseguir saborear el mejor café en cápsulas ó molido en tu cafetera express italiana y en tu propia casa.<br>
 					Analizamos tanto las cafeteras express automáticas, dolce gusto, italianas como las máquinas de café más baratas y populares del mercado para que puedas decidir que cafetera comprar, estudiando las marcas más populares como Saeco, Senseo, Krups o Nescafe.
 				</h3>
-        		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Cafeteras" class="btn btn-primary btn-large" href="/cafeteras">ver Cafeteras</a></p>
+        		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Moviles" class="btn btn-primary btn-large" href="/moviles">ver Móviles</a></p>
       		</div>
 			<!-- end: Hero Unit -->
       		
@@ -186,7 +176,7 @@
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicacionesEbooks}" varStatus="status" end="8">				
 				<div class="span4 portfolio-item">
-					<div class="picture"><a href="/cafeteras/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -194,18 +184,18 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/cafeteras/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/cafeteras/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
 				</div>
 				</c:forEach>
 				<c:forEach var="publicacion" items="${publicacionesBlog}" varStatus="status" end="8">				
 				<div class="span4 portfolio-item">
-					<div class="picture"><a href="/blog/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -213,12 +203,12 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a title="${publicacion.titulo}" href="/blog/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/blog/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/blog/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
 				</div>
 				</c:forEach>				

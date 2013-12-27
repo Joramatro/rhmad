@@ -18,18 +18,18 @@
 	<!-- end: Mobile Specific -->
 	<c:choose>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
-		<title>${publicacion.titulo} en análisis y online en Comprar Cafetera Express</title> 
-		<meta name="description" content="${publicacion.descripcion} en Comprar Cafetera Express"/>
+		<title>${publicacion.titulo} en análisis y online en Comprar Móviles Hoy</title> 
+		<meta name="description" content="${publicacion.descripcion} en Comprar Móviles Hoy"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="${publicacion.titulo} en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="${publicacion.titulo} en análisis y online en Comprar Cafetera Express"/>
-		<meta property="og:description" content="${publicacion.descripcion} en Comprar Cafetera Express"/>
-		<meta property="og:type" content="cafetera"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/cafeteras/${publicacion.url}"/>
+		<meta property="og:title" content="${publicacion.titulo} en análisis y online en Comprar Móviles Hoy"/>
+		<meta property="og:description" content="${publicacion.descripcion} en Comprar Móviles Hoy"/>
+		<meta property="og:type" content="movil"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -38,23 +38,23 @@
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/cafeteras/${publicacion.url}“/>
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/${publicacion.url}“/>
 	</c:when>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
-		<title>${publicacion.titulo} en Comprar Cafetera Express</title> 
+		<title>${publicacion.titulo} en Comprar Móviles Hoy</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="${publicacion.titulo} en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="${publicacion.titulo}"/>
 		<meta property="og:description" content="${publicacion.descripcion}"/>
 		<meta property="og:type" content="articulos"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/blog/${publicacion.url}"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -63,106 +63,106 @@
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/blog/${publicacion.url}“/>
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/${publicacion.url}“/>
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
-		<title>Extras y accesorios online para tu cafetera en Comprar Cafetera Express</title> 
-		<meta name="description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express, automática, de cápsulas o de café molido como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
+		<title>Extras y accesorios online para tu móvil en Comprar Móviles Hoy</title> 
+		<meta name="description" content="Accede a todos los extras para comprar online accesorios para tu móvil, automática, de cápsulas o de café molido como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="Extras en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="Extras en Comprar Moviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras y accesorios online para tu cafetera en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Extras y accesorios online para tu móvil en Comprar Móvil Hoy"/>
 		<meta property="og:description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
 		<meta property="og:type" content="extras"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/extras"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/extras"/>
 		<c:if test="${!empty publicaciones}">
 			<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 		</c:if>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Extras y accesorios para cafeteras en Comprar Cafetera Express">
+		<meta name="twitter:title" content="Extras y accesorios para cafeteras en Comprar Móviles Hoy">
 		<meta name="twitter:description" content="Accede a todos los extras para comprar online accesorios a tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café">
 		<c:if test="${!empty publicaciones}">
 			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 		</c:if>
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->		
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/extras“/>
+		<link rel=”canonical” href=”http://www.comprarcmovileshoy.com/extras“/>
 	</c:when>
 		<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
 		<title>Sobre Nosotros y Comprar Cafetera Express</title> 
-		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar Cafetera Express, su experiencia y valores profesionales"/>
+		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="Sobre Nosotros en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="Sobre Nosotros en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Sobre Nosotros en Comprar Cafetera Express"/>
-		<meta property="og:description" content="Toda la información sobre los que trabajamos en Comprar Cafetera Express, su experiencia y valores profesionales"/>
+		<meta property="og:title" content="Sobre Nosotros en Comprar Móviles Hoy"/>
+		<meta property="og:description" content="Toda la información sobre los que trabajamos en Comprar Móbil Hoy, su experiencia y valores profesionales"/>
 		<meta property="og:type" content="sobre"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/sobre"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/sobre"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Sobre nosotros en Comprar Cafetera Express">
-		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar Cafetera Express, su experiencia y valores profesionales">
+		<meta name="twitter:title" content="Sobre nosotros en Comprar Móviles Hoy">
+		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/sobre“/>	
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/sobre“/>	
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
 		<title>Contacta con Comprar Cafetera Express</title> 
-		<meta name="description" content="Contacta con los que trabajamos en Comprar Cafetera Express"/>
+		<meta name="description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="Contacto en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="Contacto en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Contacta en Comprar Cafetera Express"/>
-		<meta property="og:description" content="Contacta con los que trabajamos en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Contacta en Comprar Móviles Hoy"/>
+		<meta property="og:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
 		<meta property="og:type" content="contacto"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/contacto"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/contacto"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Contacta con nosotros en Comprar Cafetera Express">
-		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar Cafetera Express">
+		<meta name="twitter:title" content="Contacta con nosotros en Comprar Móviles Hoy">
+		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/contacto“/>
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/contacto“/>
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Cafeteras, precios y análisis en Comprar Cafetera Express</title> 
+		<title>Móviles, precios y análisis en Comprar Móviles Hoy</title> 
 		<meta name="description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="Cafeteras en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Cafeteras, precios y análisis en Comprar Cafetera Express"/>
+		<meta property="og:title" content="Móviles, precios y análisis en Comprar Móviles Hoy"/>
 		<meta property="og:description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
-		<meta property="og:type" content="cafetera"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/cafeteras"/>
+		<meta property="og:type" content="movil"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -175,27 +175,27 @@
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/cafeteras“/>
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/moviles“/>
 		<!-- end: Twitter tags -->		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
 		<title>Artículos y opinión sobre cafeteras express en Comprar Cafetera Express</title> 
 		<meta name="description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="Blog en Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móvil Hoy" />
+		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Opinión y detalles sobre cafeteras express para comprar tu maquina de cafe online"/>
 		<meta property="og:description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
 		<meta property="og:type" content="articulo"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/blog"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -208,59 +208,59 @@
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/blog“/>		
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/blog“/>		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
-		<title>Política de privacidad de Comprar Cafetera Express</title> 
-		<meta name="description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express"/>
+		<title>Política de privacidad de Comprar Móviles Hoy</title> 
+		<meta name="description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="Política privacidad Comprar Cafetera Express" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="Política privacidad Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Política de privacidad de Comprar Cafetera Express"/>
-		<meta property="og:description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com/politica-de-privacidad"/>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com/"/>
+		<meta property="og:title" content="Política de privacidad de Comprar Móviles Hoy"/>
+		<meta property="og:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/politica-de-privacidad"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com/"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Política de privacidad de Comprar Cafetera Express">
-		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Cafetera Express">
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com/">
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com/politica-de-privacidad“/>
+		<meta name="twitter:title" content="Política de privacidad de Comprar Móviles Hoy">
+		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy">
+		<meta name="twitter:domain" content="comprarmovileshoy.com/">
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/politica-de-privacidad“/>
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Comprar Cafetera Express - Análisis y opinión sobre las mejores cafeteras para comprar online</title> 
+		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre los mejores móviles para comprar online</title> 
 		<meta name="description" content="Información para que puedas comprar online tu cafetera express, automática, de cápsulas o de café molido adecuada y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe ya sean dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
-		<meta name="author" content="Comprar Cafetera Express" />
-		<meta name="copyright" content="Comprar Cafetera Express" />
-		<meta name="application-name" content="cafeteras express en Comprar Cafetera Express" />
+		<meta name="author" content="Comprar Móviles Hoy" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="móviles en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Bienvenido a Comprar Cafetera Express - Análisis y opinión sobre las mejores cafeteras para comprar online"/>
+		<meta property="og:title" content="Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre los mejores móviles para comprar online"/>
 		<meta property="og:description" content="Información para que puedas comprar tu cafetera express online de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
 		<meta property="og:type" content="principal"/>
-		<meta property="og:url" content="http://www.comprarcafeteraexpress.com"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarcafeteraexpress.com"/>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy">
 		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Cafeteras express online, cafeteras automaticas, de cápsulas o de café molido en Comprar Cafetera Express">
+		<meta name="twitter:title" content="Móviles online, cafeteras automaticas, de cápsulas o de café molido en Comprar Cafetera Express">
 		<meta name="twitter:description" content="Información para que puedas comprar tu cafetera express online adecuada a lo que necesitas, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarcafeteraexpress.com">
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->				
-		<link rel=”canonical” href=”http://www.comprarcafeteraexpress.com“/>
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com“/>
 	</c:otherwise>		
 	</c:choose>
-	<link rel="alternate" type="application/rss+xml" title="Comprar Cafetera Express RSS Feed" href="http://www.comprarcafeteraexpress.com/rssfeed" />
+	<link rel="alternate" type="application/rss+xml" title="Comprar Móviles Hoy RSS Feed" href="http://www.comprarmovileshoy.com/rssfeed" />
 	<link rel="author" href="https://plus.google.com/+JorgeAmat" />
 	<link rel="publisher" href="https://www.google.com/+Comprarebookhoy" />
 	<style>
@@ -326,31 +326,24 @@ ga('send', 'pageview');
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Cafetera <span>Express</span>.</a>
+					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Móviles <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
 	                			<a onClick="ga('send', 'event', 'Menu Superior', 'Menu Inicio', 'Inicio');" href="/">Inicio</a>
 	              			</li>
-	              			<li id="menuCafeteras"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Cafeteras', 'Cafeteras');" title="Cafeteras" href="/cafeteras">Cafeteras</a></li>
+	              			<li id="menuMoviles"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Moviles', 'Moviles');" title="Móviles" href="/moviles">Móviles</a></li>
 							<li class="dropdown">
 	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Destacados<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                				<c:forEach var="publicacion" items="${publicacionesDestacadas}" varStatus="status" end="5">
-										<c:choose>
-											<c:when test="${publicacion.tipo eq 'EB' }">
-												<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Destacados');" title="${publicacion.titulo}" href="/cafeteras/${publicacion.url}">${publicacion.titulo}</a></li>
-											</c:when>	
-											<c:otherwise>
-												<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Destacados');" title="${publicacion.titulo}" href="/blog/${publicacion.url}">${publicacion.titulo}</a></li>
-											</c:otherwise>
-										</c:choose>										
+										<li><a onClick="ga('send', 'event', 'Menu Superior', '${publicacion.titulo}', 'Destacados');" title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></li>									
 	                  				</c:forEach>	                					                  				
 								</ul>
 	              			</li>
 	              			<li id="menuExtras"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Extras', 'Extras');" title="Extras" href="/extras">Extras</a></li>
 	              			<li id="menuBlog"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Blog', 'Blog');" title="Blog" href="/blog">Blog</a></li>	              																			
-	              			<li id="menuSobre"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Sobre', 'Sobre');" title="Sobre Nosotros" href="/sobre">Acerca de</a></li>
+	              			<li id="menuSobre"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Sobre', 'Sobre');" title="Sobre Nosotros" href="/sobre">Sobre nosotros</a></li>
 	              			<li id="menuContacto"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Contacto', 'Contacto');" title="Contacto" href="/contacto">Contacto</a></li>
 	              			<li style="margin-top: -8px;"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu RSS', 'RSS');" href="#newsletter" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></li>
 	            		</ul>
@@ -362,6 +355,7 @@ ga('send', 'pageview');
 		</div>
 		<!--end: Container-->			
 	<div id="banGooHeader" class="iframe_wrap" style="width: 74%; margin:0 auto;">
+		<%--
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- superior 1 skyscraper cafetera -->
 		<ins class="adsbygoogle"
@@ -371,6 +365,7 @@ ga('send', 'pageview');
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
+		--%>
 	</div>			
 	</header>
 	<!--end: Header-->

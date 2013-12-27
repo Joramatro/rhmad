@@ -28,11 +28,11 @@
 	
 	<!--start: Wrapper -->
 	<div itemscope itemtype="http://schema.org/Article" itemref="_author3 _datePublished5 _image6 _articleBody7 _publisher8 _aggregateRating9" id="wrapper">
-		<div style="display:none"><span  itemprop="url">http://www.comprarcafeteraexpress.com/blog/${publicacion.url}</span></div>		
+		<div style="display:none"><span  itemprop="url">http://www.comprarmovileshoy.com/${publicacion.url}</span></div>		
 		<!--start: Container -->
     	<div class="container">
 	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 830px;">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<%-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- articulo superior recuadro cafetera -->
 				<ins class="adsbygoogle"
 				     style="display:inline-block;width:300px;height:250px"
@@ -40,7 +40,7 @@
 				     data-ad-slot="8413078942"></ins>
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+				</script> --%>
 			</div>	
 			<!-- start: Flexslider -->
 			<div style="width: 365px;height: 385px; margin-left: 355px;" class="slider" >
@@ -80,7 +80,8 @@
 								<li><strong>Puntos&nbsp;</strong>&nbsp; 
 								<a href="#comments"><b><span>${publicacion.sumaPuntos}</span></b></a>
 								&nbsp;&nbsp;(de <span>${publicacion.votantes}</span> votantes)</li>
-							</div> 
+							</div>
+							<strong>Media&nbsp;</strong>&nbsp;&nbsp;<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div> 
 						</c:if>
 						<li><strong>Fecha&nbsp;</strong>&nbsp;<span id="_datePublished5" itemprop="datePublished" content="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${publicacion.fechaCreacion}'/>"> <fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span></li>
 						<li><strong>Autor&nbsp;</strong>&nbsp; <a target="_blank" href="${publicacion.googleAutor}" rel=”author”><span id="_author3" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -101,7 +102,7 @@
 					<a class="addthis_button_tweet"></a>
 					<a class="addthis_button_pinterest_pinit"></a>
 					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
-					<g:plusone href="/blog/${publicacion.url}" align="right" size="medium"></g:plusone>
+					<g:plusone href="/${publicacion.url}" align="right" size="medium"></g:plusone>
 					</div>
 					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
@@ -147,7 +148,7 @@
 						<c:forEach var="publicacionRel" items="${publicaciones}" varStatus="status" end="2">	
 						<div class="span3">	
 							<div class="picture">
-								<a href="/blog/${publicacionRel.url}" title="${publicacionRel.titulo}">
+								<a href="/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
 									<img style="width: 270px;height: 340px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
@@ -155,7 +156,7 @@
 								</a>
 							</div>
 							<div class="item-description">
-								<h4><a title="${publicacionRel.titulo}" href="/blog/${publicacionRel.url}">${publicacionRel.titulo}</a></h4>
+								<h4><a title="${publicacionRel.titulo}" href="/${publicacionRel.url}">${publicacionRel.titulo}</a></h4>
 								<p>
 									${fn:replace(publicacionRel.descripcion, newLineChar, "<p/><p>")}
 								</p>
@@ -185,10 +186,10 @@
 										<div class="testimonials-bg"></div>
 										<c:choose>
 										<c:when test="${comentario.publicacion.tipo eq 'EB' }">
-											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a title="${comentario.publicacion.titulo}" href="/cafeteras/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
+											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a title="${comentario.publicacion.titulo}" href="/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
 										</c:when>	
 										<c:otherwise>
-											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a title="${comentario.publicacion.titulo}" href="/blog/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
+											<div class="testimonials-author"><span itemprop="reviewer">${comentario.nombre}</span>, en <a title="${comentario.publicacion.titulo}" href="/${comentario.publicacion.url }"><span itemprop="itemreviewed">${comentario.publicacion.titulo}</span></a></div>
 										</c:otherwise>
 										</c:choose>
 										<div style="display:none">
@@ -318,7 +319,7 @@
 				
 				<!-- Form -->
 				<div id="comments-form">
-					<form action="/blog/${publicacion.url}/nuevoComentario" id="formComment" method="post">
+					<form action="/${publicacion.url}/nuevoComentario" id="formComment" method="post">
 						<input id="nbrComment" name="nbrComment" type="hidden"/>
 						<div class="field">
 							<label>Nombre: <span>*</span></label>
@@ -377,13 +378,13 @@
 						<c:forEach var="publicacionRel" items="${publicaciones}" varStatus="status" end="6">
 							<c:if test="${publicacionRel.titulo ne publicacion.titulo }">				
 							<div class="span4 portfolio-item nature people">
-								<div class="picture"><a href="/blog/${publicacionRel.url}" title="${publicacionRel.titulo}">
+								<div class="picture"><a href="/${publicacionRel.url}" title="${publicacionRel.titulo}">
 								<c:if test="${!empty publicacionRel.lImages }">
 									<img src="${publicacionRel.lImages[0]}" alt="Detalle"/>
 								</c:if>
 								<div class="image-overlay-link"></div></a>
 									<div class="item-description alt">
-										<h5><a title="${publicacionRel.titulo}" href="/blog/${publicacionRel.url}">${publicacionRel.titulo}</a></h5>
+										<h5><a title="${publicacionRel.titulo}" href="/${publicacionRel.url}">${publicacionRel.titulo}</a></h5>
 										<p>
 											${fn:replace(publicacionRel.resumen, newLineChar, "<p/><p>")}
 										</p>

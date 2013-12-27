@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Cafetera Express <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Móviles <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -132,7 +132,7 @@
 
 							<li><a href="/">Inicio</a></li>
 
-							<li><a href="/cafeteras">Cafeteras</a></li>
+							<li><a href="/moviles">Móviles</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 

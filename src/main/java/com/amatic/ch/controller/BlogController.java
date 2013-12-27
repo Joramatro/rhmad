@@ -18,18 +18,17 @@ import com.amatic.ch.constants.WebConstants;
 @Controller
 public class BlogController extends PublicacionAbstract {
 
-    @RequestMapping(value = { "/blog/{url}" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/{url}" }, method = RequestMethod.GET)
     public String cargarPublicacion(ModelMap model, @PathVariable String url,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
 
-	setPublicacion(url, request, model,
-		WebConstants.SessionConstants.ARTICULO);
+	setPublicacion(url, request, model);
 
 	return "articulo";
     }
 
-    @RequestMapping(value = { "/blog/{url}/nuevoComentario" }, method = { RequestMethod.POST })
+    @RequestMapping(value = { "/{url}/nuevoComentario" }, method = { RequestMethod.POST })
     public void guardarComentario(ModelMap model,
 	    @RequestParam("url") String url,
 	    @RequestParam("nombre") String nombre,
@@ -42,10 +41,9 @@ public class BlogController extends PublicacionAbstract {
 	    throws IOException, NoSuchAlgorithmException {
 
 	guardarComentarioPub(request, url, nombre, email, puntos, comentario,
-		web, nbrComment, WebConstants.SessionConstants.ARTICULO,
-		response);
+		web, nbrComment, response);
 
-	response.sendRedirect("/blog/" + url);
+	response.sendRedirect("/" + url);
 
     }
 
@@ -58,36 +56,7 @@ public class BlogController extends PublicacionAbstract {
 	return "blog";
     }
 
-    @RequestMapping(value = { "/cafeteras/{url}" }, method = RequestMethod.GET)
-    public String cargarPublicacione(ModelMap model, @PathVariable String url,
-	    HttpServletRequest request, HttpServletResponse response)
-	    throws IOException, NoSuchAlgorithmException {
-
-	setPublicacion(url, request, model, WebConstants.SessionConstants.EBOOK);
-
-	return "ebook";
-    }
-
-    @RequestMapping(value = { "/cafeteras/{url}/nuevoComentario" }, method = { RequestMethod.POST })
-    public void guardarComentarioe(ModelMap model,
-	    @RequestParam("url") String url,
-	    @RequestParam("nombre") String nombre,
-	    @RequestParam("email") String email,
-	    @RequestParam("puntos") String puntos,
-	    @RequestParam("comentario") String comentario,
-	    @RequestParam("web") String web,
-	    @RequestParam("nbrComment") String nbrComment,
-	    HttpServletRequest request, HttpServletResponse response)
-	    throws IOException, NoSuchAlgorithmException {
-
-	guardarComentarioPub(request, url, nombre, email, puntos, comentario,
-		web, nbrComment, WebConstants.SessionConstants.EBOOK, response);
-
-	response.sendRedirect("/cafeteras/" + url);
-
-    }
-
-    @RequestMapping(value = { "/cafeteras" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/moviles" }, method = { RequestMethod.GET })
     public String getPublicacionese(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
 

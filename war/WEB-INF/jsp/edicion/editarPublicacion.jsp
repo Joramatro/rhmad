@@ -148,6 +148,10 @@ Script21: <input type="text" style="width: 600px;" id="script21" name="script21"
 Script22: <input type="text" style="width: 600px;" id="script22" name="script22" size="300" maxlength="300" value="${publicacion.script22}"><br><br>
 Script31: <input type="text" style="width: 600px;" id="script31" name="script31" size="300" maxlength="300" value="${publicacion.script31}"/><br><br>				
 Script32: <input type="text" style="width: 600px;" id="script32" name="script32" size="300" maxlength="300" value="${publicacion.script32}"><br><br>
+Script41: <input type="text" style="width: 600px;" id="script41" name="script41" size="300" maxlength="300" value="${publicacion.script41}"/><br><br>				
+Script42: <input type="text" style="width: 600px;" id="script42" name="script42" size="300" maxlength="300" value="${publicacion.script42}"><br><br>
+Script51: <input type="text" style="width: 600px;" id="script51" name="script51" size="300" maxlength="300" value="${publicacion.script51}"/><br><br>				
+Script52: <input type="text" style="width: 600px;" id="script52" name="script52" size="300" maxlength="300" value="${publicacion.script52}"><br><br>
 <table width="50%" border="0" align="center" cellpadding="10" cellspacing="0">
 <tr>
 <td><div align="center">
@@ -343,7 +347,7 @@ Script32: <input type="text" style="width: 600px;" id="script32" name="script32"
 
 							<li><a href="/">Inicio</a></li>
 
-							<li><a href="/cafeteras">Cafeteras</a></li>
+							<li><a href="/moviles">Móviles</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 

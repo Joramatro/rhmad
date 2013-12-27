@@ -98,6 +98,14 @@ public class Publicacion implements Serializable {
     String script31;
     @Index
     String script32;
+    @Index
+    String script41;
+    @Index
+    String script42;
+    @Index
+    String script51;
+    @Index
+    String script52;
 
     public String getAutor() {
 	return autor;
@@ -455,6 +463,38 @@ public class Publicacion implements Serializable {
 
     public void setScript32(String script32) {
 	this.script32 = script32;
+    }
+
+    public String getScript41() {
+	return script41;
+    }
+
+    public void setScript41(String script41) {
+	this.script41 = script41;
+    }
+
+    public String getScript42() {
+	return script42;
+    }
+
+    public void setScript42(String script42) {
+	this.script42 = script42;
+    }
+
+    public String getScript51() {
+	return script51;
+    }
+
+    public void setScript51(String script51) {
+	this.script51 = script51;
+    }
+
+    public String getScript52() {
+	return script52;
+    }
+
+    public void setScript52(String script52) {
+	this.script52 = script52;
     }
 
 }

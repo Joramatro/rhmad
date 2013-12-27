@@ -1,7 +1,6 @@
-Sitemap: http://www.comprarcafeteraexpress.com/sitemap.xml
+Sitemap: http://www.comprarmovileshoy.com/sitemap.xml
 
 User-Agent: *
-Crawl-delay: 1
 Disallow: /js/
 Disallow: /css/
 Disallow: /img/

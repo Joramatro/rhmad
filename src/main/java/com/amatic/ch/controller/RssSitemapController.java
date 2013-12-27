@@ -42,7 +42,7 @@ public class RssSitemapController {
 	    SampleContent content = new SampleContent();
 	    content.setTitle(publicacionEbook.getTitulo());
 	    content.setAuthor(publicacionEbook.getAutor());
-	    content.setUrl("http://www.comprarcafeteraexpress.com/cafeteras/"
+	    content.setUrl("http://www.comprarmovileshoy.com/"
 		    + publicacionEbook.getUrl());
 	    content.setSummary(Jsoup.parse(publicacionEbook.getArticulo())
 		    .text());
@@ -56,7 +56,7 @@ public class RssSitemapController {
 		content.getCategories().add(category2);
 	    }
 	    content.setDescription(publicacionEbook.getDescripcion());
-	    content.setComments("http://www.comprarcafeteraexpress.com/cafeteras/"
+	    content.setComments("http://www.comprarmovileshoy.com/"
 		    + publicacionEbook.getUrl() + "/#comments");
 	    content.setCreatedDate(publicacionEbook.getFechaCreacion());
 	    items.add(content);
@@ -65,7 +65,7 @@ public class RssSitemapController {
 	    SampleContent content = new SampleContent();
 	    content.setTitle(publicacionArticulo.getTitulo());
 	    content.setAuthor(publicacionArticulo.getAutor());
-	    content.setUrl("http://www.comprarcafeteraexpress.com/blog/"
+	    content.setUrl("http://www.comprarmovileshoy.com/"
 		    + publicacionArticulo.getUrl());
 	    content.setSummary(Jsoup.parse(publicacionArticulo.getArticulo())
 		    .text());
@@ -79,7 +79,7 @@ public class RssSitemapController {
 		content.getCategories().add(category2);
 	    }
 	    content.setDescription(publicacionArticulo.getDescripcion());
-	    content.setComments("http://www.comprarcafeteraexpress.com/blog/"
+	    content.setComments("http://www.comprarmovileshoy.com/"
 		    + publicacionArticulo.getUrl() + "/#comments");
 	    content.setCreatedDate(publicacionArticulo.getFechaCreacion());
 	    items.add(content);
