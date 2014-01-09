@@ -109,6 +109,9 @@ public class PublicacionDaoImpl implements PublicacionDao {
 	updatePublicacion.setClase3(publicacion.getClase3());
 	updatePublicacion.setClase4(publicacion.getClase4());
 	updatePublicacion.setClase7(publicacion.getClase7());
+	updatePublicacion.setClase10(publicacion.getClase10());
+	updatePublicacion.setClase11(publicacion.getClase11());
+	updatePublicacion.setClase12(publicacion.getClase12());
 	updatePublicacion.setTipo(publicacion.getTipo());
 	updatePublicacion.setAutor(publicacion.getAutor());
 	updatePublicacion.setGoogleAutor(publicacion.getGoogleAutor());

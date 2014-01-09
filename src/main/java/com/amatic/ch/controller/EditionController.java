@@ -63,6 +63,9 @@ public class EditionController {
 	    @RequestParam("clase3") String clase3,
 	    @RequestParam("clase4") String clase4,
 	    @RequestParam("clase7") String clase7,
+	    @RequestParam("clase10") String clase10,
+	    @RequestParam("clase11") String clase11,
+	    @RequestParam("clase12") String clase12,
 	    @RequestParam("tipo") String tipo,
 	    @RequestParam("autor") String autor,
 	    @RequestParam("googleAutor") String googleAutor,
@@ -165,6 +168,9 @@ public class EditionController {
 	    publicacion.setClase3(clase3);
 	    publicacion.setClase4(clase4);
 	    publicacion.setClase7(clase7);
+	    publicacion.setClase10(clase10);
+	    publicacion.setClase11(clase11);
+	    publicacion.setClase12(clase12);
 	    publicacion.setTipo(tipo);
 	    publicacion.setAutor(autor);
 	    publicacion.setGoogleAutor(googleAutor);
@@ -287,6 +293,9 @@ public class EditionController {
 	    @RequestParam("clase3") String clase3,
 	    @RequestParam("clase4") String clase4,
 	    @RequestParam("clase7") String clase7,
+	    @RequestParam("clase10") String clase10,
+	    @RequestParam("clase11") String clase11,
+	    @RequestParam("clase12") String clase12,
 	    @RequestParam("script") String script,
 	    @RequestParam("script2") String script2,
 	    @RequestParam("script21") String script21,
@@ -329,6 +338,9 @@ public class EditionController {
 	    publicacion.setClase3(clase3);
 	    publicacion.setClase4(clase4);
 	    publicacion.setClase7(clase7);
+	    publicacion.setClase10(clase10);
+	    publicacion.setClase11(clase11);
+	    publicacion.setClase12(clase12);
 	    publicacion.setScript(script);
 	    publicacion.setScript2(script2);
 	    publicacion.setDisponible(disponible);

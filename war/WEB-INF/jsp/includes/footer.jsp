@@ -25,7 +25,7 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="http://www.comprarcafeteraexpress.com/">Inicio</a></li>
+							<li><a href="http://www.comprarmovileshoy.com/">Inicio</a></li>
 
 							<li><a href="/moviles">Móviles</a></li>
 							
@@ -70,7 +70,7 @@
 					
 					<h3>Sobre nosotros</h3>
 					<p>
-						Somos un equipo de personas amantes del cafe y que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre la cafetera que quieres comprar.
+						Somos un equipo de personas que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre el móvil que se ajuste mejor a tus necesidades.
 					</p>
 						
 				</div>
@@ -98,10 +98,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-twitter">
-											<a target="_blank" href="https://twitter.com/ComprarHoy"></a>
+											<a target="_blank" href="https://twitter.com/ComprarHoy2"></a>
 										</div>
 										<div class="social-info-back social-twitter-hover">
-											<a target="_blank" href="https://twitter.com/ComprarHoy"></a>
+											<a target="_blank" href="https://twitter.com/ComprarHoy2"></a>
 										</div>	
 									</div>
 								</div>
@@ -112,10 +112,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-facebook">
-											<a target="_blank" href="https://www.facebook.com/comprarhoy"></a>
+											<a target="_blank" href="https://www.facebook.com/comprarhoy2"></a>
 										</div>
 										<div class="social-info-back social-facebook-hover">
-											<a target="_blank" href="https://www.facebook.com/comprarhoy"></a>
+											<a target="_blank" href="https://www.facebook.com/comprarhoy2"></a>
 										</div>
 									</div>
 								</div>
@@ -126,10 +126,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-youtube">
-											<a target="_blank" href="https://www.youtube.com/user/comprarhoy"></a>
+											<a target="_blank" href="https://www.youtube.com/user/comprarhoy2"></a>
 										</div>
 										<div class="social-info-back social-youtube-hover">
-											<a target="_blank" href="https://www.youtube.com/user/comprarhoy"></a>
+											<a target="_blank" href="https://www.youtube.com/user/comprarhoy2"></a>
 										</div>	
 									</div>
 								</div>
@@ -140,10 +140,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-flickr">
-											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy/"></a>
+											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/"></a>
 										</div>
 										<div class="social-info-back social-flickr-hover">
-											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy/"></a>
+											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/"></a>
 										</div>	
 									</div>
 								</div>
@@ -153,7 +153,7 @@
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarCafeteraExpress&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
+					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarMovilesHoy&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
 						<h3>Suscríbete! &nbsp; <a href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
 						<p>Por favor, déjanos tu email para recibir nuestras novedades.</p>
 						<label for="newsletter_input">@:</label>
@@ -185,7 +185,7 @@
 			
 				<p>
 				<a style="margin-right: 35px;" href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
-				&copy; 2013, <a target="_blank" href="https://www.google.com/+Comprarebookhoy"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+				&copy; 2014, <a target="_blank" href="https://plus.google.com/107090497050659663269"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 <span itemprop="name">Comprar Móviles Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				<a style="margin-left: 19px;" href="/politica-de-privacidad">Política de privacidad</a>					
 				</p>

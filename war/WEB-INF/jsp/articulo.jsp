@@ -16,7 +16,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1 id="_name2" itemprop="name"><i class="ico-coffe-cup ico-white"></i>${publicacion.titulo}</h1>
+				<h1 id="_name2" itemprop="name"><i class="ico-phone ico-white"></i>${publicacion.titulo}</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -52,7 +52,16 @@
 					<li class="crumb2"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.4" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase2, " ", separador)}" title="${publicacion.clase2}">${publicacion.clase2}</a></li>				
 				</c:if>
 				<c:if test="${not empty publicacion.clase7}">
-					<li class="crumb3"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.5" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase7, " ", separador)}" title="${publicacion.clase3}">${publicacion.clase7}</a></li>				
+					<li class="crumb3"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.5" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase7, " ", separador)}" title="${publicacion.clase7}">${publicacion.clase7}</a></li>				
+				</c:if>
+				<c:if test="${not empty publicacion.clase10}">
+					<li class="crumb4"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.6" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase10, " ", separador)}" title="${publicacion.clase10}">${publicacion.clase10}</a></li>				
+				</c:if>
+				<c:if test="${not empty publicacion.clase11}">
+					<li class="crumb5"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.7" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase11, " ", separador)}" title="${publicacion.clase11}">${publicacion.clase11}</a></li>				
+				</c:if>
+				<c:if test="${not empty publicacion.clase12}">
+					<li class="crumb6"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.8" href="<%=result.toString()%>/blog?filtro=${fn:replace(publicacion.clase12, " ", separador)}" title="${publicacion.clase12}">${publicacion.clase12}</a></li>				
 				</c:if>
 				<li class="crumbF"><span>&nbsp;&gt;&nbsp;</span>${publicacion.titulo}</li>
 			</ul>
@@ -446,12 +455,12 @@
 	    	</div>
 			--%>
 			<div id="Amazon2art" class="iframe_wrap">
-				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarebookh-21&o=30&p=8&l=as1&asins=B003WGGYT0&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00GOYN5TE&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 	    	</div>
 
 			<div id="Amazon3art" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=8&l=as1&asins=B005DER236&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-	    	</div>
+				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00880U9E6&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+			</div>
 	    	<%--
 			<div id="Amazon4prod" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmicroh-21&o=30&p=8&l=as1&asins=B007TVJSGA&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>	   		
@@ -541,6 +550,10 @@
 	    
 	    $('.linkContextual').click(function() {
 	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Link Contextual');  
+	    });
+	    
+	    $('.migaspan').click(function(e) {
+	    	ga('send', 'event', 'Migas', 'Miga '+$(e.target).text(), $(e.target).text());  
 	    });
 	});
 	</script>

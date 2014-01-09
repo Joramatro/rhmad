@@ -15,7 +15,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1><i class="ico-coffe-cup ico-white"></i>Móviles</h1>
+				<h1><i class="ico-phone ico-white"></i>Móviles</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -66,7 +66,7 @@
 			<div id="portfolio-wrapper" class="row">
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicaciones}" varStatus="status" >				
-				<div class='span4 portfolio-item ${fn:replace(publicacion.clase1, " ", separadorClase)} ${fn:replace(publicacion.clase2, " ", separadorClase)} ${fn:replace(publicacion.clase3, " ", separadorClase)} ${fn:replace(publicacion.clase4, " ", separadorClase)} ${fn:replace(publicacion.clase5, " ", separadorClase)} ${fn:replace(publicacion.clase6, " ", separadorClase)} ${fn:replace(publicacion.clase7, " ", separadorClase)} ${fn:replace(publicacion.clase8, " ", separadorClase)}'>
+				<div class='span4 portfolio-item ${fn:replace(publicacion.clase1, " ", separadorClase)} ${fn:replace(publicacion.clase2, " ", separadorClase)} ${fn:replace(publicacion.clase3, " ", separadorClase)} ${fn:replace(publicacion.clase4, " ", separadorClase)} ${fn:replace(publicacion.clase5, " ", separadorClase)} ${fn:replace(publicacion.clase6, " ", separadorClase)} ${fn:replace(publicacion.clase7, " ", separadorClase)} ${fn:replace(publicacion.clase8, " ", separadorClase)} ${fn:replace(publicacion.clase10, " ", separadorClase)} ${fn:replace(publicacion.clase11, " ", separadorClase)} ${fn:replace(publicacion.clase12, " ", separadorClase)} ${fn:replace(publicacion.clase13, " ", separadorClase)} ${fn:replace(publicacion.clase14, " ", separadorClase)} ${fn:replace(publicacion.clase15, " ", separadorClase)}'>
 					<div class="picture"><a href="/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
@@ -140,6 +140,12 @@
 	    	$('#optionSet1 .selected').removeClass('selected');
 	    	$('#optionSet1 .'+getURLParameter("filtro")).addClass('selected');
 	    	$('#portfolio-wrapper').isotope({ filter: '.'+ getURLParameter("filtro")});
+	    }
+	    
+	    if (getURLParameter("filtroPrecio")!=null){
+	    	$('#optionSet2 .selected').removeClass('selected');
+	    	$('#optionSet2 .'+getURLParameter("filtroPrecio")).addClass('selected');
+	    	$('#portfolio-wrapper').isotope({ filter: '.'+ getURLParameter("filtroPrecio")});
 	    }
 	});
 </script>

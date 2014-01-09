@@ -110,7 +110,7 @@ public class FileResource {
 
 	    int sizeImage = ImagesService.SERVING_SIZES_LIMIT;
 	    String url = imagesService.getServingUrl(ServingUrlOptions.Builder
-		    .withBlobKey(blobKey).crop(false).imageSize(sizeImage)
+		    .withBlobKey(blobKey).crop(true).imageSize(sizeImage)
 		    .secureUrl(true));
 
 	    Publicacion publicacion = pdi.getPublicacion(
@@ -134,7 +134,7 @@ public class FileResource {
 		    + url
 		    + "\" alt=\""
 		    + publicacion.getDescripcion()
-		    + "\" style=\"width:320px; height:375px; margin-left: 28%;\"/>";
+		    + "\" style=\"width:345px; height:375px; margin-left: 28%;\"/>";
 	    if (!publicacion.getScript().equals("#")) {
 		replaceimg += "</a>";
 	    }
@@ -209,7 +209,7 @@ public class FileResource {
 	    int sizePreview = 80;
 	    String urlPreview = imagesService
 		    .getServingUrl(ServingUrlOptions.Builder
-			    .withBlobKey(blobKey).crop(false)
+			    .withBlobKey(blobKey).crop(true)
 			    .imageSize(sizePreview).secureUrl(true));
 
 	    FileMeta meta = new FileMeta(name, size, url, urlPreview);

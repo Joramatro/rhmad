@@ -33,7 +33,7 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
+		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
@@ -58,7 +58,7 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
+		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
@@ -68,14 +68,14 @@
 		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/${publicacion.url}“/>
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
-		<title>Extras y accesorios online para tu móvil en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Accede a todos los extras para comprar online accesorios para tu móvil, automática, de cápsulas o de café molido como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
+		<title>Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy</title> 
+		<meta name="description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Apple"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
 		<meta name="application-name" content="Extras en Comprar Moviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras y accesorios online para tu móvil en Comprar Móvil Hoy"/>
-		<meta property="og:description" content="Accede a todos los extras para comprar online accesorios para tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café"/>
+		<meta property="og:title" content="Extras, accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy"/>
+		<meta property="og:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones, libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Apple"/>
 		<meta property="og:type" content="extras"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com/extras"/>
 		<c:if test="${!empty publicaciones}">
@@ -85,19 +85,19 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
-		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Extras y accesorios para cafeteras en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Accede a todos los extras para comprar online accesorios a tu cafetera express como un dispensador de cápsulas, paquetes de cápsulas ó filtros de café">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
+		<meta name="twitter:title" content="Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy">
+		<meta name="twitter:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones, Android, libres, Sony Ericsson, Blackberry, Motorola, Samsung, Apple">
 		<c:if test="${!empty publicaciones}">
 			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 		</c:if>
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->		
-		<link rel=”canonical” href=”http://www.comprarcmovileshoy.com/extras“/>
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/extras“/>
 	</c:when>
 		<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
-		<title>Sobre Nosotros y Comprar Cafetera Express</title> 
+		<title>Sobre Nosotros y Comprar Móviles Hoy</title> 
 		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
@@ -112,7 +112,7 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
+		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
 		<meta name="twitter:title" content="Sobre nosotros en Comprar Móviles Hoy">
 		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales">
@@ -122,7 +122,7 @@
 		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/sobre“/>	
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
-		<title>Contacta con Comprar Cafetera Express</title> 
+		<title>Contacta con Comprar Móviles Hoy</title> 
 		<meta name="description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
@@ -137,7 +137,7 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
+		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
 		<meta name="twitter:title" content="Contacta con nosotros en Comprar Móviles Hoy">
 		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy">
@@ -147,14 +147,14 @@
 		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/contacto“/>
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Móviles, precios y análisis en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
+		<title>Móviles, precios y comparativas online en Comprar Móviles Hoy</title> 
+		<meta name="description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
 		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Móviles, precios y análisis en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Análisis y precios de las mejores cafeteras express, máquinas de cafe automáticas, de cápsulas o de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online"/>
+		<meta property="og:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy"/>
+		<meta property="og:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta property="og:type" content="movil"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
 		<c:if test="${!empty publicaciones}">
@@ -166,10 +166,10 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
-		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Análisis y precios de cafeteras express, automáticas, de cápsulas y de cafe molido">
-		<meta name="twitter:description" content="Análisis y precios de las mejores cafeteras express, máquinas de café automáticas, de cápsulas o de café molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto para que puedas comprar y comparar online">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
+		<meta name="twitter:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy">
+		<meta name="twitter:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -180,14 +180,14 @@
 		<!-- end: Twitter tags -->		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos y opinión sobre cafeteras express en Comprar Cafetera Express</title> 
-		<meta name="description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
+		<title>Artículos y opinión sobre móviles en Comprar Móviles Hoy</title> 
+		<meta name="description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Móvil Hoy" />
 		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Opinión y detalles sobre cafeteras express para comprar tu maquina de cafe online"/>
-		<meta property="og:description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online"/>
+		<meta property="og:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online"/>
+		<meta property="og:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta property="og:type" content="articulo"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
 		<c:if test="${!empty publicaciones}">
@@ -199,10 +199,10 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
-		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Opinión y artículos sobre cafeteras express para comprar tu cafetera express preferida">
-		<meta name="twitter:description" content="Opinión y artículos en nuestro blog de las mejores cafeteras express, automaticas, de cafe molido y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto en la actualidad para que puedas comprar online">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
+		<meta name="twitter:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online">
+		<meta name="twitter:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -226,8 +226,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
-		<meta name="twitter:creator" content="@ComprarHoy">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
 		<meta name="twitter:title" content="Política de privacidad de Comprar Móviles Hoy">
 		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy">
 		<meta name="twitter:domain" content="comprarmovileshoy.com/">
@@ -235,14 +235,14 @@
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre los mejores móviles para comprar online</title> 
-		<meta name="description" content="Información para que puedas comprar online tu cafetera express, automática, de cápsulas o de café molido adecuada y de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe ya sean dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
+		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones para comprar un móvil barato y comparar precios online</title> 
+		<meta name="description" content="Información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta name="author" content="Comprar Móviles Hoy" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
 		<meta name="application-name" content="móviles en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre los mejores móviles para comprar online"/>
-		<meta property="og:description" content="Información para que puedas comprar tu cafetera express online de las mejores marcas como Saeco, Senseo, Krups, Nescafe o Dolce Gusto, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café"/>
+		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones para comprar un móvil barato y comparar precios online"/>
+		<meta property="og:description" content="Información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -250,10 +250,10 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy">
-		<meta name="twitter:creator" content="@ComprarHoy">
-		<meta name="twitter:title" content="Móviles online, cafeteras automaticas, de cápsulas o de café molido en Comprar Cafetera Express">
-		<meta name="twitter:description" content="Información para que puedas comprar tu cafetera express online adecuada a lo que necesitas, así como extras para tu maquina de cafe como dispensadores de cápsulas, paquetes de cápsulas o filtros de café">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
+		<meta name="twitter:title" content="Análisis y opinión sobre móviles y smartphones para comprar un móvil barato y comparar precios online">
+		<meta name="twitter:description" content="Información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->				
@@ -291,13 +291,12 @@
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-44277459-1', 'comprarcafeteraexpress.com');
-ga('send', 'pageview');
-
+	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
+	  ga('send', 'pageview');
 </script>
 </head>
 <body>
@@ -326,7 +325,7 @@ ga('send', 'pageview');
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Móviles <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-phone circle"></i>Comprar Móviles <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">

@@ -27,7 +27,7 @@
 					<div class="da-img">						
 						<a title="${publicacion.titulo}" href="/${publicacion.url}">							
 						<c:if test="${!empty publicacion.lImages}">
-							<img src="${publicacion.lImages[0]}" style="width: 345px;height:360px;" alt="${publicacion.titulo}" />
+							<img src="${publicacion.lImages[3]}" style="width: 345px;height:360px;" alt="${publicacion.titulo}" />
 						</c:if>
 						</a>
 					</div>
@@ -51,12 +51,12 @@
     		<tr>
     		<td>
 	    	<div id="Amazon1" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarebookh-21&o=30&p=8&l=as1&asins=B003WGGYT0&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00B92ZGY8&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 	    	</div>
 	    	</td>
 	    	<td>
 	    	<div id="Amazon2" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=8&l=as1&asins=B005DER236&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00GINX4VU&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 	    	</div>
 	    	</td>
 	    	<td>
@@ -91,12 +91,12 @@
 			</td>
 			<td>
 	    	<div id="Amazon3" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=8&l=as1&asins=B005DD3NVC&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-	    	</div>
+	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B0097CZBH4&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+			</div>
 	    	</td>
 	    	<td>
 	    	<div id="Amazon4" class="iframe_wrap">
-				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarcafeh-21&o=30&p=8&l=as1&asins=B004IZOAFO&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00GOYN5TE&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 	    	</div>
 	    	</td>
 	    	</tr>
@@ -106,8 +106,9 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Si lo que te gusta es tomarte un buen café en cualquier momento del día, existe una cafetera para ti y para cada tipo de cafe que desees: Comprar una cafetera puede ayudarte a conseguir saborear el mejor café en cápsulas ó molido en tu cafetera express italiana y en tu propia casa.<br>
-					Analizamos tanto las cafeteras express automáticas, dolce gusto, italianas como las máquinas de café más baratas y populares del mercado para que puedas decidir que cafetera comprar, estudiando las marcas más populares como Saeco, Senseo, Krups o Nescafe.
+					Los móviles se han convertido hoy en día en el complemento ideal para acompañarnos a todas partes y mantenernos en contacto con nuestros seres queridos: Comprar un móvil te permitirá además estar conectado a Internet y la red consiguiendo una experiencia de usuario única gracias al constante desarrollo tecnológico de los smartphones.<br>
+					Aquí te ayudaremos a comprar el móvil o smartphone online que más se ajuste a tus necesidades y al precio más barato del mercado.<br>
+					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony Ericsson, Motorola, Nokia, HTC, LG, Blackberry o iPhone para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Moviles" class="btn btn-primary btn-large" href="/moviles">ver Móviles</a></p>
       		</div>
@@ -125,8 +126,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Concentración</h3>
-								<p>El cafe te ayuda a conseguir un mayor estado de concentración. Al incrementar la actividad mental podría quitarte el sueño, aunque a otras personas les provoca somnolencia.</p>
+								<h3>Múltiples vías de comunicación</h3>
+								<p>La posibilidad de comunicarse a través de voz, texto vía SMS o correo electrónico e Internet permite como nunca antes la interacción entre humanos por muy lejos que estén.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -138,8 +139,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Cabeza despejada</h3>
-								<p>Tomar una taza de café disminuye ó incluso elimina el dolor de cabeza, ya que el mismo es debido a la tensión de los vasos sanguíneos del cerebro y el café puede dilatarlos, reduciendo así el dolor.</p>
+								<h3>Aplicaciones empresariales</h3>
+								<p>Gracias al impresionante avance tecnológico experimentado en los últimos años y aplicado a la telefonía móvil, los smartphones se han convertido en una herramienta fantástica para cualquier negocio o empresa que necesite estar siempre online.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -151,8 +152,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Energía</h3>
-								<p>Tomado con moderación, diversos estudios han concluido que la cafeína estimula al sistema nervioso, facilita la coordinación y mejora tu estado de ánimo y motivación.</p>
+								<h3>Precios económicos</h3>
+								<p>El constante desarrollo de sistemas operativos móviles como Android, iOS, Windows Phone o BlackBerry OS y al ecosistema de aplicaciones creadas en torno a ellos, los móviles libres ofrecen un sinfín de posibilidades a un precio mucho más barato que años atrás.</p>
 							</div>
 							<div class="clear"></div>
 						</div>

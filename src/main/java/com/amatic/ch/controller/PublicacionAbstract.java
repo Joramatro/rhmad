@@ -137,6 +137,18 @@ public abstract class PublicacionAbstract {
 		    && !categorias.contains(publicacion.getClase7())) {
 		categorias.add(publicacion.getClase7());
 	    }
+	    if (!publicacion.getClase10().equals("")
+		    && !categorias.contains(publicacion.getClase10())) {
+		categorias.add(publicacion.getClase10());
+	    }
+	    if (!publicacion.getClase11().equals("")
+		    && !categorias.contains(publicacion.getClase11())) {
+		categorias.add(publicacion.getClase11());
+	    }
+	    if (!publicacion.getClase12().equals("")
+		    && !categorias.contains(publicacion.getClase12())) {
+		categorias.add(publicacion.getClase12());
+	    }
 	}
 	Collections.sort(categorias);
 
@@ -160,6 +172,18 @@ public abstract class PublicacionAbstract {
 		}
 		if (!publicacion.getClase7().equals("")) {
 		    publicacion.setClase8(publicacion.getClase7()
+			    + publicacion.getClase3());
+		}
+		if (!publicacion.getClase10().equals("")) {
+		    publicacion.setClase13(publicacion.getClase10()
+			    + publicacion.getClase3());
+		}
+		if (!publicacion.getClase11().equals("")) {
+		    publicacion.setClase14(publicacion.getClase11()
+			    + publicacion.getClase3());
+		}
+		if (!publicacion.getClase12().equals("")) {
+		    publicacion.setClase15(publicacion.getClase12()
 			    + publicacion.getClase3());
 		}
 	    }

@@ -26,7 +26,7 @@
         <!-- Fav and touch icons -->
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="/css/apprise-v2.css" type="text/css" />
-    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar Cafetera Express">
+    <meta name="description" content="Subida de archivos y herramienta de edicion para Comprar Móviles Hoy">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			.ui-autocomplete-loading { background: white url('/img/fancybox_loading.gif') right center no-repeat; }
@@ -55,7 +55,7 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-coffe-cup circle"></i>Comprar Móviles <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-phone circle"></i>Comprar Móviles <span>Hoy</span>.</a>
 	          		<div class="nav-collapse collapse">
 	            		<ul class="nav">
 							<li class="active">
@@ -125,6 +125,9 @@ Google+: <input type="text" style="width: 433px;" id="googleAutor" name="googleA
 Clase1: <input type="text" id="clase1" name="clase1" size="20" maxlength="20" value="${publicacion.clase1}"/>
 Clase2: <input type="text" id="clase2" name="clase2" size="20" maxlength="20" value="${publicacion.clase2}"/>
 Clase3: <input type="text" id="clase7" name="clase7" size="20" maxlength="20" value="${publicacion.clase7}"/>
+Clase4: <input type="text" id="clase10" name="clase10" size="20" maxlength="20" value="${publicacion.clase10}"/>
+Clase5: <input type="text" id="clase11" name="clase11" size="20" maxlength="20" value="${publicacion.clase11}"/>
+Clase6: <input type="text" id="clase12" name="clase12" size="20" maxlength="20" value="${publicacion.clase12}"/>
 ClasePr3: <input type="text" id="clase3" name="clase3" size="20" maxlength="20" value="${publicacion.clase3}"/>
 ClasePr4: <input type="text" id="clase4" name="clase4" size="20" maxlength="20" value="${publicacion.clase4}"/>
 <br><br>
@@ -502,7 +505,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 		
 			<div class="span12">
 				<p>
-					&copy; 2013, <a href="/">Comprar Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2014, <a href="/">Comprar Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

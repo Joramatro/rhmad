@@ -10,12 +10,12 @@
 <div id="content">
 
   <div class="logo">
-		<h1><a title="Comprar Cafetera Express" href="www.comprarcafeteraexpress.com"><span class="red">Comprar Cafetera Express</span></a></h1>
-		<input type="image" src="/img/logo.png" width="95px" height="40px" class="button-sel" alt="www.comprarcafeteraexpress.com" title="www.comprarcafeteraexpress.com"/>
+		<h1><a title="Comprar Móviles Hoy" href="www.comprarmovileshoy.com"><span class="red">Comprar Móviles Hoy</span></a></h1>
+		<input type="image" src="/img/logo.png" width="95px" height="40px" class="button-sel" alt="www.comprarmovileshoy.com" title="www.comprarcafeteraexpress.com"/>
   </div>            
 
 <div class="subheader" style="margin-left:20px">
-    <h2>Log In</h2> para editar en Comprar Cafetera Express
+    <h2>Log In</h2> para editar en Comprar Móviles Hoy
 </div>
 <div id="mainbar">
 

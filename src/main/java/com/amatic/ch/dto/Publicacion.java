@@ -58,12 +58,24 @@ public class Publicacion implements Serializable {
     String clase4;
     @Index
     String clase7;
+    @Index
+    String clase10;
+    @Index
+    String clase11;
+    @Index
+    String clase12;
     @Ignore
     String clase5;
     @Ignore
     String clase6;
     @Ignore
     String clase8;
+    @Ignore
+    String clase13;
+    @Ignore
+    String clase14;
+    @Ignore
+    String clase15;
     @Index
     String tipo;
     @Index
@@ -495,6 +507,54 @@ public class Publicacion implements Serializable {
 
     public void setScript52(String script52) {
 	this.script52 = script52;
+    }
+
+    public String getClase10() {
+	return clase10;
+    }
+
+    public void setClase10(String clase10) {
+	this.clase10 = clase10;
+    }
+
+    public String getClase11() {
+	return clase11;
+    }
+
+    public void setClase11(String clase11) {
+	this.clase11 = clase11;
+    }
+
+    public String getClase12() {
+	return clase12;
+    }
+
+    public void setClase12(String clase12) {
+	this.clase12 = clase12;
+    }
+
+    public String getClase13() {
+	return clase13;
+    }
+
+    public void setClase13(String clase13) {
+	this.clase13 = clase13;
+    }
+
+    public String getClase14() {
+	return clase14;
+    }
+
+    public void setClase14(String clase14) {
+	this.clase14 = clase14;
+    }
+
+    public String getClase15() {
+	return clase15;
+    }
+
+    public void setClase15(String clase15) {
+	this.clase15 = clase15;
     }
 
 }
