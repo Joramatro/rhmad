@@ -108,7 +108,7 @@
 				<h3>
 					Los móviles se han convertido hoy en día en el complemento ideal para acompañarnos a todas partes y mantenernos en contacto con nuestros seres queridos: Comprar un móvil te permitirá además estar conectado a Internet y la red consiguiendo una experiencia de usuario única gracias al constante desarrollo tecnológico de los smartphones.<br>
 					Aquí te ayudaremos a comprar el móvil o smartphone online que más se ajuste a tus necesidades y al precio más barato del mercado.<br>
-					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony Ericsson, Motorola, Nokia, HTC, LG, Blackberry o iPhone para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
+					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony, Sony Ericsson, Motorola, Huawei, Alcatel, Nokia, HTC, LG, Blackberry o iPhone para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Moviles" class="btn btn-primary btn-large" href="/moviles">ver Móviles</a></p>
       		</div>

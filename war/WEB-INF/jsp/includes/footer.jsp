@@ -238,6 +238,10 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' 
 		$("#menuExtras").addClass('active');
 	}else if('${publicacion.tipo}' == 'EB'){	
 		$("#menuMoviles").addClass('active');
+	}else if(parts[1] == 'moviles'){	
+		$("#menuMoviles").addClass('active');
+	}else if(parts[1] == 'blog'){	
+		$("#menuBlog").addClass('active');
 	}else{
 		$("#menuInicio").addClass('active');
 	}

@@ -126,7 +126,7 @@ public class FileResource {
 	    String articulo = publicacion.getArticulo();
 
 	    String replaceimg = "<br>";
-	    if (!publicacion.getScript().equals("#")) {
+	    if (!publicacion.getScript().equals("#") && lImages.size() == 3) {
 		replaceimg += "<a target=\"_blank\" href=\"/venta/principal/"
 			+ publicacion.getUrl() + "\">";
 	    }
@@ -135,7 +135,7 @@ public class FileResource {
 		    + "\" alt=\""
 		    + publicacion.getDescripcion()
 		    + "\" style=\"width:345px; height:375px; margin-left: 28%;\"/>";
-	    if (!publicacion.getScript().equals("#")) {
+	    if (!publicacion.getScript().equals("#") && lImages.size() == 3) {
 		replaceimg += "</a>";
 	    }
 	    replaceimg += "<br> ";
