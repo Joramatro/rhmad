@@ -20,10 +20,10 @@ public class Mail {
     public static void sendMail(String msgBody, String subject) {
 	try {
 	    Message msg = new MimeMessage(session);
-	    msg.setFrom(new InternetAddress("jorge.amatro@gmail.com",
-		    "Jorge CCE News"));
+	    msg.setFrom(new InternetAddress("jorge.amatrome@gmail.com",
+		    "Jorge CMsH News"));
 	    msg.addRecipient(Message.RecipientType.TO, new InternetAddress(
-		    "hola@comprarcafeteraexpress.com", "Jorge Amat"));
+		    "hola@comprarmovileshoy.com", "Jorge Amat"));
 	    msg.setSubject(subject);
 	    msg.setText(msgBody);
 	    Transport.send(msg);

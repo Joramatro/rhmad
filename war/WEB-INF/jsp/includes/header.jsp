@@ -75,7 +75,7 @@
 		<meta name="application-name" content="Extras en Comprar Moviles Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Extras, accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones, libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple"/>
+		<meta property="og:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple"/>
 		<meta property="og:type" content="extras"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com/extras"/>
 		<c:if test="${!empty publicaciones}">
@@ -88,7 +88,7 @@
 		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@ComprarHoy2">
 		<meta name="twitter:title" content="Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones, Android, libres, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple">
+		<meta name="twitter:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple">
 		<c:if test="${!empty publicaciones}">
 			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 		</c:if>
@@ -148,7 +148,7 @@
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
 		<title>Móviles, precios y comparativas online en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<meta name="description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta name="author" content="Jorge Amat" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
 		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
@@ -169,7 +169,7 @@
 		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@ComprarHoy2">
 		<meta name="twitter:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -187,7 +187,7 @@
 		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online"/>
-		<meta property="og:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<meta property="og:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta property="og:type" content="articulo"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
 		<c:if test="${!empty publicaciones}">
@@ -235,14 +235,14 @@
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones para comprar un móvil barato y comparar precios online</title> 
-		<meta name="description" content="Información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones libres para comprar un móvil barato y comparar precios online</title> 
+		<meta name="description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta name="author" content="Comprar Móviles Hoy" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
 		<meta name="application-name" content="móviles en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones para comprar un móvil barato y comparar precios online"/>
-		<meta property="og:description" content="Información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones para comprar un smartphone libre, barato y comparar precios online"/>
+		<meta property="og:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -252,8 +252,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@ComprarHoy2">
 		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Análisis y opinión sobre móviles y smartphones para comprar un móvil barato y comparar precios online">
-		<meta name="twitter:description" content="Información para que puedas comprar online el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:title" content="Análisis y opinión sobre móviles y smartphones libres para comprar un móvil barato y comparar precios online">
+		<meta name="twitter:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->				
@@ -261,8 +261,8 @@
 	</c:otherwise>		
 	</c:choose>
 	<link rel="alternate" type="application/rss+xml" title="Comprar Móviles Hoy RSS Feed" href="http://www.comprarmovileshoy.com/rssfeed" />
-	<link rel="author" href="https://plus.google.com/+JorgeAmat" />
-	<link rel="publisher" href="https://www.google.com/+Comprarebookhoy" />
+	<link rel="author" href="https://plus.google.com/109937898739836694401" />
+	<link rel="publisher" href="https://www.google.com/+Comprarmovileshoy" />
 	<style>
 	@font-face {
 	  font-family: 'Droid Sans';

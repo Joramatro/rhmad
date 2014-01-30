@@ -185,7 +185,7 @@
 			
 				<p>
 				<a style="margin-right: 35px;" href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
-				&copy; 2014, <a target="_blank" href="https://plus.google.com/107090497050659663269"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+				&copy; 2014, <a target="_blank" href="https://www.google.com/+Comprarmovileshoy"><span id="_publisher8" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 <span itemprop="name">Comprar Móviles Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				<a style="margin-left: 19px;" href="/politica-de-privacidad">Política de privacidad</a>					
 				</p>
