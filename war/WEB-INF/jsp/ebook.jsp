@@ -45,26 +45,26 @@
 				
 				pageContext.setAttribute("separador", "-");
 			%>
-    		<ul class="breadcrumbs"><li class="home"><a name="header.breadcrumb.1" href="<%=result.toString()%>" title="Página principal">Página principal</a></li>
-				<li class="crumb0"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.2" href="<%=result.toString()%>/moviles" title="Móviles">Móviles</a></li>
-				<li class="crumb1"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.3" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase1, " ", separador)}" title="${publicacion.clase1}">${publicacion.clase1}</a></li>
+    		<ul class="breadcrumbs"><li class="home" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a name="header.breadcrumb.1" href="<%=result.toString()%>" itemprop="url" title="Página principal" class="migapan"><span itemprop="title">Página principal</span></a></li>
+				<li class="crumb0" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.2" href="<%=result.toString()%>/moviles" itemprop="url" title="Móviles" class="migapan"><span itemprop="title">Móviles</span></a></li>
+				<li class="crumb1" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.3" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase1, " ", separador)}" itemprop="url" title="${publicacion.clase1}" class="migapan"><span itemprop="title">${publicacion.clase1}</span></a></li>
 				<c:if test="${not empty publicacion.clase2}">
-					<li class="crumb2"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.4" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase2, " ", separador)}" title="${publicacion.clase2}">${publicacion.clase2}</a></li>				
+					<li class="crumb2" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.4" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase2, " ", separador)}" itemprop="url" title="${publicacion.clase2}" class="migapan"><span itemprop="title">${publicacion.clase2}</span></a></li>				
 				</c:if>
 				<c:if test="${not empty publicacion.clase7}">
-					<li class="crumb3"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.5" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase7, " ", separador)}" title="${publicacion.clase7}">${publicacion.clase7}</a></li>				
+					<li class="crumb3" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.5" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase7, " ", separador)}" itemprop="url" title="${publicacion.clase7}" class="migapan"><span itemprop="title">${publicacion.clase7}</span></a></li>				
 				</c:if>
 				<c:if test="${not empty publicacion.clase10}">
-					<li class="crumb4"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.6" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase10, " ", separador)}" title="${publicacion.clase10}">${publicacion.clase10}</a></li>				
+					<li class="crumb4" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.6" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase10, " ", separador)}" itemprop="url" title="${publicacion.clase10}" class="migapan"><span itemprop="title">${publicacion.clase10}</span></a></li>				
 				</c:if>
 				<c:if test="${not empty publicacion.clase11}">
-					<li class="crumb5"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.7" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase11, " ", separador)}" title="${publicacion.clase11}">${publicacion.clase11}</a></li>				
+					<li class="crumb5" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.7" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase11, " ", separador)}" itemprop="url" title="${publicacion.clase11}" class="migapan"><span itemprop="title">${publicacion.clase11}</span></a></li>				
 				</c:if>
 				<c:if test="${not empty publicacion.clase12}">
-					<li class="crumb6"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.8" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase12, " ", separador)}" title="${publicacion.clase12}">${publicacion.clase12}</a></li>				
+					<li class="crumb6" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.8" href="<%=result.toString()%>/moviles?filtro=${fn:replace(publicacion.clase12, " ", separador)}" itemprop="url" title="${publicacion.clase12}" class="migapan"><span itemprop="title">${publicacion.clase12}</span></a></li>				
 				</c:if>
 				<c:if test="${not empty publicacion.clase3}">
-					<li class="crumbPrecio"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.precio" href="<%=result.toString()%>/moviles?filtroPrecio=${fn:replace(publicacion.clase3, " ", separador)}" title="${publicacion.clase3}">${publicacion.clase3}</a></li>				
+					<li class="crumbPrecio" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span>&nbsp;&gt;&nbsp;</span><a name="header.breadcrumb.precio" href="<%=result.toString()%>/moviles?filtroPrecio=${fn:replace(publicacion.clase3, " ", separador)}" itemprop="url" title="${publicacion.clase3}" class="migapan"><span itemprop="title">${publicacion.clase3}</span></a></li>				
 				</c:if>
 				<li class="crumbFinal"><span>&nbsp;&gt;&nbsp;</span>${publicacion.titulo}</li>
 			</ul>
@@ -553,7 +553,7 @@
 	    	ga('send', 'event', 'Venta', '${publicacion.url}', 'Link Contextual');  
 	    });
 	    
-	    $('.migaspan').click(function(e) {
+	    $('.migapan').click(function(e) {
 	    	ga('send', 'event', 'Migas', 'Miga '+$(e.target).text(), $(e.target).text());  
 	    });
 	});

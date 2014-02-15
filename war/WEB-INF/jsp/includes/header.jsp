@@ -235,13 +235,13 @@
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones libres para comprar un móvil barato y comparar precios online</title> 
-		<meta name="description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles libres y smartphones para comprar un móvil barato y comparar precios online</title> 
+		<meta name="description" content="Información para que puedas comprar online móviles libres y baratos para conseguir el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android y baratos, de marcas como Samsung, Sony, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson o iPhone"/>
 		<meta name="author" content="Comprar Móviles Hoy" />
 		<meta name="copyright" content="Comprar Móviles Hoy" />
 		<meta name="application-name" content="móviles en Comprar Móviles Hoy" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles y smartphones para comprar un smartphone libre, barato y comparar precios online"/>
+		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles libres y smartphones para comprar un smartphone libre, barato y comparar precios online"/>
 		<meta property="og:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.comprarmovileshoy.com"/>

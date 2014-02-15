@@ -131,9 +131,9 @@
 	    }
 	    
 	    if (getURLParameter("filtro")!=null){
-	    	$('#optionSet1 .'+getURLParameter("filtro")).trigger('click');
 	    	$('#optionSet1 .selected').removeClass('selected');
 	    	$('#optionSet1 .'+getURLParameter("filtro")).addClass('selected');
+	    	$('#portfolio-wrapper').isotope({ filter: '.'+ getURLParameter("filtro")});
 	    }
 	});
 </script>

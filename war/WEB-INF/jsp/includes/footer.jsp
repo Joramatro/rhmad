@@ -70,7 +70,7 @@
 					
 					<h3>Sobre nosotros</h3>
 					<p>
-						Somos un equipo de personas que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre el móvil que se ajuste mejor a tus necesidades.
+						Somos un equipo de personas que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre móviles y smartphones para que puedas elegir el móvil libre que mejor se ajuste a tus necesidades y al precio más económico y barato del mercado.
 					</p>
 						
 				</div>
