@@ -50,6 +50,7 @@
 						<li><a id="filter1${status.count}" href="#filter" class='${fn:replace(categoria, " ", separadorClase)}'>${categoria}</a></li>
 					</c:forEach>
 				</ul>
+				<br>
 				<ul id="optionSet2" class="option-set" data-option-key="filter">
 					<li><a id="filter20" href="#filter" class="selected">Cualquier precio</a></li>
 					<c:forEach var="categoriaPrecio" items="${categoriasPrecio}" varStatus="status" >
@@ -76,6 +77,9 @@
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
 							<h5><a title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<c:if test="${publicacion.sumaPuntos gt 0 }">
+							<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div>
+							</c:if>
 							<p>
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>

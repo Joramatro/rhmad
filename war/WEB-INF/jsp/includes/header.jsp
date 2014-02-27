@@ -146,6 +146,41 @@
 		<!-- end: Twitter tags -->
 		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/contacto“/>
 	</c:when>
+	
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks') && not empty param.filtro}">
+		<title>Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy</title> 
+		<meta name="description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>
+		<meta name="author" content="Jorge Amat" />
+		<meta name="copyright" content="Comprar Móviles Hoy" />
+		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
+		<!-- start: Facebook Open Graph -->
+		<meta property="og:title" content="Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/> 
+		<meta property="og:description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>		
+		<meta property="og:type" content="movil"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
+		<c:if test="${!empty publicaciones}">
+			<c:if test="${!empty publicaciones[0].lImages}">
+				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
+			</c:if>
+		</c:if>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<!-- end: Facebook Open Graph -->
+		<!-- start: Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
+		<meta property="twitter:title" content="Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/> 
+		<meta property="twitter:description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>		
+		<c:if test="${!empty publicaciones}">
+			<c:if test="${!empty publicaciones[0].lImages}">
+				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
+			</c:if>
+		</c:if>
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/moviles“/>
+		<!-- end: Twitter tags -->		
+	</c:when>	
+	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
 		<title>Móviles, precios y comparativas online en Comprar Móviles Hoy</title> 
 		<meta name="description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
@@ -179,6 +214,41 @@
 		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/moviles“/>
 		<!-- end: Twitter tags -->		
 	</c:when>
+	
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog') && not empty param.filtro}">
+		<title>Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy</title> 
+		<meta name="description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>
+		<meta name="author" content="Jorge Amat" />
+		<meta name="copyright" content="Comprar Móvil Hoy" />
+		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
+		<!-- start: Facebook Open Graph -->
+		<meta property="og:title" content="Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/>
+		<meta property="og:description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>
+		<meta property="og:type" content="articulo"/>
+		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
+		<c:if test="${!empty publicaciones}">
+			<c:if test="${!empty publicaciones[0].lImages}">
+				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
+			</c:if>
+		</c:if>
+		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<!-- end: Facebook Open Graph -->
+		<!-- start: Twitter tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:creator" content="@ComprarHoy2">
+		<meta property="twitter:title" content="Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/>
+		<meta property="twitter:description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>		
+		<c:if test="${!empty publicaciones}">
+			<c:if test="${!empty publicaciones[0].lImages}">
+				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
+			</c:if>
+		</c:if>
+		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<!-- end: Twitter tags -->
+		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/blog“/>		
+	</c:when>	
+	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
 		<title>Artículos y opinión sobre móviles en Comprar Móviles Hoy</title> 
 		<meta name="description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
@@ -296,6 +366,7 @@
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
+	  ga('require', 'linkid', 'linkid.js');
 	  ga('send', 'pageview');
 </script>
 </head>
