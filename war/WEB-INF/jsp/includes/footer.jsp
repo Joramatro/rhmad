@@ -98,10 +98,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-twitter">
-											<a target="_blank" href="https://twitter.com/ComprarHoy2"></a>
+											<a target="_blank" href="https://twitter.com/ComprarMovilesH"></a>
 										</div>
 										<div class="social-info-back social-twitter-hover">
-											<a target="_blank" href="https://twitter.com/ComprarHoy2"></a>
+											<a target="_blank" href="https://twitter.com/ComprarMovilesH"></a>
 										</div>	
 									</div>
 								</div>
@@ -112,10 +112,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-facebook">
-											<a target="_blank" href="https://www.facebook.com/comprarhoy2"></a>
+											<a target="_blank" href="https://www.facebook.com/comprarmovileshoy"></a>
 										</div>
 										<div class="social-info-back social-facebook-hover">
-											<a target="_blank" href="https://www.facebook.com/comprarhoy2"></a>
+											<a target="_blank" href="https://www.facebook.com/comprarmovileshoy"></a>
 										</div>
 									</div>
 								</div>
