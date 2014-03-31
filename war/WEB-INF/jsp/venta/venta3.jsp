@@ -15,21 +15,21 @@
 	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
 	  ga('require', 'linkid', 'linkid.js');
 	  ga('send', 'pageview');
+	  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 </script>
 </head>
 <body onload="window.location.href = '${publicacion.script31}'">
 <noscript>
 Por favor, haz click <a href="${publicacion.script31}">aquí</a> para acceder a la página de compra del producto.
 </noscript>
-<!-- Google Code for pagina venta Conversion Page -->
+<!-- Google Code for Ir a comprar Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
-var google_conversion_id = 992260331;
+var google_conversion_id = 974611599;
 var google_conversion_language = "en";
 var google_conversion_format = "3";
 var google_conversion_color = "ffffff";
-var google_conversion_label = "KQyZCMX-1wcQ6-GS2QM";
-var google_conversion_value = 0;
+var google_conversion_label = "PhNDCPGA2AgQj8nd0AM";
 var google_remarketing_only = false;
 /* ]]> */
 </script>
@@ -37,9 +37,10 @@ var google_remarketing_only = false;
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/992260331/?value=0&amp;label=KQyZCMX-1wcQ6-GS2QM&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/974611599/?label=PhNDCPGA2AgQj8nd0AM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+
 <img src="${publicacion.script32}" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 </body>
 </html>

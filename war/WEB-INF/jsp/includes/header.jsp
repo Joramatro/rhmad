@@ -40,7 +40,7 @@
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/${publicacion.url}“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/${publicacion.url}"/>
 	</c:when>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
 		<title>${publicacion.titulo} en Comprar Móviles Hoy</title> 
@@ -65,7 +65,7 @@
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/${publicacion.url}“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/${publicacion.url}"/>
 	</c:when>	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
 		<title>Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy</title> 
@@ -94,7 +94,7 @@
 		</c:if>
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->		
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/extras“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/extras"/>
 	</c:when>
 		<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
 		<title>Sobre Nosotros y Comprar Móviles Hoy</title> 
@@ -119,7 +119,7 @@
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/sobre“/>	
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/sobre"/>	
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
 		<title>Contacta con Comprar Móviles Hoy</title> 
@@ -144,7 +144,7 @@
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/contacto“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/contacto"/>
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks') && not empty param.filtro}">
@@ -177,7 +177,7 @@
 			</c:if>
 		</c:if>
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/moviles“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/moviles"/>
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	
@@ -211,7 +211,7 @@
 			</c:if>
 		</c:if>
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/moviles“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/moviles"/>
 		<!-- end: Twitter tags -->		
 	</c:when>
 	
@@ -246,7 +246,7 @@
 		</c:if>
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/blog“/>		
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/blog"/>		
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
@@ -280,7 +280,7 @@
 		</c:if>
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/blog“/>		
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/blog"/>		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
 		<title>Política de privacidad de Comprar Móviles Hoy</title> 
@@ -301,7 +301,7 @@
 		<meta name="twitter:title" content="Política de privacidad de Comprar Móviles Hoy">
 		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy">
 		<meta name="twitter:domain" content="comprarmovileshoy.com/">
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com/politica-de-privacidad“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com/politica-de-privacidad"/>
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
@@ -327,7 +327,7 @@
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="comprarmovileshoy.com">
 		<!-- end: Twitter tags -->				
-		<link rel=”canonical” href=”http://www.comprarmovileshoy.com“/>
+		<link rel="canonical" href="http://www.comprarmovileshoy.com"/>
 	</c:otherwise>		
 	</c:choose>
 	<link rel="alternate" type="application/rss+xml" title="Comprar Móviles Hoy RSS Feed" href="http://www.comprarmovileshoy.com/rssfeed" />
@@ -368,6 +368,7 @@
 	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
 	  ga('require', 'linkid', 'linkid.js');
 	  ga('send', 'pageview');
+	  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 </script>
 </head>
 <body>

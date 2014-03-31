@@ -54,7 +54,7 @@ La Información que se proporcione en estos Sitios Cobrandeados esta sujeta a la
 <p><a href="http://www.google.com/intl/es_ALL/privacypolicy.html">Google Adsense</a><br /></p>
 <p>Nosotros estudiamos las preferencias de nuestros usuarios, sus características demográficas, sus patrones de tráfico, y otra información en conjunto para comprender mejor quiénes constituyen nuestra audiencia y qué es lo que usted necesita. El rastreo de las preferencias de nuestros usuarios también nos ayuda a servirle a usted los avisos publicitarios más relevantes.</p>
 <p>Política De Privacidad De Fuentes De Rastreo Utilizadas En Este Sitio:</p>
-<p><a href="http://www.google.com/intl/es_ALL/privacypolicy.html">Google Analytics</a><br />
+<p><a href="http://www.google.com/intl/es_ALL/privacypolicy.html">Google Analytics</a><br>
 <a href="http://www.google.com/intl/es_ALL/privacypolicy.html">Google Adwords</a></p>
 <p><strong>Política De Protección De Datos Personales</strong></p>
 <p>Para utilizar algunos de los servicios o acceder a determinados contenidos, deberá proporcionar previamente ciertos datos de carácter personal, que solo serán utilizados para el propósito que fueron recopilados.</p>
