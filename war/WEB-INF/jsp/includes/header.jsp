@@ -366,9 +366,9 @@
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
-	  ga('require', 'linkid', 'linkid.js');
+	  ga('require', 'displayfeatures');
 	  ga('send', 'pageview');
-	  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	  
 </script>
 </head>
 <body>
