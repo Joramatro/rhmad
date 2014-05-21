@@ -65,16 +65,16 @@
 				</c:if>
 				<li class="crumbF"><span>&nbsp;&gt;&nbsp;</span>${publicacion.titulo}</li>
 			</ul>
-	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 830px;">
-				<%-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- articulo superior recuadro cafetera -->
+	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 925px;margin-top:115px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- articulo superior cmosh -->
 				<ins class="adsbygoogle"
 				     style="display:inline-block;width:300px;height:250px"
 				     data-ad-client="ca-pub-3168560600423825"
-				     data-ad-slot="8413078942"></ins>
+				     data-ad-slot="8847152546"></ins>
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script> --%>
+				</script>
 			</div>	
 			<!-- start: Flexslider -->
 			<div style="width: 550px;height: 435px; margin: 0 auto;" class="slider" >
@@ -123,6 +123,28 @@
 					</ul>					
 				</div>				
 				<div class="span10">
+				<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+					<a class="addthis_button_tweet"></a>
+					<a class="addthis_button_pinterest_pinit"></a>
+					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
+					<g:plusone href="/${publicacion.url}" align="right" size="medium"></g:plusone>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
+					<!-- AddThis Button END -->
+					<!-- Botón +1. -->
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/plusone.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script> 
+					
+					<br>
+				
 					<c:if test="${publicacion.disponible ne 'N'}">
 						<h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo Hoy');" class="button color launch" target="_blank">¡ Comprar Hoy!</a></h2>				
 					</c:if>
@@ -132,7 +154,7 @@
 					<c:if test="${publicacion.disponible ne 'N'}">
 						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Compralo hoy al mejor precio');" class="button color launch">¡ Comprar Hoy!</a></h2>
 					</c:if>					
-					<br>
+					
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
 					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
@@ -157,17 +179,15 @@
 					<p style="font-style: italic;">Por favor, no dudes en puntuar y comentar tu opinión sobre este artículo en la sección de <a href="#comments">comentarios</a></p>
 				</div>	
 				<div id="banGoogleFinArticulo" class="iframe_wrap" style="width: 64%; margin:0 auto;">
-				<%--
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- fin articulo skyscraper cafetera -->
-					<ins class="adsbygoogle"
-					     style="display:inline-block;width:728px;height:90px"
-					     data-ad-client="ca-pub-3168560600423825"
-					     data-ad-slot="5320011740"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				--%>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- articulo inferior cmosh 1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3168560600423825"
+     data-ad-slot="5195682140"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 				</div>				
 			</div>
 			<!-- end: Row -->
@@ -228,7 +248,7 @@
 						<ol class="commentlist">
 						<c:forEach var="comentario" items="${publicacion.comentariosDeref}" varStatus="status">
 							<c:if test="${comentario.publicado ne 'N'}">
-							<li style="width: 100%;">
+							<li style="width: 100%;padding-bottom:6px">
 								<div class="comments">
 									<div class="avatar">
 									<c:choose>
@@ -260,6 +280,9 @@
 										
 										<span itemprop="description">${fn:replace(comentario.comentario, newLineChar, "<br>")}</span>
 										</p>
+										<div style="clear: both;padding-top: 10px;padding-bottom: 10px;">
+											<a title="Responder mensaje citando" href="#comments-form" onclick="javascript:replyComment('${status.count}');" style="font-size:14px;" >Responder</a>
+										</div>
 									</div>
 								</div>		
 							</li>
@@ -274,7 +297,7 @@
 						<ol class="commentlist">
 						<c:forEach var="comentario" items="${publicacion.comentariosDeref}" varStatus="status">
 							<c:if test="${comentario.publicado ne 'N'}">
-							<li style="width: 100%;">
+							<li style="width: 100%;padding-bottom:6px">
 								<div class="comments">
 									<div class="avatar">
 									<c:choose>
@@ -306,6 +329,9 @@
 										
 										<span itemprop="description">${fn:replace(comentario.comentario, newLineChar, "<br>")}</span>
 										</p>
+										<div style="clear: both;padding-top: 10px;padding-bottom: 10px;">
+											<a title="Responder mensaje citando" href="#comments-form" onclick="javascript:replyComment('${status.count}');" style="font-size:14px;" >Responder</a>
+										</div>
 									</div>
 								</div>		
 							</li>
@@ -394,7 +420,7 @@
 			$("#banGoogle").hide();
 		}
 	</script>
-	<div id="banAmazonHorizontal" style="position:absolute;top:895px;left:54px;">
+	<div id="banAmazonHorizontal" style="position:absolute;top:1025px;left:54px;">
 		<div style="margin-left: 33px; margin-bottom: 12px;"><b>OFERTAS</b></div>
 			<%-- <div id="Amazon1" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=EBF7F9&IS2=1&bg1=EBF7F9&fc1=666666&lc1=005580&t=comprarmicroh-21&o=30&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=B007HMLEAY" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>   		   		
@@ -459,7 +485,7 @@
 	
 	$(window).scroll(function(){
 		if($('#footer').width() >= 855){
-			if($(window).scrollTop() > 895){
+			if($(window).scrollTop() > 1025){
 				$("#banAmazonHorizontal").css("top", $(window).scrollTop());
 			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top){
 			    	$("#banAmazonHorizontal").hide();

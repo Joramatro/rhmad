@@ -61,32 +61,28 @@
 	    	</td>
 	    	<td>
 			<div id="googleRecIndex1" class="iframe_wrap">
-				<%-- 
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- rectangulo index izquierda cafetera -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:300px;height:250px"
-				     data-ad-client="ca-pub-3168560600423825"
-				     data-ad-slot="5180410941"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-				--%>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- rect inx inferior 1 cmosh -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3168560600423825"
+     data-ad-slot="8288749346"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 			</div>
 			</td>
 			<td>
 			<div id="googleRecIndex2" class="iframe_wrap">
-				<%--
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- rectangulo index derecha cafetera -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:300px;height:250px"
-				     data-ad-client="ca-pub-3168560600423825"
-				     data-ad-slot="2527995747"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-				--%>
+<!-- rect inx inferior 2 cmosh -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-3168560600423825"
+     data-ad-slot="3718948945"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 			</div>
 			</td>
 			<td>

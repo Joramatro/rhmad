@@ -426,17 +426,15 @@
 		</div>
 		<!--end: Container-->			
 	<div id="banGooHeader" class="iframe_wrap" style="width: 74%; margin:0 auto;">
-		<%--
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- superior 1 skyscraper cafetera -->
-		<ins class="adsbygoogle"
-		     style="display:inline-block;width:728px;height:90px"
-		     data-ad-client="ca-pub-3168560600423825"
-		     data-ad-slot="8273478147"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-		--%>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- rectangulo header cmosh -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3168560600423825"
+     data-ad-slot="5335282944"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 	</div>			
 	</header>
 	<!--end: Header-->

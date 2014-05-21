@@ -28,17 +28,15 @@
 	<!--start: Wrapper-->
 	<div id="wrapper">
 		<div id="banGoogleETop" class="iframe_wrap" style="width: 54%;margin: -16px auto;">
-		<%--
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- superior 2 skyscraper cafetera -->
-			<ins class="adsbygoogle"
-			     style="display:inline-block;width:728px;height:90px"
-			     data-ad-client="ca-pub-3168560600423825"
-			     data-ad-slot="8133877340"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		--%>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- extras superior cmosh -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3168560600423825"
+     data-ad-slot="8428350142"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 		</div>				
 		<!-- start: Container -->	
 		<div class="container">
@@ -83,17 +81,15 @@
 			
 			<div class="clear" style="padding-top: 25px;"></div>
 			<div id="banGoogleMasVistos" style="margin-bottom: 25px;" class="iframe_wrap">
-			<%--
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- rectangulo abajo cafetera -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:300px;height:250px"
-				     data-ad-client="ca-pub-3168560600423825"
-				     data-ad-slot="3564076949"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			--%>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- extras inferior cmosh -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3168560600423825"
+     data-ad-slot="2381816541"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 			</div>			
 			<%@ include file="/WEB-INF/jsp/includes/masleidos.jsp"%>	
 			
