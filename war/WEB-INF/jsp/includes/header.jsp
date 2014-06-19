@@ -425,16 +425,27 @@
 						
 		</div>
 		<!--end: Container-->			
-	<div id="banGooHeader" class="iframe_wrap" style="width: 74%; margin:0 auto;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- rectangulo header cmosh -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-3168560600423825"
-     data-ad-slot="5335282944"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+	<div id="header" class="iframe_wrap" style="width: 74%; margin:0 auto; display:none">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- rectangulo header cmosh -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:728px;height:90px"
+		     data-ad-client="ca-pub-3168560600423825"
+		     data-ad-slot="5335282944"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<div id="headerMob" class="iframe_wrap" style="width: 53%; margin:0 auto; display:none;">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- mobile header -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:320px;height:50px"
+		     data-ad-client="ca-pub-3168560600423825"
+		     data-ad-slot="5554851741"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 	</div>			
 	</header>
 	<!--end: Header-->

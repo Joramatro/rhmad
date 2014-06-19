@@ -69,19 +69,19 @@
 				<li class="crumbFinal"><span>&nbsp;&gt;&nbsp;</span>${publicacion.titulo}</li>
 			</ul>
 			
-	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 925px;margin-top:115px;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ebook superior cmosh -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-3168560600423825"
-     data-ad-slot="2661018144"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+	    	<div id="banGoogle" class="iframe_wrap" style="position:absolute;margin-left: 860px;margin-top:115px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- ebook superior cmosh -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:300px;height:250px"
+				     data-ad-client="ca-pub-3168560600423825"
+				     data-ad-slot="2661018144"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>	
 			<!-- start: Flexslider -->
-			<div style="width: 550px;height: 435px; margin: 0 auto;" class="slider" >
+			<div style="width: 470px;height: 435px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
 					<c:if test="${publicacion.disponible eq 'S' }">
 						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
@@ -182,16 +182,27 @@
 					<br><br>
 					<p style="font-style: italic;">Por favor, no dudes en puntuar y comentar tu opinión para aportar más detalles sobre el producto en la sección de <a href="#comments">comentarios</a></p>
 				</div>
-				<div id="banGoogleFinArticulo" class="iframe_wrap" style="width: 64%; margin:0 auto;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ebook inferior cmosh 1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-3168560600423825"
-     data-ad-slot="5056081348"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+				<div id="banGoogleFinArticulo" class="iframe_wrap" style="width: 64%; margin:0 auto;display:none">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- ebook inferior cmosh 1 -->
+					<ins class="adsbygoogle"
+					     style="display:inline-block;width:728px;height:90px"
+					     data-ad-client="ca-pub-3168560600423825"
+					     data-ad-slot="5056081348"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+				<div id="banGoogleFinArticuloMob" class="iframe_wrap" style="width: 64%; margin:0 auto;display:none">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- mobile end article -->
+					<ins class="adsbygoogle"
+					     style="display:inline-block;width:320px;height:100px"
+					     data-ad-client="ca-pub-3168560600423825"
+					     data-ad-slot="7031584944"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
 				</div>					
 			</div>
 			<!-- end: Row -->
@@ -529,6 +540,14 @@
 	    $('.migapan').click(function(e) {
 	    	ga('send', 'event', 'Migas', 'Miga '+$(e.target).text(), $(e.target).text());  
 	    });
+	});
+	
+	jQuery(document).ready(function($){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {		
+			$("#banGoogleFinArticuloMob").show();
+		}else{
+			$("#banGoogleFinArticulo").show();
+		}
 	});
 	</script>	
 
