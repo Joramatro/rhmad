@@ -47,69 +47,28 @@
 				
 		<!--start: Container -->
     	<div class="container">
-		<table style="margin: 0px auto -43px">
-    		<tr>
-    		<td>
-	    	<div id="Amazon1" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00K83BIX2&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-	    	</div>
-	    	</td>
-	    	<td>
-	    	<div id="Amazon2" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00GINX4VU&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-	    	</div>
-	    	</td>
-	    	<td>
-			<div id="googleRecIndex1" class="iframe_wrap">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- rect inx inferior 1 cmosh -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-3168560600423825"
-     data-ad-slot="8288749346"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-			</div>
-			</td>
-			<td>
-			<div id="googleRecIndex2" class="iframe_wrap">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- rect inx inferior 2 cmosh -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-3168560600423825"
-     data-ad-slot="3718948945"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-			</div>
-			</td>
-			<td>
-	    	<div id="Amazon3" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00KKSKHFA&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-			</div>
-	    	</td>
-	    	<td>
-	    	<div id="Amazon4" class="iframe_wrap">
-				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00GOYN5TE&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-	    	</div>
-	    	</td>
-	    	</tr>
-	    </table>		
-			<hr>
-	
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
 					Los móviles libres y baratos se han convertido hoy en día en el complemento ideal para acompañarnos a todas partes y mantenernos en contacto con nuestros seres queridos: Comprar un móvil te permitirá además estar conectado a Internet y la red consiguiendo una experiencia de usuario única gracias al constante desarrollo tecnológico de los smartphones.<br>
 					Aquí te ayudaremos a comprar el móvil o smartphone libre y online que más se ajuste a tus necesidades, al precio más barato y pudiendo comparar los móviles más actuales del mercado.<br>
-					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony, Sony Ericsson, Motorola, Huawei, Alcatel, Nokia, HTC, LG, Blackberry o iPhone para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
+					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony, Motorola, Nokia, HTC, LG, así como los nuevos móviles chinos cada vez más populares de marcas como Huawei, Xiaomi o Jiayu, para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Moviles" class="btn btn-primary btn-large" href="/moviles">ver Móviles</a></p>
       		</div>
 			<!-- end: Hero Unit -->
-      		
+			<div id="googleRecIndex1" class="iframe_wrap">			
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- index1r -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3168560600423825"
+				     data-ad-slot="2638269742"
+				     data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>      		
 			<hr>
 			<!-- start: Row -->
 			<div class="row">
@@ -247,31 +206,17 @@
 
 	});
 	
-	if($('#footer').width() < 1345){
-		$("#Amazon3").hide();
-		$("#Amazon4").hide();
-		$("#googleRecIndex2").hide();
-	}
-	
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		$(".titPortada").css("font-size","38px");
-		$(".descPortada").css("font-size","14px");
-		$("#Amazon3").hide();
-		$("#Amazon4").hide();
-		$("#googleRecIndex2").hide();
+		$(".titPortada").css({
+			   'font-size' : '38px',
+			   'white-space' : 'normal'
+			});
+		$(".descPortada").css({
+			   'font-size' : '14px',
+			   'margin-top' : '29px'
+		});
 	}
 	
-	$(window).bind('resize', function () { 
-		if($('#footer').width() < 1345){
-			$("#Amazon3").hide();
-			$("#Amazon4").hide();
-			$("#googleRecIndex2").hide();
-		}else{
-			$("#Amazon3").show();
-			$("#Amazon4").show();
-			$("#googleRecIndex2").show();
-		}
-	});
 </script>
 
 </body>

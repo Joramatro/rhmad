@@ -29,11 +29,12 @@
 	<div id="wrapper">
 		<div id="banGoogleETop" class="iframe_wrap" style="width: 54%;margin: -16px auto;">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- superior blog skyscraper cmosh -->
+			<!-- interior1r -->
 			<ins class="adsbygoogle"
-			     style="display:inline-block;width:728px;height:90px"
+			     style="display:block"
 			     data-ad-client="ca-pub-3168560600423825"
-			     data-ad-slot="2800618944"></ins>
+			     data-ad-slot="9603133345"
+			     data-ad-format="auto"></ins>
 			<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
@@ -41,7 +42,7 @@
 		<!-- start: Container -->	
 		<div class="container">
 
-			<div id="filters" style="margin-top: 15px;">
+			<div id="filters" style="margin-top: 20px;">
 				<ul id="optionSet1" class="option-set" data-option-key="filter">
 					<li><a href="#filter" class="selected" data-option-value="*">Todos</a></li>
 					<c:forEach var="categoria" items="${categorias}" varStatus="status" >
@@ -84,15 +85,16 @@
 			
 			<div class="clear" style="padding-top: 25px;"></div>
 			<div id="banGoogleMasVistos" style="margin-bottom: 25px;" class="iframe_wrap">
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inferior blog skyscraper -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-3168560600423825"
-     data-ad-slot="8707551749"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- interior1r -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-3168560600423825"
+				     data-ad-slot="9603133345"
+				     data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>			
 			<%@ include file="/WEB-INF/jsp/includes/masleidos.jsp"%>					
       	
@@ -104,11 +106,7 @@
 	<!-- end: Wrapper  -->
 	
 <%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
-<script>
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		$("#banGoogleVistos").hide();
-	}
-</script>
+
 <script>
 	jQuery(document).ready(function($){
 	    $('.iframe_wrap iframe').iframeTracker({
