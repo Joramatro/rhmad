@@ -1,4 +1,4 @@
-Sitemap: http://www.comprarmovileshoy.com/sitemap.xml
+Sitemap: http://www.reservarhotelmadrid.com/sitemap.xml
 
 User-Agent: *
 Disallow: /js/

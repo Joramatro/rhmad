@@ -52,7 +52,7 @@
 				<div class="span3">
 					<div class="title"><h3>Información de Contacto</h3></div>
 					<p>
-						<b>Comprar Móviles Hoy</b>
+						<b>Reservar Hotel Madrid</b>
 					</p>
 					<p>
 						The Triangle, Ranelagh
@@ -61,7 +61,7 @@
 						Dublin 6, Dublin, Irlanda
 					</p>	
 					<p>
-						Email: hola@comprarmovileshoy.com
+						Email: hola@reservarhotelmadrid.com
 					</p>
 				</div>
 				<!-- end: Contact Info -->		

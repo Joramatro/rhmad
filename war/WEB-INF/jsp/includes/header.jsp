@@ -18,319 +18,290 @@
 	<!-- end: Mobile Specific -->
 	<c:choose>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
-		<title>${publicacion.titulo} en análisis y online en Comprar Móviles Hoy</title> 
-		<meta name="description" content="${publicacion.descripcion} en Comprar Móviles Hoy"/>
+		<title>${publicacion.titulo} en análisis y online en Reservar Hotel Madrid</title> 
+		<meta name="description" content="${publicacion.descripcion} en Reservar Hotel Madrid"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar Móviles Hoy" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="${publicacion.titulo} en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="${publicacion.titulo} en análisis y online en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="${publicacion.descripcion} en Comprar Móviles Hoy"/>
-		<meta property="og:type" content="movil"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/${publicacion.url}"/>
+		<meta property="og:title" content="${publicacion.titulo} en detalle en Reservar Hotel Madrid"/>
+		<meta property="og:description" content="${publicacion.descripcion} en Reservar Hotel Madrid"/>
+		<meta property="og:type" content="hotel"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/${publicacion.url}"/>
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 	</c:when>
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
-		<title>${publicacion.titulo} en Comprar Móviles Hoy</title> 
+		<title>${publicacion.titulo} en Reservar Hotel Madrid</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="${publicacion.titulo} en Comprar Móviles Hoy" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="${publicacion.titulo} en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="${publicacion.titulo}"/>
 		<meta property="og:description" content="${publicacion.descripcion}"/>
 		<meta property="og:type" content="articulos"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/${publicacion.url}"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
 		<meta name="twitter:creator" content="@Jorge_Amat1">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/${publicacion.url}"/>
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 	</c:when>	
-	<c:when test="${fn:contains(pageContext.request.requestURI, 'extras')}">
-		<title>Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para Smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Extras en Comprar Moviles Hoy" />
+	<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
+		<title>Sobre Nosotros y Reservar Hotel Madrid</title> 
+		<meta name="description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales"/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Sobre Nosotros en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Extras, accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple"/>
-		<meta property="og:type" content="extras"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/extras"/>
-		<c:if test="${!empty publicaciones}">
-			<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
-		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
-		<!-- end: Facebook Open Graph -->
-		<!-- start: Twitter tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Accesorios, fundas y protectores online para tu móvil en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Accede a accesorios online para tu móvil como fundas, carcasas, baterías, cargadores, protectores o soportes, para smartphones libres, Android, Sony Ericsson, Blackberry, Motorola, Samsung, Sony, Alcatel, Huawei o Apple">
-		<c:if test="${!empty publicaciones}">
-			<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
-		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<!-- end: Twitter tags -->		
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/extras"/>
-	</c:when>
-		<c:when test="${fn:contains(pageContext.request.requestURI, 'sobre')}">
-		<title>Sobre Nosotros y Comprar Móviles Hoy</title> 
-		<meta name="description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Sobre Nosotros en Comprar Móviles Hoy" />
-		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Sobre Nosotros en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Toda la información sobre los que trabajamos en Comprar Móbil Hoy, su experiencia y valores profesionales"/>
+		<meta property="og:title" content="Sobre Nosotros en Reservar Hotel Madrid"/>
+		<meta property="og:description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales"/>
 		<meta property="og:type" content="sobre"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/sobre"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/sobre"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Sobre nosotros en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Comprar Móviles Hoy, su experiencia y valores profesionales">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:title" content="Sobre nosotros en Reservar Hotel Madrid">
+		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/sobre"/>	
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/sobre"/>	
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'contacta')}">
-		<title>Contacta con Comprar Móviles Hoy</title> 
-		<meta name="description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Contacto en Comprar Móviles Hoy" />
+		<title>Contacta con Reservar Hotel Madrid</title> 
+		<meta name="description" content="Contacta con los que trabajamos en Reservar Hotel Madrid"/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Contacto en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Contacta en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy"/>
+		<meta property="og:title" content="Contacta en Reservar Hotel Madrid"/>
+		<meta property="og:description" content="Contacta con los que trabajamos en Reservar Hotel Madrid"/>
 		<meta property="og:type" content="contacto"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/contacto"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/contacto"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
-		<meta name="twitter:title" content="Contacta con nosotros en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Contacta con los que trabajamos en Comprar Móviles Hoy">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:title" content="Contacta con nosotros en Reservar Hotel Madrid">
+		<meta name="twitter:description" content="Contacta con los que trabajamos en Reservar Hotel Madrid">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/contacto"/>
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/contacto"/>
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks') && not empty param.filtro}">
-		<title>Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
+		<title>Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid</title> 
+		<meta name="description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española."/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Oferta de Hoteles en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/> 
-		<meta property="og:description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>		
-		<meta property="og:type" content="movil"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
+		<meta property="og:title" content="Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
+		<meta property="og:description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
+		<meta property="og:type" content="hotel"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/oferta"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta property="twitter:title" content="Móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/> 
-		<meta property="twitter:description" content="Análisis, precios y comparativas online de móviles de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas comparar online móviles de distintos tipos, Smartphones libres, android y baratos"/>		
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta property="twitter:title" content="Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
+		<meta property="twitter:description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/moviles"/>
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/ofertas"/>
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Móviles, precios y comparativas online en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Móviles en Comprar Móviles Hoy" />
+		<title>Oferta de Hoteles de Madrid en Reservar Hotel Madrid</title> 
+		<meta name="description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española."/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Oferta de Hoteles en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta property="og:type" content="movil"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/moviles"/>
+		<meta property="og:title" content="Oferta de Hoteles de Madrid en Reservar Hotel Madrid"/> 
+		<meta property="og:description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
+		<meta property="og:type" content="hotel"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/oferta"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Móviles, precios y comparativas online en Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Análisis, precios y comparativas online de móviles para que puedas comparar online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta property="twitter:title" content="Oferta de Hoteles de Madrid en Reservar Hotel Madrid"/> 
+		<meta property="twitter:description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/moviles"/>
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/ofertas"/>
 		<!-- end: Twitter tags -->		
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog') && not empty param.filtro}">
-		<title>Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móvil Hoy" />
-		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
+		<title>Artículos sobre lugares y hoteles para reservar en Madrid - <%= request.getParameter("filtro").replaceAll("-", " ") %></title> 
+		<meta name="description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Blog en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>
+		<meta property="og:title" content="Artículos sobre lugares y hoteles para reservar en Madrid - <%= request.getParameter("filtro").replaceAll("-", " ") %>"/>
+		<meta property="og:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
 		<meta property="og:type" content="articulo"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/blog"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta property="twitter:title" content="Artículos y opinión sobre móviles de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Comprar Móviles Hoy"/>
-		<meta property="twitter:description" content="Opinión y artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos"/>		
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:title" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos sobre lugares y hoteles para reservar en Madrid">
+		<meta name="twitter:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/blog"/>		
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/blog"/>			
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos y opinión sobre móviles en Comprar Móviles Hoy</title> 
-		<meta name="description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
-		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móvil Hoy" />
-		<meta name="application-name" content="Blog en Comprar Móviles Hoy" />
+		<title>Artículos sobre lugares y hoteles para reservar en Madrid</title> 
+		<meta name="description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Blog en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online"/>
-		<meta property="og:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, Smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<meta property="og:title" content="Artículos sobre lugares y hoteles para reservar en Madrid"/>
+		<meta property="og:description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
 		<meta property="og:type" content="articulo"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/blog"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/blog"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta property="og:image" content="${publicaciones[0].lImages[0]}"/>
 			</c:if>
 		</c:if>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Opinión y detalles sobre móviles para que puedas comparararlos y elegir tu móvil online">
-		<meta name="twitter:description" content="Opinión, artículos y comparativas en nuestro blog de los mejores móviles para que puedas comparar precios online y móviles de distintos tipos, smartphones, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:title" content="Artículos sobre lugares y hoteles para reservar en Madrid">
+		<meta name="twitter:description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
 			</c:if>
 		</c:if>
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/blog"/>		
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/blog"/>		
 	</c:when>
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
-		<title>Política de privacidad de Comprar Móviles Hoy</title> 
-		<meta name="description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy"/>
+		<title>Política de privacidad de Reservar Hotel Madrid</title> 
+		<meta name="description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid"/>
 		<meta name="author" content="Jorge Amat" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="Política privacidad Comprar Móviles Hoy" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Política privacidad Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Política de privacidad de Comprar Móviles Hoy"/>
-		<meta property="og:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com/politica-de-privacidad"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com/"/>
+		<meta property="og:title" content="Política de privacidad de Reservar Hotel Madrid"/>
+		<meta property="og:description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com/politica-de-privacidad"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com/"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Política de privacidad de Comprar Móviles Hoy">
-		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Comprar Móviles Hoy">
-		<meta name="twitter:domain" content="comprarmovileshoy.com/">
-		<link rel="canonical" href="http://www.comprarmovileshoy.com/politica-de-privacidad"/>
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:title" content="Política de privacidad de Reservar Hotel Madrid">
+		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com/">
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com/politica-de-privacidad"/>
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Comprar Móviles Hoy - Análisis y opinión sobre móviles libres y smartphones para comprar un móvil barato y comparar precios online</title> 
-		<meta name="description" content="Información para que puedas comprar online móviles libres y baratos para conseguir el móvil más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android y baratos, de marcas como Samsung, Sony, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson o iPhone"/>
-		<meta name="author" content="Comprar Móviles Hoy" />
-		<meta name="copyright" content="Comprar Móviles Hoy" />
-		<meta name="application-name" content="móviles en Comprar Móviles Hoy" />
+		<title>Bienvenido a Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid</title> 
+		<meta name="description" content="Información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España"/>
+		<meta name="author" content="Reservar Hotel Madrid" />
+		<meta name="copyright" content="Reservar Hotel Madrid" />
+		<meta name="application-name" content="Hoteles en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Comprar Móviles Hoy - Análisis y opinión sobre móviles libres y smartphones para comprar un smartphone libre, barato y comparar precios online"/>
-		<meta property="og:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone"/>
+		<meta property="og:title" content="Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid"/>
+		<meta property="og:description" content="Toda la información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España."/>
 		<meta property="og:type" content="principal"/>
-		<meta property="og:url" content="http://www.comprarmovileshoy.com"/>
+		<meta property="og:url" content="http://www.reservarhotelmadrid.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
-		<meta property="og:email" content="hola@comprarmovileshoy.com"/>
+		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ComprarHoy2">
-		<meta name="twitter:creator" content="@ComprarHoy2">
-		<meta name="twitter:title" content="Análisis y opinión sobre móviles y smartphones libres para comprar un móvil barato y comparar precios online">
-		<meta name="twitter:description" content="Información para que puedas comprar online el móvil libre más adecuado a tus necesidades y comparar precios y móviles de distintos tipos, smartphones libres, android, libres y baratos, de marcas como Samsung, Sony, Alcatel, Huawei, HTC, LG, Nokia, Motorola, Sony Ericsson, Blackberry o iPhone">
+		<meta name="twitter:site" content="@ReservarHotelMadrid">
+		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:title" content="Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid">
+		<meta name="twitter:description" content="Toda la información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España.">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
-		<meta name="twitter:domain" content="comprarmovileshoy.com">
+		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->				
-		<link rel="canonical" href="http://www.comprarmovileshoy.com"/>
+		<link rel="canonical" href="http://www.reservarhotelmadrid.com"/>
 	</c:otherwise>		
 	</c:choose>
-	<link rel="alternate" type="application/rss+xml" title="Comprar Móviles Hoy RSS Feed" href="http://www.comprarmovileshoy.com/rssfeed" />
+	<link rel="alternate" type="application/rss+xml" title="Reservar Hotel Madrid RSS Feed" href="http://www.reservarhotelmadrid.com/rssfeed" />
 	<link rel="author" href="https://plus.google.com/109937898739836694401" />
 	<link rel="publisher" href="https://www.google.com/+Comprarmovileshoy" />
 	<style>
@@ -365,7 +336,7 @@
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-46821516-1', 'comprarmovileshoy.com');
+	  ga('create', 'UA-46821516-1', 'reservarhotelmadrid.com');
 	  ga('require', 'displayfeatures');
 	  ga('send', 'pageview');
 	  
@@ -397,13 +368,13 @@
 	            		<span class="icon-bar"></span>
 	            		<span class="icon-bar"></span>
 	          		</a>
-					<a class="brand" href="/"><i class="ico-phone circle"></i>Comprar Móviles <span>Hoy</span>.</a>
+					<a class="brand" href="/"><i class="ico-suitcase circle"></i>Reservar Hotel <span>Madrid</span></a>
 	          		<div class="nav-collapse collapse">
 	            		<ul id="menuSuperior" class="nav" style="margin-right:-30px;">
 							<li id="menuInicio">
 	                			<a onClick="ga('send', 'event', 'Menu Superior', 'Menu Inicio', 'Inicio');" href="/">Inicio</a>
 	              			</li>
-	              			<li id="menuMoviles"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Moviles', 'Moviles');" title="Móviles" href="/moviles">Móviles</a></li>
+	              			<li id="menuOferta"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Oferta', 'OfertaHoteles');" title="Oferta de hoteles" href="/ofertas">Oferta de Hoteles Madrid</a></li>
 							<li class="dropdown">
 	                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Destacados<b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
@@ -412,7 +383,6 @@
 	                  				</c:forEach>	                					                  				
 								</ul>
 	              			</li>
-	              			<li id="menuExtras"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Extras', 'Extras');" title="Extras" href="/extras">Extras</a></li>
 	              			<li id="menuBlog"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Blog', 'Blog');" title="Blog" href="/blog">Blog</a></li>	              																			
 	              			<li id="menuSobre"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Sobre', 'Sobre');" title="Sobre Nosotros" href="/sobre">Sobre nosotros</a></li>
 	              			<li id="menuContacto"><a onClick="ga('send', 'event', 'Menu Superior', 'Menu Contacto', 'Contacto');" title="Contacto" href="/contacto">Contacto</a></li>

@@ -18,7 +18,7 @@
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.disponible eq 'S' }">
-						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Comprar Hoy');" href="/venta/principal/${publicacion.url}" class="da-link">COMPRAR HOY</a>
+						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Reservar Hoy');" href="/venta/principal/${publicacion.url}" class="da-link">RESERVAR HOY</a>
 					</c:when>
 					<c:otherwise>
 						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
@@ -50,11 +50,11 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Los móviles libres y baratos se han convertido hoy en día en el complemento ideal para acompañarnos a todas partes y mantenernos en contacto con nuestros seres queridos: Comprar un móvil te permitirá además estar conectado a Internet y la red consiguiendo una experiencia de usuario única gracias al constante desarrollo tecnológico de los smartphones.<br>
-					Aquí te ayudaremos a comprar el móvil o smartphone libre y online que más se ajuste a tus necesidades, al precio más barato y pudiendo comparar los móviles más actuales del mercado.<br>
-					Te mostramos los mejores análisis de móviles libres, Android, iOS de Apple, Windows Phone y comparativas junto a las mejores marcas como Samsung, Sony, Motorola, Nokia, HTC, LG, así como los nuevos móviles chinos cada vez más populares de marcas como Huawei, Xiaomi o Jiayu, para que puedas responder con la mejor información a la pregunta de qué móvil comprar.
+					Si estás interesado en reservar hotel en Madrid tanto en el centro como en las afueras, en esta web podrás encontrar los mejores hoteles más económicos en función de tus necesidades y posibilidades.<br>
+					Aquí te ayudaremos a elegir tu destino y el hotel con encanto ideal que estás buscando en Madrid, para poder visitar los mejores lugares y rincones de la capital de España.<br>
+					Te mostramos los mejores artículos y las mejores ofertas de hoteles donde poder hospedarte para tu viaje y reservar tu habitación en Madrid con la máxima seguridad y los mejores profesionales.
 				</h3>
-        		<p><br><a class="btn btn-primary btn-large" title="Blog" href="/blog">ver Blog</a> &nbsp;&nbsp;<a title="Moviles" class="btn btn-primary btn-large" href="/moviles">ver Móviles</a></p>
+        		<p><br><a class="btn btn-primary btn-large" title="Oferta Hoteles Madrid" href="/ofertas">ver Oferta de Hoteles en Madrid</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">ver Blog</a></p>
       		</div>
 			<!-- end: Hero Unit -->
 			<div id="googleRecIndex1" class="iframe_wrap">			
@@ -81,8 +81,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Múltiples vías de comunicación</h3>
-								<p>La posibilidad de comunicarse a través de voz, texto vía SMS o correo electrónico e Internet permite como nunca antes la interacción entre humanos por muy lejos que estén.</p>
+								<h3>Reservar Hotel en Madrid Centro</h3>
+								<p>Reserva en los hoteles más encantadores y económicos del centro de Madrid para poder visitar fácilmente los lugares más interesantes de la ciudad.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -94,8 +94,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Aplicaciones empresariales</h3>
-								<p>Gracias al impresionante avance tecnológico experimentado en los últimos años y aplicado a la telefonía móvil, los smartphones se han convertido en una herramienta fantástica para cualquier negocio o empresa que necesite estar siempre online.</p>
+								<h3>Qué Ver en Madrid</h3>
+								<p>Encuentra artículos y opiniones personales donde te mostramos los sitios y eventos que no te puedes perder durante tu visita a la capital española.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -107,8 +107,8 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Precios económicos</h3>
-								<p>El constante desarrollo de sistemas operativos móviles como Android, iOS, Windows Phone o BlackBerry OS y al ecosistema de aplicaciones creadas en torno a ellos, los móviles libres ofrecen un sinfín de posibilidades a un precio mucho más barato que años atrás.</p>
+								<h3>La mejor oferta de hoteles en Madrid</h3>
+								<p>Descubre el mejor hotel para tu estancia según tus necesidades y presupuesto para hacer de tu viaje una experiencia inolvidable.</p>
 							</div>
 							<div class="clear"></div>
 						</div>

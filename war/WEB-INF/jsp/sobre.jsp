@@ -42,13 +42,13 @@
 					<div id="about">
 						<div class="title"><h3>Sobre nosotros</h3></div>
 						<p>
-							Somos un equipo de personas con gran formación tecnólogica que quiere ofrecerte la mejor información y los mejores análisis sobre móviles en la red.
+							Somos un equipo de personas con pasión por viajar y en especial por la ciudad de Madrid, que además quiere ofrecerte la mejor información y los mejores artículos sobre reserva de hoteles y destinos a visitar en la capital española, pues está repleta de rincones maravillosos que explorar.
 						</p>
 						<p>
-							Nuestras valoraciones son honestas y con sello propio, pretendiendo aclarar tu idea para comprar un móvil en función de tus necesidades. Estamos aquí para ayudarte en todo lo posible y darte la mejor información que puedas encontrar en Internet.
+							Además de nuestros artículos y opiniones, te ofrecemos información detallada sobre los mejores hoteles que puedes reservar en Madrid. Estamos aquí para ayudarte en todo lo posible y darte la mejor información al respecto que puedas encontrar en Internet.
 						</p>
 						<p>
-							Por favor, no dudes en contactar con nosotros para consultarnos cualquier duda que tengas ó darnos tu opinión sobre nuestro trabajo, queremos ayudarte y conseguir que tu elección sea la idónea. Puedes usar la sección de comentarios de cada artículo para puntuar, preguntar o aportar más información sobre un producto analizado.
+							Por favor, contacta con nosotros para consultarnos cualquier duda que te surja ó darnos tu opinión sobre nuestra web, puedes usar también la sección de comentarios de cada artículo para preguntar o aportar más información o incluso valorarlo puntuándolo.
 						</p>
 					</div>	
 					<!-- end: About Us -->
@@ -57,49 +57,19 @@
 					<div id="history">
 						<div class="title"><h3>Historia</h3></div>
 						<p>
-							<span class="dropcap">1</span>Somos un grupo humano cuya profesión y pasión es la tecnología, que reciéntemente ha decidido apostar por una nueva marca en la que ofrecer sus conocimientos para ayudar a otras personas.
+							<span class="dropcap">1</span>Somos un grupo de personas cuya profesión y pasión es la tecnología y los viajes, por eso hemos decidido publicar a través de esta y otras webs nuestros conocimientos con objeto de ayudar a más gente.
 						</p>
 						<p>
-							<span class="dropcap color">2</span>Desde hace ya unos años, los móviles, hoy en día también conocidos como smartphones, han irrumpido con fuerza en el mercado y se presetan claramente como un aparato tecnológico en constante desarrollo y mejora que promete ser un complemento imprescindible en nuestro día a día para mantenernos conectados y cerca de los nuestros.
+							<span class="dropcap color">2</span>Desde hace ya unos años, el turismo y los viajes de ocio se han convertido en algo imprescindible para nuestro tiempo de ocio y conocer nuevos lugares y ciudades como Madrid.
 						</p>
 						<p>
-							<span class="dropcap dark">3</span>Nosotros venimos de una formación relacionada con la tecnología, y tras más de 10 años trabajando para distintas empresas TIC privadas y estudiando nuevos gadgets tecnológicos en nuestro tiempo libre, reunimos aquí todos nuestros conocimientos para intentar crear la mejor web de habla hispana sobre móviles y productos relacionados. Nuestro objetivo es ser honestos y aportar valor a nuestros lectores. 
+							<span class="dropcap dark">3</span>Nosotros venimos de una formación relacionada con la tecnología y somos apasionados por los viajes y el turismo, por lo que hemos decidido reunir aquí todos nuestros conocimientos para intentar crear la mejor web en español sobre viajes y reservas de hoteles en Madrid. Nuestro objetivo es ser honestos y aportar valor a nuestros lectores. 
 						</p>
 						<p>
-							Reciéntemente hemos iniciado nuestra propia empresa, dónde pretendemos ofrecer la mejor información y los mejores análisis para conseguir que aciertes con la compra del producto que buscas. Estamos aquí para ayudarte y que decidas con la mejor opinión creada posible, <a title="Contacto" href="/contacto">contacta</a> con nosotros cuando así lo requieras.
+							Por fin hemos hemos lanzado nuestra propia empresa, dónde intentamos ofreceros la mejor información y las mejores opiniones sobre lugares que visitar en madrid y mejores a hoteles a reservar. Estamos aquí para ayudarte, por eso <a title="Contacto" href="/contacto">contacta</a> con nosotros cuando así lo requieras.
 						</p>
 					</div>	
-					<!-- end: History -->
-
-					  
-					<div id="team">
-						
-						<div class="title"><h3>Equipo</h3></div>
-											
-						<div class="row">
-						
-							<div class="span4">
-								<img src="/img/jorge_1.jpg" alt="team member">
-								<div class="team-name">Jorge Amat<span> / Creador de Comprar Hoy</span></div>
-								<p>
-									 Jorge es un joven y polifacético desarrollador de software, especialmente orientado a asuntos de marketing y desarrollo web. Es el creador de la plataforma web "Comprar Hoy" y dedica una buena parte de su tiempo a mejorarla entre otros proyectos. Además colabora con otras empresas tecnológicas en Dublin donde reside hasta la fecha, en busca de la Guinness perfecta. Como gran apasionado a los gadgets tecnológicos, también escribe artículos y anáisis que pueden ayudarte en la elección de tu producto favorito. 
-								</p>
-								<div class="social_profiles">
-									<ul class="social-bookmarks">
-										<li class="facebook"><a target="_blank" href="https://www.facebook.com/jorge.amat.ro">facebook</a></li>
-										<li class="googleplus"><a target="_blank" href="https://plus.google.com/109937898739836694401/" rel=”me”>googleplus</a></li>
-										<li class="linkedin"><a target="_blank" href="http://ie.linkedin.com/pub/jorge-amat-romero/2b/731/895">linkedin</a></li>
-										<li class="twitter"><a target="_blank" href="https://twitter.com/Jorge_Amat1">twitter</a></li>
-										<li class="pinterest"><a target="_blank" href="http://pinterest.com/jorgeamatro/">pinterest</a></li>
-									</ul>
-								</div>	
-							</div>	
-						
-						</div>
-
-					</div>
-										
-					
+					<!-- end: History -->				
 				</div>	
 				
 				<div class="span4">
@@ -111,20 +81,20 @@
 				       	<div class="title"><h3>Nuestras habilidades</h3></div>
 				       	<ul class="progress-bar">
 				        	<li>
-				            	<h5>Productos de marca ( 90% )</h5>
+				            	<h5>Desarrollo turístico ( 95% )</h5>
 				            	<div class="meter"><span style="width: 90%"></span></div><!-- Edite width here -->
 				          	</li>
 				          	<li>
-				            	<h5>Gestión de contenidos( 100% )</h5>
+				            	<h5>Reserva de hoteles( 100% )</h5>
 				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
 				          	</li>
 				          	<li>
-				            	<h5>Desarrollo web ( 100% )</h5>
-				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
-				          	</li>
-				          	<li>
-				            	<h5>Optimización SEO ( 90% )</h5>
+				            	<h5>Posicionamiento web ( 90% )</h5>
 				            	<div class="meter"><span style="width: 90%"></span></div><!-- Edite width here -->
+				          	</li>
+				          	<li>
+				            	<h5>Hostelería en Madrid ( 100% )</h5>
+				            	<div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
 				          	</li>
 				      	</ul>
 				      	<!-- end: Skills -->

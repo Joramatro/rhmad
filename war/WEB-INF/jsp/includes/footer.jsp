@@ -13,7 +13,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="http://www.comprarmovileshoy.com/">CM<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="http://www.reservarhotelmadrid.com/">RH<span>Madrid</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -25,9 +25,9 @@
 
 						<ul id="footer-nav">
 
-							<li><a href="http://www.comprarmovileshoy.com/">Inicio</a></li>
+							<li><a href="http://www.reservarhotelmadrid.com/">Inicio</a></li>
 
-							<li><a href="/moviles">Móviles</a></li>
+							<li><a href="/ofertas">Oferta Hoteles Madrid</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 
@@ -42,7 +42,7 @@
 				<div class="span1">
 						
 					<div id="footer-menu-back-to-top">
-						<a href="http://www.comprarmovileshoy.com/"></a>
+						<a href="http://www.reservarhotelmadrid.com/"></a>
 					</div>
 				
 				</div>
@@ -70,7 +70,7 @@
 					
 					<h3>Sobre nosotros</h3>
 					<p>
-						Somos un equipo de personas que quiere ofrecerte la mejor información y todos los detalles que necesitas saber sobre móviles y smartphones para que puedas elegir el móvil libre que mejor se ajuste a tus necesidades y al precio más económico y barato del mercado.
+						Somos un equipo de personas con pasión por viajar y en especial por la ciudad de Madrid, que además quiere ofrecerte la mejor información y los mejores artículos sobre reserva de hoteles y destinos a visitar en la capital española.
 					</p>
 						
 				</div>
@@ -234,12 +234,10 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' 
 		$("#menuSobre").addClass('active');
 	}else if('${publicacion.tipo}' == 'AR'){	
 		$("#menuBlog").addClass('active');
-	}else if(parts[1] == 'extras'){	
-		$("#menuExtras").addClass('active');
 	}else if('${publicacion.tipo}' == 'EB'){	
-		$("#menuMoviles").addClass('active');
-	}else if(parts[1] == 'moviles'){	
-		$("#menuMoviles").addClass('active');
+		$("#menuHoteles").addClass('active');
+	}else if(parts[1] == 'hoteles'){	
+		$("#menuHoteles").addClass('active');
 	}else if(parts[1] == 'blog'){	
 		$("#menuBlog").addClass('active');
 	}else{
