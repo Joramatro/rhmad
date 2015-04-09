@@ -110,13 +110,12 @@
 				<div class="span5" style="padding-bottom: 12px;">
 					<div class="title"><h3>Síguenos!</h3></div>
 					<ul class="social-bookmarks">
-						<li class="facebook"><a target="_blank" href="https://www.facebook.com/comprarmovileshoy">facebook</a></li>
-						<li class="flickr"><a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/">flickr</a></li>
-						<li class="googleplus"><a target="_blank" href="https://plus.google.com/+Comprarmovileshoy/">googleplus</a></li>
-						<li class="linkedin"><a target="_blank" href="http://ie.linkedin.com/pub/jorge-amat-romero/2b/731/895">linkedin</a></li>
-						<li class="twitter"><a target="_blank" href="https://twitter.com/ComprarMovilesH">twitter</a></li>
-						<li class="yelp"><a target="_blank" href="http://www.yelp.ie/user_details?userid=4t6COjQHIXnO4eZKT8WwLA">yelp</a></li>
-						<li class="youtube"><a target="_blank" href="https://www.youtube.com/user/comprarhoy2">youtube</a></li>
+						<li class="facebook"><a target="_blank" href="https://www.facebook.com/reservarhotelmadrid">facebook</a></li>
+						<li class="flickr"><a target="_blank" href="https://www.flickr.com/photos/reservarhotelmadrid/">flickr</a></li>
+						<li class="googleplus"><a target="_blank" href="https://plus.google.com/u/1/b/112598405675220307611/">googleplus</a></li>
+						<li class="twitter"><a target="_blank" href="https://twitter.com/RHotelMadrid">twitter</a></li>
+						<li class="yelp"><a target="_blank" href="http://www.yelp.es/user_details?userid=5Kcyc9NKkJ81ZxrGmCrLXQ">yelp</a></li>
+						<li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCBN3PXHQr-jGpstTiSuqCKQ">youtube</a></li>
 					</ul>
 				</div>
 				<!-- end: Social Sites -->							

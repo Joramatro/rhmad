@@ -349,8 +349,6 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 						<ul id="footer-nav">
 
 							<li><a href="/">Inicio</a></li>
-
-							<li><a href="/moviles">Móviles</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 

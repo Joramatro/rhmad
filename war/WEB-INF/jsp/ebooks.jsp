@@ -62,7 +62,7 @@
 		
 		<!--start: Container -->
     	<div class="container">
-			<!-- start: moviles -->
+			<!-- start: -->
 			<div id="portfolio-wrapper" class="row">
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicaciones}" varStatus="status" >				
@@ -88,7 +88,7 @@
 				</div>
 				</c:forEach>
 			</div>
-			<!-- end: moviles -->
+			<!-- end:-->
 			
 			<div class="clear" style="padding-top: 25px;"></div>
 			<div id="banGoogleMasVistos" style="margin-bottom: 25px;" class="iframe_wrap">

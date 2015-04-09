@@ -29,7 +29,7 @@
 	          .append(port);
 	  }
 	 %>
-		<br><br><span>Tipo Moviles</span><br><br>
+		<br><br><span>Tipo Articulo</span><br><br>
 		<table>
 		<c:forEach var="publicacion" items="${publicacionesEbook}" varStatus="status">
 		<tr>

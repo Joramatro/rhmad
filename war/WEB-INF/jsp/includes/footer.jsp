@@ -13,7 +13,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="http://www.reservarhotelmadrid.com/">RH<span>Madrid</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="http://www.reservarhotelmadrid.com/">RH<span>Mad</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -98,10 +98,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-twitter">
-											<a target="_blank" href="https://twitter.com/ComprarMovilesH"></a>
+											<a target="_blank" href="https://twitter.com/RHotelMadrid"></a>
 										</div>
 										<div class="social-info-back social-twitter-hover">
-											<a target="_blank" href="https://twitter.com/ComprarMovilesH"></a>
+											<a target="_blank" href="https://twitter.com/RHotelMadrid"></a>
 										</div>	
 									</div>
 								</div>
@@ -112,10 +112,10 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-facebook">
-											<a target="_blank" href="https://www.facebook.com/comprarmovileshoy"></a>
+											<a target="_blank" href="https://www.facebook.com/reservarhotelmadrid"></a>
 										</div>
 										<div class="social-info-back social-facebook-hover">
-											<a target="_blank" href="https://www.facebook.com/comprarmovileshoy"></a>
+											<a target="_blank" href="https://www.facebook.com/reservarhotelmadrid"></a>
 										</div>
 									</div>
 								</div>
@@ -126,40 +126,41 @@
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-youtube">
-											<a target="_blank" href="https://www.youtube.com/user/comprarhoy2"></a>
+											<a target="_blank" href="https://www.youtube.com/channel/UCBN3PXHQr-jGpstTiSuqCKQ"></a>
 										</div>
 										<div class="social-info-back social-youtube-hover">
-											<a target="_blank" href="https://www.youtube.com/user/comprarhoy2"></a>
+											<a target="_blank" href="https://www.youtube.com/channel/UCBN3PXHQr-jGpstTiSuqCKQ"></a>
 										</div>	
 									</div>
 								</div>
 							</div>
 						</li>
+						 
 						<li>
 							<div class="social-item">				
 								<div class="social-info-wrap">
 									<div class="social-info">
 										<div class="social-info-front social-flickr">
-											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/"></a>
+											<a target="_blank" href="https://www.flickr.com/photos/reservarhotelmadrid/"></a>
 										</div>
 										<div class="social-info-back social-flickr-hover">
-											<a target="_blank" href="http://www.flickr.com/photos/comprarhoy2/"></a>
+											<a target="_blank" href="https://www.flickr.com/photos/reservarhotelmadrid/"></a>
 										</div>	
 									</div>
 								</div>
 							</div>
-						</li>
+						</li> 
 					</ul>
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ComprarMovilesHoy&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
-						<h3>Suscríbete! &nbsp; <a href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
+					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ReservarHotelMadrid&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
+						<h3>Suscríbete! &nbsp; <a href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
 						<p>Por favor, déjanos tu email para recibir nuestras novedades.</p>
 						<label for="newsletter_input">@:</label>
 						<input style="border: 1px solid #29a9df;" type="text" name="email" id="newsletter_input">
 						<input type="submit" id="btnSuscripcion" value="Enviar">			
-						<input type="hidden" value="ComprarMovilesHoy" name="uri"/>
+						<input type="hidden" value="ReservarHotelMadrid" name="uri"/>
 						<input type="hidden" name="loc" value="es_ES"/>						
 					</form>
 					<!-- end: Newsletter -->
@@ -184,9 +185,9 @@
 			<div class="span12">
 			
 				<p>
-				<a style="margin-right: 35px;" href="http://www.comprarmovileshoy.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
-				&copy; 2014, <a target="_blank" href="https://www.google.com/+Comprarmovileshoy"><span id="_publisher8" itemscope itemtype="http://schema.org/Organization">
-<span itemprop="name">Comprar Móviles Hoy</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+				<a style="margin-right: 35px;" href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rss.gif" alt="RSS"/>RSS</a>
+				&copy; 2015, <a target="_blank" href="https://plus.google.com/112598405675220307611" rel="publisher"><span id="_publisher8" itemscope itemtype="http://schema.org/Organization">
+<span itemprop="name">Reservar Hotel Madrid</span></span></a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				<a style="margin-left: 19px;" href="/politica-de-privacidad">Política de privacidad</a>					
 				</p>
 			</div>

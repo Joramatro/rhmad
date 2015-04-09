@@ -118,7 +118,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CC<span>HOY</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">CC<span>H</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -131,8 +131,6 @@
 						<ul id="footer-nav">
 
 							<li><a href="/">Inicio</a></li>
-
-							<li><a href="/moviles">Móviles</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 
@@ -287,7 +285,7 @@
 		
 			<div class="span12">
 				<p>
-					&copy; 2014, <a href="/">Compra Móviles Hoy</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2014, <a href="/">CCH</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	

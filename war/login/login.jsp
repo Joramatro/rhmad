@@ -15,7 +15,7 @@
   </div>            
 
 <div class="subheader" style="margin-left:20px">
-    <h2>Log In</h2> para editar en Reservar Hotel Hoy
+    <h2>Log In</h2> para editar en Reservar Hotel Madrid
 </div>
 <div id="mainbar">
 

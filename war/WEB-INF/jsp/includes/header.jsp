@@ -33,8 +33,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
@@ -58,8 +58,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@Jorge_Amat1">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="${publicacion.titulo}">
 		<meta name="twitter:description" content="${publicacion.descripcion}">
 		<meta name="twitter:image" content="${publicacion.lImages[0]}">
@@ -83,8 +83,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Sobre nosotros en Reservar Hotel Madrid">
 		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
@@ -108,8 +108,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Contacta con nosotros en Reservar Hotel Madrid">
 		<meta name="twitter:description" content="Contacta con los que trabajamos en Reservar Hotel Madrid">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
@@ -138,8 +138,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta property="twitter:title" content="Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
 		<meta property="twitter:description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<c:if test="${!empty publicaciones}">
@@ -172,8 +172,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta property="twitter:title" content="Oferta de Hoteles de Madrid en Reservar Hotel Madrid"/> 
 		<meta property="twitter:description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<c:if test="${!empty publicaciones}">
@@ -206,8 +206,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos sobre lugares y hoteles para reservar en Madrid">
 		<meta name="twitter:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
 		<c:if test="${!empty publicaciones}">
@@ -240,8 +240,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Artículos sobre lugares y hoteles para reservar en Madrid">
 		<meta name="twitter:description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
 		<c:if test="${!empty publicaciones}">
@@ -267,8 +267,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Política de privacidad de Reservar Hotel Madrid">
 		<meta name="twitter:description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid">
 		<meta name="twitter:domain" content="reservarhotelmadrid.com/">
@@ -291,8 +291,8 @@
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@ReservarHotelMadrid">
-		<meta name="twitter:creator" content="@ReservarHotelMadrid">
+		<meta name="twitter:site" content="@RHotelMadrid">
+		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid">
 		<meta name="twitter:description" content="Toda la información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España.">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
@@ -302,8 +302,10 @@
 	</c:otherwise>		
 	</c:choose>
 	<link rel="alternate" type="application/rss+xml" title="Reservar Hotel Madrid RSS Feed" href="http://www.reservarhotelmadrid.com/rssfeed" />
-	<link rel="author" href="https://plus.google.com/109937898739836694401" />
-	<link rel="publisher" href="https://www.google.com/+Comprarmovileshoy" />
+	<link href="https://plus.google.com/112598405675220307611" rel="publisher" />
+	<script type="text/javascript" async defer
+	  src="https://apis.google.com/js/platform.js?publisherid=112598405675220307611">
+	</script>
 	<style>
 	@font-face {
 	  font-family: 'Droid Sans';
@@ -331,15 +333,15 @@
     <![endif]-->
 
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-46821516-1', 'reservarhotelmadrid.com');
-	  ga('require', 'displayfeatures');
-	  ga('send', 'pageview');
-	  
+  ga('create', 'UA-61708064-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
 </script>
 </head>
 <body>
