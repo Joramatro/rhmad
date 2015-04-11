@@ -67,18 +67,16 @@
 			</ul>
 	    	
 			<!-- start: Flexslider -->
-			<div style="max-width: 515px;height: 435px; margin: 0 auto;" class="slider" >
+			<div style="max-width: 590px;height: 405px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
 					<c:if test="${publicacion.disponible eq 'S' }">
 						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
 					</c:if>
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
-						<c:if test="${status.count ne 3}">
 							<li>
-								<img style="width: 420px;height: 420px;" src="${imagen}"  alt="${publicacion.titulo}" />															
+								<img style="width: 570px;height: 395px;" src="${imagen}"  alt="${publicacion.titulo}" />															
 							</li>
-						</c:if>
 						</c:forEach>
 						<div class="slide-caption n">
 							<h3>${publicacion.titulo2}</h3>
@@ -136,13 +134,13 @@
 					<br>
 				
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">¡ Oferta Hoteles!</a></h2>				
+						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver Hoteles Recomendados</a></h2>				
 					</c:if>
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/venta/principal/${publicacion.url}" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">¡ Oferta Hoteles!</a></h2>
+						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver Hoteles Recomendados</a></h2>
 					</c:if>					
 					
 					<!-- AddThis Button BEGIN -->
@@ -404,6 +402,7 @@
 	<%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
 
 	<div id="banAmazonHorizontal" style="position:absolute;top:1025px;left:54px;color:#F57C17">
+	<%-- 
 		<div style="margin-left: 33px; margin-bottom: 12px;"><b>OFERTAS</b></div>
 			<div id="Amazon2art" class="iframe_wrap">
 	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00LGU4H2A&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
@@ -411,7 +410,8 @@
 
 			<div id="Amazon3art" class="iframe_wrap">
 				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00K83BIX2&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-			</div>		    	
+			</div>
+	--%>		    	
 	</div>
 	<script>
 		if($('#footer').width() < 855){

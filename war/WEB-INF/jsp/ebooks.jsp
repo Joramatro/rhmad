@@ -15,7 +15,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1><i class="ico-suitcase ico-white"></i>Móviles</h1>
+				<h1><i class="ico-suitcase ico-white"></i>Hoteles Madrid</h1>
 
 			</div>
 			<!-- end: Container  -->
@@ -67,7 +67,7 @@
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
 				<c:forEach var="publicacion" items="${publicaciones}" varStatus="status" >				
 				<div class='span4 portfolio-item ${fn:replace(publicacion.clase1, " ", separadorClase)} ${fn:replace(publicacion.clase2, " ", separadorClase)} ${fn:replace(publicacion.clase3, " ", separadorClase)} ${fn:replace(publicacion.clase4, " ", separadorClase)} ${fn:replace(publicacion.clase5, " ", separadorClase)} ${fn:replace(publicacion.clase6, " ", separadorClase)} ${fn:replace(publicacion.clase7, " ", separadorClase)} ${fn:replace(publicacion.clase8, " ", separadorClase)} ${fn:replace(publicacion.clase10, " ", separadorClase)} ${fn:replace(publicacion.clase11, " ", separadorClase)} ${fn:replace(publicacion.clase12, " ", separadorClase)} ${fn:replace(publicacion.clase13, " ", separadorClase)} ${fn:replace(publicacion.clase14, " ", separadorClase)} ${fn:replace(publicacion.clase15, " ", separadorClase)}'>
-					<div class="picture"><a href="/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/venta/principal/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -75,7 +75,7 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a title="${publicacion.titulo}" href="/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/venta/principal/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<c:if test="${publicacion.sumaPuntos gt 0 }">
 							<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div>
 							</c:if>

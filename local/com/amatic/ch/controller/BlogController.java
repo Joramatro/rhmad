@@ -58,7 +58,7 @@ public class BlogController extends PublicacionAbstract {
 	return "blog";
     }
 
-    @RequestMapping(value = { "/moviles" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/ofertas" }, method = { RequestMethod.GET })
     public String getPublicacionese(ModelMap model, HttpServletRequest request,
 	    HttpServletResponse response) throws IOException {
 
@@ -67,14 +67,14 @@ public class BlogController extends PublicacionAbstract {
 	return "ebooks";
     }
 
-    @RequestMapping(value = { "/extras" }, method = { RequestMethod.GET })
-    public String getAccesorios(ModelMap model, HttpServletRequest request,
-	    HttpServletResponse response) throws IOException {
-
-	setPublicaciones(model, WebConstants.SessionConstants.ACCESORIO);
-
-	return "extras";
-    }
+    // @RequestMapping(value = { "/extras" }, method = { RequestMethod.GET })
+    // public String getAccesorios(ModelMap model, HttpServletRequest request,
+    // HttpServletResponse response) throws IOException {
+    //
+    // setPublicaciones(model, WebConstants.SessionConstants.ACCESORIO);
+    //
+    // return "extras";
+    // }
 
     @RequestMapping(value = { "/venta/{tipo}/{url}" }, method = { RequestMethod.GET })
     public String getVenta(ModelMap model, @PathVariable String url,
@@ -111,50 +111,51 @@ public class BlogController extends PublicacionAbstract {
 			    WebConstants.SessionConstants.ARTICULO);
 		}
 	    }
-	} else if (tipo.equals("extra")) {
-	    publicacion = publicacionService.getPublicacion(key,
-		    WebConstants.SessionConstants.ACCESORIO);
-	    if (publicacion == null && !originalUrl.equals(url)) {
-		keyb = new String(WebUtils.SHA1(url.replaceAll("-", " ")));
-		publicacion = publicacionService.getPublicacion(keyb,
-			WebConstants.SessionConstants.ACCESORIO);
-	    }
-	} else if (tipo.equals("marca")) {
-	    publicacion = new Publicacion();
-	    if (url.equals("logo1")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo1);
-		publicacion.setScript2(WebConstants.SessionConstants.logo1img);
-	    } else if (url.equals("logo2")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo2);
-		publicacion.setScript2(WebConstants.SessionConstants.logo2img);
-	    } else if (url.equals("logo3")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo3);
-		publicacion.setScript2(WebConstants.SessionConstants.logo3img);
-	    } else if (url.equals("logo4")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo4);
-		publicacion.setScript2(WebConstants.SessionConstants.logo4img);
-	    } else if (url.equals("logo5")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo5);
-		publicacion.setScript2(WebConstants.SessionConstants.logo5img);
-	    } else if (url.equals("logo6")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo6);
-		publicacion.setScript2(WebConstants.SessionConstants.logo6img);
-	    } else if (url.equals("logo7")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo7);
-		publicacion.setScript2(WebConstants.SessionConstants.logo7img);
-	    } else if (url.equals("logo8")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo8);
-		publicacion.setScript2(WebConstants.SessionConstants.logo8img);
-	    } else if (url.equals("logo9")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo9);
-		publicacion.setScript2(WebConstants.SessionConstants.logo9img);
-	    } else if (url.equals("logo10")) {
-		publicacion.setScript(WebConstants.SessionConstants.logo10);
-		publicacion.setScript2(WebConstants.SessionConstants.logo10img);
-	    } else {
-		publicacion = null;
-	    }
 	}
+	// else if (tipo.equals("extra")) {
+	// publicacion = publicacionService.getPublicacion(key,
+	// WebConstants.SessionConstants.ACCESORIO);
+	// if (publicacion == null && !originalUrl.equals(url)) {
+	// keyb = new String(WebUtils.SHA1(url.replaceAll("-", " ")));
+	// publicacion = publicacionService.getPublicacion(keyb,
+	// WebConstants.SessionConstants.ACCESORIO);
+	// }
+	// } else if (tipo.equals("marca")) {
+	// publicacion = new Publicacion();
+	// if (url.equals("logo1")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo1);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo1img);
+	// } else if (url.equals("logo2")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo2);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo2img);
+	// } else if (url.equals("logo3")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo3);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo3img);
+	// } else if (url.equals("logo4")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo4);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo4img);
+	// } else if (url.equals("logo5")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo5);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo5img);
+	// } else if (url.equals("logo6")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo6);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo6img);
+	// } else if (url.equals("logo7")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo7);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo7img);
+	// } else if (url.equals("logo8")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo8);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo8img);
+	// } else if (url.equals("logo9")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo9);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo9img);
+	// } else if (url.equals("logo10")) {
+	// publicacion.setScript(WebConstants.SessionConstants.logo10);
+	// publicacion.setScript2(WebConstants.SessionConstants.logo10img);
+	// } else {
+	// publicacion = null;
+	// }
+	// }
 
 	if (publicacion == null) {
 	    String uri = request.getRequestURI();

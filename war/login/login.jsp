@@ -32,7 +32,6 @@
 	            <p style="margin-right: 250px;">Tu cuenta no será publicada ni utilizada para ningún otro propósito que no sea parte de esta web. Recuerda que debes estar dado de alta en el sistema. Por favor, clicka en logo para <b>logarte</b> con una de tus cuentas de abajo:
                 </p>
 	            <div id="openid_btns" class=".login-page .openid_large_btn">
-	            <span title="log in with Google" onclick="javascript:sendToLogin('https://www.google.com/accounts/o8/id');" style="background: #fff url(http://cdn.sstatic.net/Img/openid/openid-logos.png?v=8); background-position: -1px -1px;cursor:pointer;" class="google openid_large_btn"></span>
 	            <span title="log in with Yahoo" onclick="javascript:sendToLogin('https://me.yahoo.com/user');" style="background: #fff url(http://cdn.sstatic.net/Img/openid/openid-logos.png?v=8); background-position: -1px -63px;cursor:pointer;" class="yahoo openid_large_btn"></span>
 	            <span title="log in with Facebook" onclick="javascript:showMessage();sendToLogin('https://me.yahoo.com/user');" style="background: #fff url(http://cdn.sstatic.net/Img/openid/openid-logos.png?v=8); background-position: -1px -456px;cursor:pointer;" class="facebook openid_large_btn"></span><br></br>
 	            <input id="openid_identifier" name="openid_identifier" type="hidden" size=80/>

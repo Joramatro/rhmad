@@ -82,8 +82,8 @@
     	<h2><i class="ico-keynote ico-white"></i><a id="logout" href="#" class="btn logout">Logout</a></h2>
  Tipo: <select name="tipo" id="tipo">
 				  <option value="AR">Artículo</option>
-				  <option value="EB">Móvil</option>
-				  <option value="AC">Accesorio</option>
+				  <option value="EB">Hotel</option>
+				  
 				</select><br><br>
  Portada: <select name="portada" id="portada">
  				  <option value="N">No</option>
@@ -97,7 +97,7 @@ Destacado: <select name="destacado" id="destacado">
 				  <option value="S">Si</option>
 				</select><br><br>									
 Autor: <input type="text" id="autor" name="autor" size="25" maxlength="50"/><br><br>	
-Google+: <input type="text" style="width: 433px;" id="googleAutor" name="googleAutor" value="https://plus.google.com/109937898739836694401?rel=author" size="250" maxlength="570"/><br><br>			
+Google+: <input type="text" style="width: 433px;" id="googleAutor" name="googleAutor" value="https://plus.google.com/103018694195258076550?rel=author" size="250" maxlength="570"/><br><br>			
 Titulo: <input type="text" style="width: 350px;" id="titulo" name="titulo" size="70" maxlength="70"/><br><br>
 Titulo2: <input type="text" style="width: 433px;" id="titulo2" name="titulo2" size="120" maxlength="120"/><br><br>
 Descripcion: <input type="text" style="width: 633px;" id="descripcion" name="descripcion" size="160" maxlength="180"/>
@@ -316,7 +316,7 @@ Script52: <input type="text" style="width: 600px;" id="script52" name="script52"
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CMs<span>H</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">RH<span>MAD</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->

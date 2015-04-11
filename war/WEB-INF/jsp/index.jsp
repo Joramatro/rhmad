@@ -27,7 +27,7 @@
 					<div class="da-img">						
 						<a title="${publicacion.titulo}" href="/${publicacion.url}">							
 						<c:if test="${!empty publicacion.lImages}">
-							<img src="${publicacion.lImages[3]}" style="width: 345px;height:360px;" alt="${publicacion.titulo}" />
+							<img src="${publicacion.lImages[3]}" style="width: 440px;height:310px;" alt="${publicacion.titulo}" />
 						</c:if>
 						</a>
 					</div>
@@ -130,6 +130,7 @@
 		<div class="container">
 			<div id="portfolio-wrapper" class="row">
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
+				<%-- 
 				<c:forEach var="publicacion" items="${publicacionesEbooks}" varStatus="status" end="8">				
 				<div class="span4 portfolio-item">
 					<div class="picture"><a href="/${publicacion.url}" title="${publicacion.titulo}">
@@ -148,10 +149,11 @@
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="/${publicacion.url}">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comments</a></span></div>
 					</div>	
-				</div>
+				</div>			
 				</c:forEach>
+				--%>
 				<c:forEach var="publicacion" items="${publicacionesBlog}" varStatus="status" end="8">				
 				<div class="span4 portfolio-item">
 					<div class="picture"><a href="/${publicacion.url}" title="${publicacion.titulo}">
