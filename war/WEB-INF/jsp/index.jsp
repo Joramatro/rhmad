@@ -18,7 +18,7 @@
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.disponible eq 'S' }">
-						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Reservar Hoy');" href="/venta/principal/${publicacion.url}" class="da-link">RESERVAR HOY</a>
+						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Leer Mas');" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
 					</c:when>
 					<c:otherwise>
 						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEER MÁS</a>

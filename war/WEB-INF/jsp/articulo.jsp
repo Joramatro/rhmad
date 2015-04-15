@@ -134,13 +134,13 @@
 					<br>
 				
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver Hoteles Recomendados</a></h2>				
+						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver hoteles recomendados en Madrid</a></h2>				
 					</c:if>
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver Hoteles Recomendados</a></h2>
+						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver hoteles recomendados en Madrid</a></h2>
 					</c:if>					
 					
 					<!-- AddThis Button BEGIN -->
