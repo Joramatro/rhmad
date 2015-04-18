@@ -65,9 +65,28 @@
 			<!-- start: -->
 			<div id="portfolio-wrapper" class="row">
 				<% pageContext.setAttribute("newLineChar", "\n"); %>
+				<div class="span4 portfolio-item Seducción Trucos">
+				<div>
+				<div id="BuscadorHoteles" style="margin: 0 auto;">				
+					<ins class="bookingaff" data-aid="820003" data-target_aid="819521" data-prod="nsb" data-width="325" data-height="370">
+					    <!-- Anything inside will go away once widget is loaded. -->
+					    <a href="//www.booking.com?aid=819521">Booking.com</a>
+					</ins>
+					<script type="text/javascript">
+					    (function(d, sc, u) {
+					      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+					      s.type = 'text/javascript';
+					      s.async = true;
+					      s.src = u + '?v=' + (+new Date());
+					      p.parentNode.insertBefore(s,p);
+					      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+					</script>		
+				</div>	
+				</div>
+				</div>
 				<c:forEach var="publicacion" items="${publicaciones}" varStatus="status" >				
 				<div class='span4 portfolio-item ${fn:replace(publicacion.clase1, " ", separadorClase)} ${fn:replace(publicacion.clase2, " ", separadorClase)} ${fn:replace(publicacion.clase3, " ", separadorClase)} ${fn:replace(publicacion.clase4, " ", separadorClase)} ${fn:replace(publicacion.clase5, " ", separadorClase)} ${fn:replace(publicacion.clase6, " ", separadorClase)} ${fn:replace(publicacion.clase7, " ", separadorClase)} ${fn:replace(publicacion.clase8, " ", separadorClase)} ${fn:replace(publicacion.clase10, " ", separadorClase)} ${fn:replace(publicacion.clase11, " ", separadorClase)} ${fn:replace(publicacion.clase12, " ", separadorClase)} ${fn:replace(publicacion.clase13, " ", separadorClase)} ${fn:replace(publicacion.clase14, " ", separadorClase)} ${fn:replace(publicacion.clase15, " ", separadorClase)}'>
-					<div class="picture"><a href="/venta/principal/${publicacion.url}" title="${publicacion.titulo}">
+					<div class="picture"><a href="/ofertas/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
 					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
@@ -75,7 +94,7 @@
 					
 					<div class="image-overlay-link"></div></a>
 						<div class="item-description alt">
-							<h5><a title="${publicacion.titulo}" href="/venta/principal/${publicacion.url}">${publicacion.titulo}</a></h5>
+							<h5><a title="${publicacion.titulo}" href="/ofertas/${publicacion.url}">${publicacion.titulo}</a></h5>
 							<c:if test="${publicacion.sumaPuntos gt 0 }">
 							<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div>
 							</c:if>

@@ -155,6 +155,21 @@ Script41: <input type="text" style="width: 600px;" id="script41" name="script41"
 Script42: <input type="text" style="width: 600px;" id="script42" name="script42" size="300" maxlength="300" value="${publicacion.script42}"><br><br>
 Script51: <input type="text" style="width: 600px;" id="script51" name="script51" size="300" maxlength="300" value="${publicacion.script51}"/><br><br>				
 Script52: <input type="text" style="width: 600px;" id="script52" name="script52" size="300" maxlength="300" value="${publicacion.script52}"><br><br>
+Script61: <input type="text" style="width: 600px;" id="script61" name="script61" size="300" maxlength="300" value="${publicacion.script61}"/><br><br>				
+Script62: <input type="text" style="width: 600px;" id="script62" name="script62" size="300" maxlength="300" value="${publicacion.script62}"><br><br>
+Script71: <input type="text" style="width: 600px;" id="script71" name="script71" size="300" maxlength="300" value="${publicacion.script71}"/><br><br>				
+Script72: <input type="text" style="width: 600px;" id="script72" name="script72" size="300" maxlength="300" value="${publicacion.script72}"><br><br>
+Script81: <input type="text" style="width: 600px;" id="script81" name="script81" size="300" maxlength="300" value="${publicacion.script81}"/><br><br>				
+Script82: <input type="text" style="width: 600px;" id="script82" name="script82" size="300" maxlength="300" value="${publicacion.script82}"><br><br>
+Script91: <input type="text" style="width: 600px;" id="script91" name="script91" size="300" maxlength="300" value="${publicacion.script91}"/><br><br>				
+Script92: <input type="text" style="width: 600px;" id="script92" name="script92" size="300" maxlength="300" value="${publicacion.script92}"><br><br>
+Script101: <input type="text" style="width: 600px;" id="script101" name="script101" size="300" maxlength="300" value="${publicacion.script101}"/><br><br>				
+Script102: <input type="text" style="width: 600px;" id="script102" name="script102" size="300" maxlength="300" value="${publicacion.script102}"><br><br>
+Script111: <input type="text" style="width: 600px;" id="script111" name="script111" size="300" maxlength="300" value="${publicacion.script111}"/><br><br>				
+Script112: <input type="text" style="width: 600px;" id="script112" name="script112" size="300" maxlength="300" value="${publicacion.script112}"><br><br>
+Script121: <input type="text" style="width: 600px;" id="script121" name="script121" size="300" maxlength="300" value="${publicacion.script121}"/><br><br>				
+Script122: <input type="text" style="width: 600px;" id="script122" name="script122" size="300" maxlength="300" value="${publicacion.script122}"><br><br>
+
 <table width="50%" border="0" align="center" cellpadding="10" cellspacing="0">
 <tr>
 <td><div align="center">

@@ -60,19 +60,7 @@
 		</table>
 		
 		
-		<br><br><span>Tipo Extra</span><br><br>
-		<table>
-		<c:forEach var="publicacion" items="${publicacionesExtra}" varStatus="status">
-		<tr>
-			<td>
-				<%=result.toString()%>/venta/extra/${publicacion.url}
-			</td>
-			<td>
-				${publicacion.titulo}
-			</td>
-		</tr>
-		</c:forEach>
-		</table>
+		
 		
 		
 	

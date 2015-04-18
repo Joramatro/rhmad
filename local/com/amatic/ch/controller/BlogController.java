@@ -1,8 +1,11 @@
 package com.amatic.ch.controller;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,7 +30,51 @@ public class BlogController extends PublicacionAbstract {
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws IOException, NoSuchAlgorithmException {
 
-	return setPublicacion(url, request, model);
+	return setPublicacionArticulo(url, request, model);
+    }
+
+    String setPublicacionArticulo(String url, HttpServletRequest request,
+	    ModelMap model) throws NoSuchAlgorithmException,
+	    UnsupportedEncodingException {
+	String key = WebUtils.SHA1(url.replaceAll("-", " "));
+	Publicacion publicacion = publicacionService.getPublicacion(key,
+		WebConstants.SessionConstants.ARTICULO);
+	String view = "articulo";
+
+	if (publicacion == null) {
+	    String uri = request.getRequestURI();
+	    throw new UnknownResourceException("No existe el recurso: " + uri);
+	    // return "channelNotFound";
+	}
+	// incremeanting number viewers
+	publicacion.setNumVisitas(publicacion.getNumVisitas() + 1);
+	publicacionService.update(publicacion);
+
+	model.addAttribute("publicacion", publicacion);
+
+	List<Publicacion> publicaciones = publicacionService
+		.getUltimasPublicaciones(publicacion.getTipo());
+
+	List<Publicacion> publicacionesInteresantes = new ArrayList<Publicacion>();
+	for (Publicacion publicacionNoRep : publicaciones) {
+	    if (!publicacion.getKey().equals(publicacionNoRep.getKey())) {
+		publicacionesInteresantes.add(publicacionNoRep);
+	    }
+	}
+
+	// List<Publicacion> publicacionesMVE = publicacionService
+	// .getPublicacionesMasVistas(WebConstants.SessionConstants.EBOOK);
+
+	List<Publicacion> publicacionesMVA = publicacionService
+		.getPublicacionesMasVistas(WebConstants.SessionConstants.ARTICULO);
+
+	// model.addAttribute("publicacionesMVE", publicacionesMVE);
+
+	model.addAttribute("publicacionesMVA", publicacionesMVA);
+
+	model.addAttribute("publicaciones", publicacionesInteresantes);
+
+	return view;
     }
 
     @RequestMapping(value = { "/{url}/nuevoComentario" }, method = { RequestMethod.POST })
@@ -76,11 +123,10 @@ public class BlogController extends PublicacionAbstract {
     // return "extras";
     // }
 
-    @RequestMapping(value = { "/venta/{tipo}/{url}" }, method = { RequestMethod.GET })
+    @RequestMapping(value = { "/ofertas/{url}" }, method = { RequestMethod.GET })
     public String getVenta(ModelMap model, @PathVariable String url,
-	    @PathVariable String tipo, HttpServletRequest request,
-	    HttpServletResponse response) throws IOException,
-	    NoSuchAlgorithmException {
+	    HttpServletRequest request, HttpServletResponse response)
+	    throws IOException, NoSuchAlgorithmException {
 	String originalUrl = url;
 	String keyb = null;
 	if (url.endsWith("-2")) {
@@ -91,71 +137,41 @@ public class BlogController extends PublicacionAbstract {
 	    originalUrl = originalUrl.replace("-4", "");
 	} else if (url.endsWith("-5")) {
 	    originalUrl = originalUrl.replace("-5", "");
+	} else if (url.endsWith("-6")) {
+	    originalUrl = originalUrl.replace("-6", "");
+	} else if (url.endsWith("-7")) {
+	    originalUrl = originalUrl.replace("-7", "");
+	} else if (url.endsWith("-8")) {
+	    originalUrl = originalUrl.replace("-8", "");
+	} else if (url.endsWith("-9")) {
+	    originalUrl = originalUrl.replace("-9", "");
+	} else if (url.endsWith("-10")) {
+	    originalUrl = originalUrl.replace("-10", "");
+	} else if (url.endsWith("-11")) {
+	    originalUrl = originalUrl.replace("-11", "");
+	} else if (url.endsWith("-12")) {
+	    originalUrl = originalUrl.replace("-12", "");
 	}
+
 	String key = WebUtils.SHA1(originalUrl.replaceAll("-", " "));
 	Publicacion publicacion = null;
-	if (tipo.equals("principal")) {
+
+	publicacion = publicacionService.getPublicacion(key,
+		WebConstants.SessionConstants.EBOOK);
+	if (publicacion == null) {
 	    publicacion = publicacionService.getPublicacion(key,
+		    WebConstants.SessionConstants.ARTICULO);
+	}
+
+	if (publicacion == null && !originalUrl.equals(url)) {
+	    keyb = new String(WebUtils.SHA1(url.replaceAll("-", " ")));
+	    publicacion = publicacionService.getPublicacion(keyb,
 		    WebConstants.SessionConstants.EBOOK);
 	    if (publicacion == null) {
-		publicacion = publicacionService.getPublicacion(key,
+		publicacion = publicacionService.getPublicacion(keyb,
 			WebConstants.SessionConstants.ARTICULO);
 	    }
-
-	    if (publicacion == null && !originalUrl.equals(url)) {
-		keyb = new String(WebUtils.SHA1(url.replaceAll("-", " ")));
-		publicacion = publicacionService.getPublicacion(keyb,
-			WebConstants.SessionConstants.EBOOK);
-		if (publicacion == null) {
-		    publicacion = publicacionService.getPublicacion(keyb,
-			    WebConstants.SessionConstants.ARTICULO);
-		}
-	    }
 	}
-	// else if (tipo.equals("extra")) {
-	// publicacion = publicacionService.getPublicacion(key,
-	// WebConstants.SessionConstants.ACCESORIO);
-	// if (publicacion == null && !originalUrl.equals(url)) {
-	// keyb = new String(WebUtils.SHA1(url.replaceAll("-", " ")));
-	// publicacion = publicacionService.getPublicacion(keyb,
-	// WebConstants.SessionConstants.ACCESORIO);
-	// }
-	// } else if (tipo.equals("marca")) {
-	// publicacion = new Publicacion();
-	// if (url.equals("logo1")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo1);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo1img);
-	// } else if (url.equals("logo2")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo2);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo2img);
-	// } else if (url.equals("logo3")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo3);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo3img);
-	// } else if (url.equals("logo4")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo4);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo4img);
-	// } else if (url.equals("logo5")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo5);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo5img);
-	// } else if (url.equals("logo6")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo6);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo6img);
-	// } else if (url.equals("logo7")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo7);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo7img);
-	// } else if (url.equals("logo8")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo8);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo8img);
-	// } else if (url.equals("logo9")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo9);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo9img);
-	// } else if (url.equals("logo10")) {
-	// publicacion.setScript(WebConstants.SessionConstants.logo10);
-	// publicacion.setScript2(WebConstants.SessionConstants.logo10img);
-	// } else {
-	// publicacion = null;
-	// }
-	// }
 
 	if (publicacion == null) {
 	    String uri = request.getRequestURI();
@@ -235,6 +251,20 @@ public class BlogController extends PublicacionAbstract {
 		    return "venta/venta4";
 		} else if (url.endsWith(lastTwoChars + "-5")) {
 		    return "venta/venta5";
+		} else if (url.endsWith(lastTwoChars + "-6")) {
+		    return "venta/venta6";
+		} else if (url.endsWith(lastTwoChars + "-7")) {
+		    return "venta/venta7";
+		} else if (url.endsWith(lastTwoChars + "-8")) {
+		    return "venta/venta8";
+		} else if (url.endsWith(lastTwoChars + "-9")) {
+		    return "venta/venta9";
+		} else if (url.endsWith(lastTwoChars + "-10")) {
+		    return "venta/venta10";
+		} else if (url.endsWith(lastTwoChars + "-11")) {
+		    return "venta/venta11";
+		} else if (url.endsWith(lastTwoChars + "-12")) {
+		    return "venta/venta12";
 		} else {
 		    return "venta/venta";
 		}
@@ -248,6 +278,20 @@ public class BlogController extends PublicacionAbstract {
 		    return "venta/venta4";
 		} else if (url.endsWith("-5")) {
 		    return "venta/venta5";
+		} else if (url.endsWith("-6")) {
+		    return "venta/venta6";
+		} else if (url.endsWith("-7")) {
+		    return "venta/venta7";
+		} else if (url.endsWith("-8")) {
+		    return "venta/venta8";
+		} else if (url.endsWith("-9")) {
+		    return "venta/venta9";
+		} else if (url.endsWith("-10")) {
+		    return "venta/venta10";
+		} else if (url.endsWith("-11")) {
+		    return "venta/venta11";
+		} else if (url.endsWith("-12")) {
+		    return "venta/venta12";
 		} else {
 		    return "venta/venta";
 		}

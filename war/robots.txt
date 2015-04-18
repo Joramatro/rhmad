@@ -1,6 +1,6 @@
 Sitemap: http://www.reservarhotelmadrid.com/sitemap.xml
 
 User-Agent: *
-Disallow: /venta/
+Disallow: /ofertas/
 Disallow: /video/
 

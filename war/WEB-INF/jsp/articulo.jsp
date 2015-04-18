@@ -69,9 +69,11 @@
 			<!-- start: Flexslider -->
 			<div style="max-width: 590px;height: 405px; margin: 0 auto;" class="slider" >
 				<div id="flex1" class="flexslider home">
+					<%-- 
 					<c:if test="${publicacion.disponible eq 'S' }">
 						<a target="_blank" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Imagen Superior');" href="/venta/principal/${publicacion.url}">
 					</c:if>
+					--%>
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 							<li>
@@ -83,7 +85,9 @@
 						</div>
 					</ul>
 					<c:if test="${publicacion.disponible eq 'S' }">
+						<%--
 						</a>
+						--%>
 					</c:if>
 				</div>
 			</div>
@@ -134,13 +138,13 @@
 					<br>
 				
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver hoteles recomendados en Madrid</a></h2>				
+						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver hoteles recomendados en Madrid</a></h2>				
 					</c:if>
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Venta', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver hoteles recomendados en Madrid</a></h2>
+						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver hoteles recomendados en Madrid</a></h2>
 					</c:if>					
 					
 					<!-- AddThis Button BEGIN -->
@@ -401,13 +405,23 @@
 	
 	<%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
 
-	<div id="banAmazonHorizontal" style="position:absolute;top:1025px;left:54px;color:#F57C17">
-	<%-- 
-		<div style="margin-left: 33px; margin-bottom: 12px;"><b>OFERTAS</b></div>
+	<div id="banAmazonHorizontal" style="position:absolute;top:910px;left:18px;color:#F57C17">
 			<div id="Amazon2art" class="iframe_wrap">
-	    		<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00LGU4H2A&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+			<ins data-lang="es" class="bookingaff" data-aid="819535" data-target_aid="819521" data-prod="nsb" data-width="205" data-height="370">
+    			<!-- Anything inside will go away once widget is loaded. -->
+			    <a href="//www.booking.com?aid=819521">Booking.com</a>
+			</ins>
+			<script type="text/javascript">
+			    (function(d, sc, u) {
+			      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+			      s.type = 'text/javascript';
+			      s.async = true;
+			      s.src = u + '?v=' + (+new Date());
+			      p.parentNode.insertBefore(s,p);
+			      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+			</script>
 	    	</div>
-
+	<%-- 
 			<div id="Amazon3art" class="iframe_wrap">
 				<iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=comprarmovsh-21&o=30&p=8&l=as1&asins=B00K83BIX2&ref=tf_til&fc1=666666&IS2=1&lt1=_blank&m=amazon&lc1=005580&bc1=EBF7F9&bg1=EBF7F9&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 			</div>
@@ -446,14 +460,14 @@
 	$(window).scroll(function(){
 		if($('#footer').width() >= 855){
 			if($(window).scrollTop() > 1025){
-				$("#banAmazonHorizontal").css({position:"fixed",top:"20px"});
+				$("#banAmazonHorizontal").css({position:"fixed",top:"18px"});
 			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top - 180){
 			    	$("#banAmazonHorizontal").hide();
 			    }else{
 			    	$("#banAmazonHorizontal").show();
 			    }
 			}else{
-				$("#banAmazonHorizontal").css({position:"absolute",top:"1025px",left:"54px"});
+				$("#banAmazonHorizontal").css({position:"absolute",top:"910px",left:"18px"});
 			}
 		}
 	});	

@@ -18,7 +18,7 @@
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.disponible eq 'S' }">
-						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Venta', 'Home ${publicacion.url}', 'Boton Leer Mas');" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
+						<a title="${publicacion.titulo}" onClick="ga('send', 'event', 'Leer', 'Home ${publicacion.url}', 'Boton Leer Mas');" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
 					</c:when>
 					<c:otherwise>
 						<a title="${publicacion.titulo}" href="/${publicacion.url}" class="da-link">LEER MÁS</a>
@@ -54,7 +54,7 @@
 					Aquí te ayudaremos a elegir tu destino y el hotel con encanto ideal que estás buscando en Madrid, para poder visitar los mejores lugares y rincones de la capital de España.<br>
 					Te mostramos los mejores artículos y las mejores ofertas de hoteles donde poder hospedarte para tu viaje y reservar tu habitación en Madrid con la máxima seguridad y los mejores profesionales.
 				</h3>
-        		<p><br><a class="btn btn-primary btn-large" title="Oferta Hoteles Madrid" href="/ofertas">ver Oferta de Hoteles en Madrid</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">ver Blog</a></p>
+        		<p><br><a class="btn btn-primary btn-large" title="Oferta Hoteles Madrid" href="/ofertas">ver Hoteles Recomendados en Madrid</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">ver Blog</a></p>
       		</div>
 			<!-- end: Hero Unit -->
 			<div id="googleRecIndex1" class="iframe_wrap">			
@@ -81,7 +81,7 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Reservar Hotel en Madrid Centro</h3>
+								<h3>Reservar Hotel Madrid Centro</h3>
 								<p>Reserva en los hoteles más encantadores y económicos del centro de Madrid para poder visitar fácilmente los lugares más interesantes de la ciudad.</p>
 							</div>
 							<div class="clear"></div>
@@ -94,7 +94,7 @@
 						<div class="icons-box-vert">
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
-								<h3>Qué Ver en Madrid</h3>
+								<h3>Qué ver en Madrid</h3>
 								<p>Encuentra artículos y opiniones personales donde te mostramos los sitios y eventos que no te puedes perder durante tu visita a la capital española.</p>
 							</div>
 							<div class="clear"></div>
