@@ -18,11 +18,12 @@
 
 </script>
 </head>
-<body onload="window.location.href = '${publicacion.script51}'">
+<body onload="window.location.href = '<c:out value="${empty publicacion.script51 ? '/ofertas' : publicacion.script51}" />'">
 <noscript>
 Por favor, haz click <a href="${publicacion.script51}">aquí</a> para acceder a la página solicitada.
 </noscript>
-
+<c:if test="${not empty publicacion.script52}">
 <img src="${publicacion.script52}" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</c:if>
 </body>
 </html>

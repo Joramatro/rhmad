@@ -18,12 +18,12 @@
 
 </script>
 </head>
-<body onload="window.location.href = '<c:out value="${empty publicacion.script31 ? '/ofertas' : publicacion.script31}" />'">
+<body onload="window.location.href = '<c:out value="${empty publicacion.script91 ? '/ofertas' : publicacion.script91}" />'">
 <noscript>
-Por favor, haz click <a href="${publicacion.script31}">aquí</a> para acceder a la página solicitada.
+Por favor, haz click <a href="${publicacion.script91}">aquí</a> para acceder a la página solicitada.
 </noscript>
-<c:if test="${not empty publicacion.script32}">
-<img src="${publicacion.script32}" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<c:if test="${not empty publicacion.script92}">
+<img src="${publicacion.script92}" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 </c:if>
 </body>
 </html>
