@@ -51,7 +51,7 @@
       		<div class="hero-unit">
 				<h3>
 					Si estás interesado en reservar hotel en Madrid tanto en el centro como en las afueras, en esta web podrás encontrar los mejores hoteles más económicos en función de tus necesidades y posibilidades.<br>
-					Aquí te ayudaremos a elegir tu destino y el hotel con encanto ideal que estás buscando en Madrid, para poder visitar los mejores lugares y rincones de la capital de España.<br>
+					Aquí te ayudaremos a elegir tu destino y buscar el hotel con encanto ideal que estás buscando en Madrid, a través de nuestros artículos y así poder visitar los mejores lugares y rincones de la capital de España.<br>
 					Te mostramos los mejores artículos y las mejores ofertas de hoteles donde poder hospedarte para tu viaje y reservar tu habitación en Madrid con la máxima seguridad y los mejores profesionales.
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Oferta Hoteles Madrid" href="/ofertas">ver Hoteles Recomendados en Madrid</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">ver Blog</a></p>
@@ -82,7 +82,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>Reservar Hotel Madrid Centro</h3>
-								<p>Reserva en los hoteles más encantadores y económicos del centro de Madrid para poder visitar fácilmente los lugares más interesantes de la ciudad.</p>
+								<p>Reserva el hotel más encantador y económico del centro de Madrid para poder visitar fácilmente los lugares más interesantes de la ciudad.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -95,7 +95,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>Qué ver en Madrid</h3>
-								<p>Encuentra artículos y opiniones personales donde te mostramos los sitios y eventos que no te puedes perder durante tu visita a la capital española.</p>
+								<p>Encuentra artículos y opiniones personales para buscar hotel y donde además te mostramos los sitios y eventos que no te puedes perder durante tu visita a la capital española.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -108,7 +108,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>La mejor oferta de hoteles en Madrid</h3>
-								<p>Descubre el mejor hotel para tu estancia según tus necesidades y presupuesto para hacer de tu viaje una experiencia inolvidable.</p>
+								<p>Encuentra el mejor hotel para tu estancia según tus necesidades, presupuesto y la zona donde quieras alojarte para hacer así de tu viaje una experiencia inolvidable.</p>
 							</div>
 							<div class="clear"></div>
 						</div>

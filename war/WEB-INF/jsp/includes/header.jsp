@@ -119,14 +119,14 @@
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks') && not empty param.filtro}">
-		<title>Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid</title> 
-		<meta name="description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española."/>
+		<title>Oferta de hoteles recomendados de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid</title> 
+		<meta name="description" content="Lista y oferta de hoteles recomendados en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Oferta de Hoteles en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
-		<meta property="og:description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
+		<meta property="og:title" content="Oferta de hoteles recomendados de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
+		<meta property="og:description" content="Lista y oferta de hoteles recomendados en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<meta property="og:type" content="hotel"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/oferta"/>
 		<c:if test="${!empty publicaciones}">
@@ -140,8 +140,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@RHotelMadrid">
 		<meta name="twitter:creator" content="@RHotelMadrid">
-		<meta property="twitter:title" content="Oferta de Hoteles de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
-		<meta property="twitter:description" content="Lista y oferta de hoteles en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
+		<meta property="twitter:title" content="Oferta de hoteles recomendados de Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
+		<meta property="twitter:description" content="Lista y oferta de hoteles recomendados en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -153,14 +153,14 @@
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Oferta de Hoteles de Madrid en Reservar Hotel Madrid</title> 
-		<meta name="description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española."/>
+		<title>Oferta de hoteles recomendados de Madrid en Reservar Hotel Madrid</title> 
+		<meta name="description" content="Lista y oferta de hoteles recomendados en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Oferta de Hoteles en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Oferta de Hoteles de Madrid en Reservar Hotel Madrid"/> 
-		<meta property="og:description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
+		<meta property="og:title" content="Oferta de hoteles recomendados de Madrid en Reservar Hotel Madrid"/> 
+		<meta property="og:description" content="Lista y oferta de hoteles recomendados en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<meta property="og:type" content="hotel"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/oferta"/>
 		<c:if test="${!empty publicaciones}">
@@ -174,8 +174,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@RHotelMadrid">
 		<meta name="twitter:creator" content="@RHotelMadrid">
-		<meta property="twitter:title" content="Oferta de Hoteles de Madrid en Reservar Hotel Madrid"/> 
-		<meta property="twitter:description" content="Lista y oferta de hoteles en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
+		<meta property="twitter:title" content="Oferta de hoteles recomendados de Madrid en Reservar Hotel Madrid"/> 
+		<meta property="twitter:description" content="Lista y oferta de hoteles recomendados en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje en la capital española"/>		
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -187,14 +187,14 @@
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog') && not empty param.filtro}">
-		<title>Artículos sobre lugares y hoteles para reservar en Madrid - <%= request.getParameter("filtro").replaceAll("-", " ") %></title> 
-		<meta name="description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
+		<title>Artículos sobre lugares donde reservar hotel en Madrid - <%= request.getParameter("filtro").replaceAll("-", " ") %></title> 
+		<meta name="description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares donde reservar hotel en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Blog en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Artículos sobre lugares y hoteles para reservar en Madrid - <%= request.getParameter("filtro").replaceAll("-", " ") %>"/>
-		<meta property="og:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
+		<meta property="og:title" content="Artículos sobre lugares donde reservar hotel en Madrid - <%= request.getParameter("filtro").replaceAll("-", " ") %>"/>
+		<meta property="og:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares donde reservar un hotel en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
 		<meta property="og:type" content="articulo"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/blog"/>
 		<c:if test="${!empty publicaciones}">
@@ -208,8 +208,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@RHotelMadrid">
 		<meta name="twitter:creator" content="@RHotelMadrid">
-		<meta name="twitter:title" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos sobre lugares y hoteles para reservar en Madrid">
-		<meta name="twitter:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
+		<meta name="twitter:title" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos sobre lugares donde reservar hotel en Madrid">
+		<meta name="twitter:description" content="<%= request.getParameter("filtro").replaceAll("-", " ") %> - Artículos y opinión sobre los mejores lugares donde reservar hotel en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -221,14 +221,14 @@
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos sobre lugares y hoteles para reservar en Madrid</title> 
-		<meta name="description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
+		<title>Artículos sobre lugares donde reservar hotel en Madrid</title> 
+		<meta name="description" content="Artículos y opinión sobre los mejores lugares donde buscar y reservar hotel en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Blog en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Artículos sobre lugares y hoteles para reservar en Madrid"/>
-		<meta property="og:description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
+		<meta property="og:title" content="Artículos sobre lugares donde reservar hotel en Madrid"/>
+		<meta property="og:description" content="Artículos y opinión sobre los mejores lugares donde buscar y reservar hotel en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España"/>
 		<meta property="og:type" content="articulo"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/blog"/>
 		<c:if test="${!empty publicaciones}">
@@ -242,8 +242,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@RHotelMadrid">
 		<meta name="twitter:creator" content="@RHotelMadrid">
-		<meta name="twitter:title" content="Artículos sobre lugares y hoteles para reservar en Madrid">
-		<meta name="twitter:description" content="Artículos y opinión sobre los mejores lugares y hoteles para reservar en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
+		<meta name="twitter:title" content="Artículos sobre lugares donde reservar hotel en Madrid">
+		<meta name="twitter:description" content="Artículos y opinión sobre los mejores lugares donde buscar y reservar hotel en Madrid, con las visitas y eventos que no te puedes perder durante tu estancia en la capital de España">
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
 				<meta name="twitter:image" content="${publicaciones[0].lImages[0]}">
@@ -276,14 +276,14 @@
 		<!-- end: Twitter tags -->		
 	</c:when>	
 	<c:otherwise>
-		<title>Bienvenido a Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid</title> 
-		<meta name="description" content="Información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España"/>
+		<title>Reservar Hotel Madrid - Información para reservar hotel en Madrid</title> 
+		<meta name="description" content="Información para que puedas buscar y reservar hotel en Madrid a través de nuestros artículos, ya sea en el centro de la ciudad o en las afueras y descubrir así los mejores lugares y actividades a realizar."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Hoteles en Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
-		<meta property="og:title" content="Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid"/>
-		<meta property="og:description" content="Toda la información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España."/>
+		<meta property="og:title" content="Reservar Hotel Madrid - Información para reservar hotel en Madrid"/>
+		<meta property="og:description" content="Información para que puedas buscar y reservar hotel en Madrid a través de nuestros artículos, ya sea en el centro de la ciudad o en las afueras y descubrir así los mejores lugares y actividades a realizar."/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com"/>
 		<meta property="og:image" content="/img/img-meta/logoGrande.jpg"/>
@@ -293,8 +293,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@RHotelMadrid">
 		<meta name="twitter:creator" content="@RHotelMadrid">
-		<meta name="twitter:title" content="Reservar Hotel Madrid - Información y opinión para reservar hotel en Madrid">
-		<meta name="twitter:description" content="Toda la información para que puedas reservar hotel en Madrid en el centro de la ciudad o en las afueras y descubrir los mejores lugares para visitar de la capital de España.">
+		<meta name="twitter:title" content="Reservar Hotel Madrid - Información para reservar hotel en Madrid">
+		<meta name="twitter:description" content="Información para que puedas buscar y reservar hotel en Madrid a través de nuestros artículos, ya sea en el centro de la ciudad o en las afueras y descubrir así los mejores lugares y actividades a realizar.">
 		<meta name="twitter:image" content="/img/img-meta/logoGrande.jpg">
 		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->				
