@@ -82,7 +82,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>Reservar Hotel Madrid Centro</h3>
-								<p>Reserva el hotel más encantador y económico del centro de Madrid para poder visitar fácilmente los lugares más interesantes de la ciudad.</p>
+								<p>Reserva el hotel más encantador y económico en Madrid centro para poder visitar fácilmente los lugares más interesantes de la ciudad.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -95,7 +95,7 @@
 							<i class="ico-ok ico-white circle-color-full"></i>
 							<div class="icons-box-vert-info">
 								<h3>Qué ver en Madrid</h3>
-								<p>Encuentra artículos y opiniones personales para buscar hotel y donde además te mostramos los sitios y eventos que no te puedes perder durante tu visita a la capital española.</p>
+								<p>Encuentra artículos y opiniones personales para buscar hotel en Madrid y descubre con nosotros los sitios y eventos que no te puedes perder durante tu visita a la capital española.</p>
 							</div>
 							<div class="clear"></div>
 						</div>

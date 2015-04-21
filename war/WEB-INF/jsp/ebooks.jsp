@@ -15,7 +15,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h1><i class="ico-suitcase ico-white"></i>Mejores Hoteles Madrid</h1>
+				<h1><i class="ico-suitcase ico-white"></i>Ofertas de hoteles recomendados en Madrid</h1>
 
 			</div>
 			<!-- end: Container  -->

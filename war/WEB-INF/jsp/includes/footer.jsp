@@ -26,8 +26,10 @@
 						<ul id="footer-nav">
 
 							<li><a href="http://www.reservarhotelmadrid.com/">Inicio</a></li>
+							
+							<li><a href="/blog">Blog</a></li>
 
-							<li><a href="/ofertas">Oferta Hoteles Madrid</a></li>
+							<li><a href="/ofertas">Ofertas de hoteles</a></li>
 							
 							<li><a href="/contacto">Contacto</a></li>
 
@@ -236,9 +238,9 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' 
 	}else if('${publicacion.tipo}' == 'AR'){	
 		$("#menuBlog").addClass('active');
 	}else if('${publicacion.tipo}' == 'EB'){	
-		$("#menuHoteles").addClass('active');
-	}else if(parts[1] == 'hoteles'){	
-		$("#menuHoteles").addClass('active');
+		$("#menuOfertas").addClass('active');
+	}else if(parts[1] == 'ofertas'){	
+		$("#menuOfertas").addClass('active');
 	}else if(parts[1] == 'blog'){	
 		$("#menuBlog").addClass('active');
 	}else{
