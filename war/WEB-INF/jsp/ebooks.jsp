@@ -89,7 +89,7 @@
 					<div class="picture"><a href="/ofertas/${publicacion.url}" title="${publicacion.titulo}">
 					
 					<c:if test="${!empty publicacion.lImages }">
-					<img pagespeed_no_defer="" src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
+					<img src="${publicacion.lImages[0]}" alt="${publicacion.titulo}"/>
 					</c:if>
 					
 					<div class="image-overlay-link"></div></a>
@@ -102,7 +102,7 @@
 								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
 							</p>
 						</div>
-						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="#">Jorge Amat</a></span>--%> <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comentarios</a></span></div>
+						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="#">Jorge Amat</a></span>--%> <%-- <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comentarios</a></span>--%></div>
 					</div>	
 				</div>
 				</c:forEach>
@@ -129,8 +129,7 @@
 		<!--end: Container-->
 	</div>
 	<!-- end: Wrapper  -->
-		
-			
+
 <%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
 
 <script>
@@ -165,6 +164,7 @@
 	    	$('#portfolio-wrapper').isotope({ filter: '.'+ getURLParameter("filtroPrecio")});
 	    }
 	});
+	
 </script>
 
 </body>

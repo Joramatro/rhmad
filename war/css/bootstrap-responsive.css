@@ -968,7 +968,7 @@
   }
   .nav-collapse .nav {
     float: none;
-    margin: 0 0 10px;
+    margin: 0 0 10px !important;
   }
   .nav-collapse .nav > li {
     float: none;

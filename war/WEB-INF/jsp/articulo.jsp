@@ -77,7 +77,7 @@
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 							<li>
-								<img style="width: 570px;height: 395px;" src="${imagen}"  alt="${publicacion.titulo}" />															
+								<img style="width: 570px;height: 395px;" class="lazy" data-original="${imagen}"  alt="${publicacion.titulo}" />															
 							</li>
 						</c:forEach>
 						<div class="slide-caption n">
@@ -109,9 +109,9 @@
 							</div>
 							<strong>Media&nbsp;</strong>&nbsp;&nbsp;<div class="rateit" data-rateit-value="${publicacion.sumaPuntos div publicacion.votantes}" data-rateit-ispreset="true" data-rateit-readonly="true" title="<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${publicacion.sumaPuntos div publicacion.votantes}" /> / 5"></div> 
 						</c:if>
-						<li><strong>Fecha&nbsp;</strong>&nbsp;<span id="_datePublished5" itemprop="datePublished" content="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${publicacion.fechaCreacion}'/>"> <fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span></li>
+						<li><strong>Fecha&nbsp;</strong>&nbsp;<span style="display: inline-table;" id="_datePublished5" itemprop="datePublished" content="<fmt:setLocale value='es_ES' scope='session'/><fmt:formatDate type='date' dateStyle='short' value='${publicacion.fechaCreacion}'/>"> <fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span></li>
 						<li><strong>Autor&nbsp;</strong>&nbsp; <a target="_blank" href="${publicacion.googleAutor}" rel=”author”><span id="_author3" itemprop="author" itemscope itemtype="http://schema.org/Person">
-						<span itemprop="name">${publicacion.autor}</span></span></a></li>
+						<span style="white-space: nowrap;" itemprop="name">${publicacion.autor}</span></span></a></li>
 					</ul>					
 				</div>				
 				<div class="span10">
@@ -208,7 +208,7 @@
 							<div class="picture">
 								<a href="/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
-									<img style="width: 270px;height: 240px;" src="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
+									<img style="width: 270px;height: 240px;" class="lazy" data-original="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
 									<div class="image-overlay-link"></div>
 								</a>
@@ -246,10 +246,10 @@
 									<div class="avatar">
 									<c:choose>
 									<c:when test="${empty comentario.gravatar }">
-									<img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=50" alt="" width="50" height="50" border="0" /> 
+									<img class="lazy" data-original="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=50" alt="" width="50" height="50" border="0" /> 
 									</c:when>
 									<c:otherwise>
-									<img src="${comentario.gravatar}" alt="" width="50" height="50" border="0" />
+									<img class="lazy" data-original="${comentario.gravatar}" alt="" width="50" height="50" border="0" />
 									</c:otherwise>
 									</c:choose>
 									</div>
@@ -295,10 +295,10 @@
 									<div class="avatar">
 									<c:choose>
 									<c:when test="${empty comentario.gravatar }">
-									<img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=50" alt="" width="50" height="50" border="0" /> 
+									<img class="lazy" data-original="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&s=50" alt="" width="50" height="50" border="0" /> 
 									</c:when>
 									<c:otherwise>
-									<img src="${comentario.gravatar}" alt="" width="50" height="50" border="0" />
+									<img class="lazy" data-original="${comentario.gravatar}" alt="" width="50" height="50" border="0" />
 									</c:otherwise>
 									</c:choose>
 									</div>
@@ -363,7 +363,7 @@
 						
 						<div class="field">
 							<label>Dar Puntos: </label>
-							<select name="puntos" style="width: 9%;" title="Por favor, valora (5 lo mejor) este producto">
+							<select name="puntos" style="width: 65px" title="Por favor, valora (5 lo mejor) este producto">
 							  <option value="5">5</option>
 							  <option value="4">4</option>
 							  <option value="3">3</option>
@@ -428,7 +428,7 @@
 	--%>		    	
 	</div>
 	<script>
-		if($('#footer').width() < 855){
+		if($('#footer').width() < 1280){
 			$("#banAmazonHorizontal").hide();
 		}
 	</script>
@@ -445,7 +445,7 @@
 	</script>
 	<script>
 	$(window).bind('resize', function () { 
-		if($('#footer').width() < 855){
+		if($('#footer').width() < 1280){
 			$("#banAmazonHorizontal").hide();
 		}else{
 			$("#banAmazonHorizontal").show();
@@ -458,7 +458,7 @@
 	});
 	
 	$(window).scroll(function(){
-		if($('#footer').width() >= 855){
+		if($('#footer').width() >= 1280){
 			if($(window).scrollTop() > 1025){
 				$("#banAmazonHorizontal").css({position:"fixed",top:"18px"});
 			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top - 180){

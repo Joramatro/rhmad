@@ -202,6 +202,7 @@
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/js/jquery-1.8.2.min.js"></script>
+<script src="/js/jquery.lazyload.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/isotope.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
@@ -228,6 +229,10 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/fancybox.css
 $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' />");
 </script>
 <script>
+	$(function() {
+	    $("img.lazy").lazyload();
+	});
+
 	var pathname = window.location.pathname;
 	var parts = pathname.split('/');
 	$("#menuSuperior > li").removeClass('active');
