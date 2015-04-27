@@ -1,29 +1,4 @@
-<!-- Indices written at Tue, 21 Apr 2015 20:06:09 BST -->
+<!-- Indices written at Mon, 27 Apr 2015 05:04:00 BST -->
 
-<datastore-indexes>
+<datastore-indexes/>
 
-    <!-- Used 1 time in query history -->
-    <datastore-index kind="Publicacion" ancestor="false" source="auto">
-        <property name="tipo" direction="asc"/>
-        <property name="fechaCreacion" direction="desc"/>
-    </datastore-index>
-
-    <!-- Used 2 times in query history -->
-    <datastore-index kind="Comentario" ancestor="false" source="auto">
-        <property name="publicado" direction="asc"/>
-        <property name="fecha" direction="desc"/>
-    </datastore-index>
-
-    <!-- Used 1 time in query history -->
-    <datastore-index kind="Publicacion" ancestor="false" source="auto">
-        <property name="destacado" direction="asc"/>
-        <property name="fechaCreacion" direction="desc"/>
-    </datastore-index>
-
-    <!-- Used 1 time in query history -->
-    <datastore-index kind="Publicacion" ancestor="false" source="auto">
-        <property name="tipo" direction="asc"/>
-        <property name="numVisitas" direction="desc"/>
-    </datastore-index>
-
-</datastore-indexes>

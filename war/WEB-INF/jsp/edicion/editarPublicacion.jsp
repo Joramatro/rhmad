@@ -351,7 +351,7 @@ Script122: <input type="text" style="width: 600px;" id="script122" name="script1
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CMs<span>H</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">C<span>H</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->

@@ -77,7 +77,7 @@
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 							<li>
-								<img style="width: 570px;height: 395px;" class="lazy" data-original="${imagen}"  alt="${publicacion.titulo}" />															
+								<img style="width: 570px;height: 395px;" src="${imagen}"  alt="${publicacion.titulo}" />															
 							</li>
 						</c:forEach>
 						<div class="slide-caption n">
@@ -208,7 +208,7 @@
 							<div class="picture">
 								<a href="/${publicacionRel.url}" title="${publicacionRel.titulo}">
 									<c:if test="${!empty publicacionRel.lImages }">
-									<img style="width: 270px;height: 240px;" class="lazy" data-original="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
+									<img style="height: 240px;" class="lazy" data-original="${publicacionRel.lImages[0]}" alt="${publicacionRel.titulo}"/>
 									</c:if>
 									<div class="image-overlay-link"></div>
 								</a>
@@ -436,8 +436,6 @@
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$(".slide-caption").hide();
-			$("#_image6").css('margin-left', '');
-			$(".imageContextual").css('margin-left', '');
 		}
 		if($('#footer').width() < 1345){
 			$(".slide-caption").hide();
