@@ -115,25 +115,10 @@
 					</ul>					
 				</div>				
 				<div class="span10">
-				<!-- AddThis Button BEGIN -->
-					<div class="addthis_toolbox addthis_default_style ">
-					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-					<a class="addthis_button_tweet"></a>
-					<a class="addthis_button_pinterest_pinit"></a>
-					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
-					<g:plusone href="/${publicacion.url}" align="right" size="medium"></g:plusone>
-					</div>
-					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
-					<!-- AddThis Button END -->
-					<!-- Botón +1. -->
-					<script type="text/javascript">
-					  (function() {
-					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-					    po.src = 'https://apis.google.com/js/plusone.js';
-					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script> 
+					<!-- Place this tag where you want the +1 button to render. -->
+					<div class="g-plusone"></div> 
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					<div class="addthis_sharing_toolbox"></div>					
 					
 					<br>
 				
@@ -143,32 +128,14 @@
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					<div class="addthis_native_toolbox"></div>
+					<br>
+					<p style="font-style: italic;">Por favor, no dudes en compartir en las redes sociales, puntuar y comentar tu opinión sobre este artículo en la sección de <a href="#comments">comentarios</a></p>					
 					<c:if test="${publicacion.disponible ne 'N'}">
 						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver hoteles recomendados en Madrid</a></h2>
-					</c:if>					
-					
-					<!-- AddThis Button BEGIN -->
-					<div class="addthis_toolbox addthis_default_style ">
-					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-					<a class="addthis_button_tweet"></a>
-					<a class="addthis_button_pinterest_pinit"></a>
-					<a class="addthis_counter addthis_pill_style"></a>&nbsp;&nbsp;
-					<g:plusone href="/${publicacion.url}" align="right" size="medium"></g:plusone>
-					</div>
-					<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523eb37018889803"></script>
-					<!-- AddThis Button END -->
-					<!-- Botón +1. -->
-					<script type="text/javascript">
-					  (function() {
-					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-					    po.src = 'https://apis.google.com/js/plusone.js';
-					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script> 
-					
-					<br><br>
-					<p style="font-style: italic;">Por favor, no dudes en puntuar y comentar tu opinión sobre este artículo en la sección de <a href="#comments">comentarios</a></p>
+					</c:if>
+					<br>											
 				</div>	
 				<div id="banGoogleFinArticulo" class="iframe_wrap" style="width: 64%; margin:0 auto;">
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -427,6 +394,14 @@
 			</div>
 	--%>		    	
 	</div>
+	
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553dd5bd44db18b3" async="async"></script>	
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://apis.google.com/js/platform.js" async defer>
+	  {lang: 'es'}
+	</script>
+	
 	<script>
 		if($('#footer').width() < 1280){
 			$("#banAmazonHorizontal").hide();
@@ -459,7 +434,7 @@
 		if($('#footer').width() >= 1280){
 			if($(window).scrollTop() > 1025){
 				$("#banAmazonHorizontal").css({position:"fixed",top:"18px"});
-			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top - 180){
+			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top - 200){
 			    	$("#banAmazonHorizontal").hide();
 			    }else{
 			    	$("#banAmazonHorizontal").show();

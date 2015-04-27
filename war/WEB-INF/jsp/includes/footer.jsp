@@ -229,8 +229,8 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/fancybox.css
 $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' />");
 </script>
 <script>
-	$(function() {
-	    $("img.lazy").lazyload();
+	$("img.lazy").lazyload({
+	    threshold : 250
 	});
 
 	var pathname = window.location.pathname;

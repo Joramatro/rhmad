@@ -303,9 +303,6 @@
 	</c:choose>
 	<link rel="alternate" type="application/rss+xml" title="Reservar Hotel Madrid RSS Feed" href="http://www.reservarhotelmadrid.com/rssfeed" />
 	<link href="https://plus.google.com/112598405675220307611" rel="publisher" />
-	<script type="text/javascript" async defer
-	  src="https://apis.google.com/js/platform.js?publisherid=112598405675220307611">
-	</script>
 	<style>
 	@font-face {
 	  font-family: 'Droid Sans';
