@@ -211,7 +211,6 @@
 <script src="/js/jquery.cslider.min.js"></script>
 <script src="/js/slider.min.js"></script>
 <script src="/js/fancybox.min.js"></script>
-<script src="/js/jquery.iframetracker.js"></script>
 <script defer="defer" src="/js/custom.min.js"></script>
 <script async src="/js/apprise-v2.min.js"></script>
 <script async src="/js/jquery.rateit.min.js"></script>
