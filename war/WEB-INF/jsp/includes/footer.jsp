@@ -160,7 +160,7 @@
 						<h3>Suscríbete! &nbsp; <a href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
 						<p>Por favor, déjanos tu email para recibir nuestras novedades.</p>
 						<label for="newsletter_input">@:</label>
-						<input style="border: 1px solid #29a9df" type="text" name="EMAIL" id="mce-EMAIL" placeholder="Introduce tu correo electrónico">
+						<input style="border: 1px solid #29a9df" type="text" name="EMAIL" id="mce-EMAIL" placeholder="Introduce tu email">
 						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     					<div style="position: absolute; left: -5000px;"><input type="text" name="b_fa305d6ec0ab2ca194c14e92b_d2be27c462" tabindex="-1" value=""></div>
 						<input type="submit" value="Suscribirme" name="Suscribirme" id="mc-embedded-subscribe">							
@@ -197,7 +197,8 @@
 		</div>
 		<!-- end: Container  -->
 		
-	</div>	
+	</div>
+		
 	<!-- end: Copyright -->
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -252,5 +253,6 @@ $("head").append("<link rel='stylesheet' type='text/css' href='/css/rateit.css' 
 		$("#menuInicio").addClass('active');
 	}
 </script>
+<script src="//load.sumome.com/" data-sumo-site-id="a69a8738b4d6dd583b543aaf3aa2ca89fc3cdfe10dd50a13dbb796a5996e49e6" async defer></script>
 
 <!-- end: Java Script -->

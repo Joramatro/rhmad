@@ -116,9 +116,7 @@
 				</div>				
 				<div class="span10">
 					<!-- Place this tag where you want the +1 button to render. -->
-					<div class="g-plusone"></div> 
-										
-					
+					<div class="g-plusone"></div> 												
 					<br>
 				
 					<c:if test="${publicacion.disponible ne 'N'}">
@@ -128,7 +126,7 @@
 					${publicacion.articulo}				
 					<br>
 					<!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
-					<div class="g-plusone" data-annotation="inline"></div>
+					<div class="g-plusone"></div>
 					<br>
 					<p style="font-style: italic;">Por favor, no dudes en compartir en las redes sociales, puntuar y comentar tu opinión sobre este artículo en la sección de <a href="#comments">comentarios</a></p>					
 					<c:if test="${publicacion.disponible ne 'N'}">
@@ -371,21 +369,21 @@
 	
 	<%@ include file="/WEB-INF/jsp/includes/footer.jsp"%>
 
-	<div id="banAmazonHorizontal" style="position:absolute;top:910px;left:18px;color:#F57C17">
+	<div id="banAmazonHorizontal" style="position:absolute;top:950px;left:18px;color:#F57C17">
 			<div id="Amazon2art" class="iframe_wrap">
-			<ins data-lang="es" class="bookingaff" data-aid="819535" data-target_aid="819521" data-prod="nsb" data-width="205" data-height="370">
-    			<!-- Anything inside will go away once widget is loaded. -->
-			    <a href="//www.booking.com?aid=819521">Booking.com</a>
-			</ins>
-			<script type="text/javascript">
-			    (function(d, sc, u) {
-			      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-			      s.type = 'text/javascript';
-			      s.async = true;
-			      s.src = u + '?v=' + (+new Date());
-			      p.parentNode.insertBefore(s,p);
-			      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
-			</script>
+				<ins data-lang="es" class="bookingaff" data-aid="819535" data-target_aid="819521" data-prod="nsb" data-width="210" data-height="400">
+				    <!-- Anything inside will go away once widget is loaded. -->
+				    <a href="//www.booking.com?aid=819521">Booking.com</a>
+				</ins>
+				<script type="text/javascript">
+				    (function(d, sc, u) {
+				      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+				      s.type = 'text/javascript';
+				      s.async = true;
+				      s.src = u + '?v=' + (+new Date());
+				      p.parentNode.insertBefore(s,p);
+				      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+				</script>
 	    	</div>
 	<%-- 
 			<div id="Amazon3art" class="iframe_wrap">
@@ -395,7 +393,7 @@
 	</div>
 	
 	<script>
-		if($('#footer').width() < 1280){
+		if($('#footer').width() < 1290){
 			$("#banAmazonHorizontal").hide();
 		}
 	</script>
@@ -404,35 +402,39 @@
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$(".slide-caption").hide();
 		}
-		if($('#footer').width() < 1345){
+		if($('#footer').width() < 1300){
 			$(".slide-caption").hide();
 		}
 	</script>
 	<script>
 	$(window).bind('resize', function () { 
-		if($('#footer').width() < 1280){
+		if($('#footer').width() < 1290){
 			$("#banAmazonHorizontal").hide();
 		}else{
 			$("#banAmazonHorizontal").show();
 		}
-		if($('#footer').width() < 1345){
+		if($('#footer').width() < 1300){
 			$(".slide-caption").hide();
 		}else{
 			$(".slide-caption").show();
 		}
 	});
-	
+	var lastScrollTop = 0;
 	$(window).scroll(function(){
-		if($('#footer').width() >= 1280){
-			if($(window).scrollTop() > 1025){
-				$("#banAmazonHorizontal").css({position:"fixed",top:"18px"});
-			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top - 200){
-			    	$("#banAmazonHorizontal").hide();
-			    }else{
-			    	$("#banAmazonHorizontal").show();
+		if($('#footer').width() >= 1290){
+			if($(window).scrollTop() > 829){
+				$("#banAmazonHorizontal").css({position:"fixed",top:"121px"});
+				var st = $(this).scrollTop();
+			    if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) > $("#ttpi").offset().top - 320
+			    		&& st > lastScrollTop){
+			    	$("#banAmazonHorizontal").hide( "fast" );	    	
+			    }else if($("#banAmazonHorizontal").offset().top + $('#banAmazonHorizontal').outerHeight(true) < $("#ttpi").offset().top - 320
+			    		&& st < lastScrollTop) {
+			    	$("#banAmazonHorizontal").show( "fast" );
 			    }
+			    lastScrollTop = st;
 			}else{
-				$("#banAmazonHorizontal").css({position:"absolute",top:"910px",left:"18px"});
+				$("#banAmazonHorizontal").css({position:"absolute",top:"950px",left:"18px"});
 			}
 		}
 	});	

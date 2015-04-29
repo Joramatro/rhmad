@@ -405,8 +405,6 @@
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
-	</div>
-	<script src="//load.sumome.com/" data-sumo-site-id="a69a8738b4d6dd583b543aaf3aa2ca89fc3cdfe10dd50a13dbb796a5996e49e6" async="async"></script>
-			
+	</div>			
 </header>
 	<!--end: Header-->
