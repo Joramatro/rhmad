@@ -117,8 +117,7 @@
 				<div class="span10">
 					<!-- Place this tag where you want the +1 button to render. -->
 					<div class="g-plusone"></div> 
-					<!-- Go to www.addthis.com/dashboard to customize your tools -->
-					<div class="addthis_sharing_toolbox"></div>					
+										
 					
 					<br>
 				
@@ -128,8 +127,8 @@
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
-					<!-- Go to www.addthis.com/dashboard to customize your tools -->
-					<div class="addthis_native_toolbox"></div>
+					<!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+					<div class="g-plusone" data-annotation="inline"></div>
 					<br>
 					<p style="font-style: italic;">Por favor, no dudes en compartir en las redes sociales, puntuar y comentar tu opinión sobre este artículo en la sección de <a href="#comments">comentarios</a></p>					
 					<c:if test="${publicacion.disponible ne 'N'}">
@@ -395,13 +394,6 @@
 	--%>		    	
 	</div>
 	
-	<!-- Go to www.addthis.com/dashboard to customize your tools -->
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553dd5bd44db18b3" async="async"></script>	
-	<!-- Place this tag in your head or just before your close body tag. -->
-	<script src="https://apis.google.com/js/platform.js" async defer>
-	  {lang: 'es'}
-	</script>
-	
 	<script>
 		if($('#footer').width() < 1280){
 			$("#banAmazonHorizontal").hide();
@@ -466,6 +458,9 @@
 	});
 	
 	</script>
-
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://apis.google.com/js/platform.js" async defer>
+	  {lang: 'es'}
+	</script>
 </body>
 </html>

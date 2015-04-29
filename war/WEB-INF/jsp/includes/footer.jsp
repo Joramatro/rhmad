@@ -156,14 +156,14 @@
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ReservarHotelMadrid&amp;loc=es_ES', 'popupwindow', 'scrollbars=yes,width=550,height=520');">
+					<form id="newsletter" action="//reservarhotelmadrid.us10.list-manage.com/subscribe/post?u=fa305d6ec0ab2ca194c14e92b&amp;id=d2be27c462" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
 						<h3>Suscríbete! &nbsp; <a href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
 						<p>Por favor, déjanos tu email para recibir nuestras novedades.</p>
 						<label for="newsletter_input">@:</label>
-						<input style="border: 1px solid #29a9df;" type="text" name="email" id="newsletter_input">
-						<input type="submit" id="btnSuscripcion" value="Enviar">			
-						<input type="hidden" value="ReservarHotelMadrid" name="uri"/>
-						<input type="hidden" name="loc" value="es_ES"/>						
+						<input style="border: 1px solid #29a9df" type="text" name="EMAIL" id="mce-EMAIL" placeholder="Introduce tu correo electrónico">
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    					<div style="position: absolute; left: -5000px;"><input type="text" name="b_fa305d6ec0ab2ca194c14e92b_d2be27c462" tabindex="-1" value=""></div>
+						<input type="submit" value="Suscribirme" name="Suscribirme" id="mc-embedded-subscribe">							
 					</form>
 					<!-- end: Newsletter -->
 				
