@@ -50,9 +50,9 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
 				<h3>
-					Si estás interesado en reservar hotel en Madrid tanto en el centro como en las afueras, en esta web podrás encontrar los mejores hoteles más económicos en función de tus necesidades y posibilidades.<br>
-					Aquí te ayudaremos a elegir tu destino y buscar el hotel con encanto ideal que estás buscando en Madrid, a través de nuestros artículos y así poder visitar los mejores lugares y rincones de la capital de España.<br>
-					Te mostramos los mejores artículos y las mejores ofertas de hoteles donde poder hospedarte para tu viaje y reservar tu habitación en Madrid con la máxima seguridad y los mejores profesionales.
+					Si estás interesado en reservar hotel en Madrid, ya sea en el centro de la capital como en las afueras, en esta web podrás encontrar los mejores hoteles más económicos en función de tus intereses y posibilidades.<br>
+					Aquí te ayudaremos a buscar y encontrar el hotel ideal que estás buscando en Madrid a través de nuestros artículos, de manera que puedas disfrutar de los mejores lugares y rincones de la capital de España.<br>
+					Te mostramos además las mejores ofertas de hoteles donde poder hospedarte para tu próximo viaje y reservar tu habitación con la máxima seguridad y los mejores profesionales del sector hotelero.
 				</h3>
         		<p><br><a class="btn btn-primary btn-large" title="Oferta Hoteles Madrid" href="/ofertas">ver Hoteles Recomendados en Madrid</a> &nbsp;&nbsp;<a title="Blog" class="btn btn-primary btn-large" href="/blog">ver Blog</a></p>
       		</div>
