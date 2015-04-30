@@ -13,8 +13,8 @@
 
 		<div id="da-slider" class="da-slider">
 			<c:forEach var="publicacion" items="${publicacionesPortada}" varStatus="status" end="4">				
-					<div class="da-slide"><h2 class="titPortada">
-					<a title="${publicacion.titulo}" href="/${publicacion.url}" onClick="ga('send', 'event', 'Leer', 'Home ${publicacion.url}', 'Titulo Portada');">${publicacion.tituloPortada}</a></h2>
+					<div class="da-slide">
+					<h2 class="titPortada"><a title="${publicacion.titulo}" href="/${publicacion.url}" onClick="ga('send', 'event', 'Leer', 'Home ${publicacion.url}', 'Titulo Portada');">${publicacion.tituloPortada}</a></h2>
 					<p class="descPortada">${publicacion.descPortada}</p>
 					<c:choose>
 					<c:when test="${publicacion.disponible eq 'S' }">
