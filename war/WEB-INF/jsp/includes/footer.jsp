@@ -156,9 +156,10 @@
 					<!-- end: Follow Us -->
 				
 					<!-- start: Newsletter -->
-					<form id="newsletter" action="//reservarhotelmadrid.us10.list-manage.com/subscribe/post?u=fa305d6ec0ab2ca194c14e92b&amp;id=d2be27c462" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-						<h3>Suscríbete! &nbsp; <a href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
-						<p>Por favor, déjanos tu email para recibir nuestras novedades.</p>
+					
+					<h3>Suscríbete! &nbsp; <a href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
+					<form id="newsletter" action="//reservarhotelmadrid.us10.list-manage.com/subscribe/post?u=fa305d6ec0ab2ca194c14e92b&amp;id=d2be27c462" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">	
+						<p>Por favor, déjanos tu email para recibir las mejores ofertas para reservar hotel en Madrid.</p>
 						<label for="newsletter_input">@:</label>
 						<input style="border: 1px solid #29a9df" type="text" name="EMAIL" id="mce-EMAIL" placeholder="Introduce tu email">
 						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
