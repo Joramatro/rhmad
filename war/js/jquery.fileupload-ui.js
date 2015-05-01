@@ -44,7 +44,7 @@
             autoUpload: true,
             // The following option limits the number of files that are
             // allowed to be uploaded using this widget:
-            maxNumberOfFiles: 15,
+            maxNumberOfFiles: 30,
             // The maximum allowed file size:
             maxFileSize: 32000000,
             // The minimum allowed file size:
