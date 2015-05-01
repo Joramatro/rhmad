@@ -241,7 +241,7 @@ Script122: <input type="text" style="width: 600px;" id="script122" name="script1
         <h3>Notes</h3>
         <ul>
             <li>The maximum file size for uploads is <strong>32 MB</strong>.</li>
-            <li>The maximum number of files for upload are <strong>10</strong>.</li>
+            <li>The maximum number of files for upload are <strong>15</strong>.</li>
             <li>Only image files (<strong>JPG, GIF, PNG</strong>) are allowed.</li>
             <li>You can <strong>drag &amp; drop</strong> files from your desktop on this place.</li>
         </ul>
@@ -573,7 +573,7 @@ Script122: <input type="text" style="width: 600px;" id="script122" name="script1
 $(function(){ /* DOM ready */
     $("#btnGuardarIrFotos").on('click', function(e) {
 		$("#divFotos").css("display", "block");
-		$("#btnGuardarIrFotos").css("display", "none");
+		//$("#btnGuardarIrFotos").css("display", "none");
 		
 	});
 });

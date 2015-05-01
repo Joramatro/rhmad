@@ -77,7 +77,7 @@
 					<ul class="slides">
 						<c:forEach var="imagen" items="${publicacion.lImages}" varStatus="status">
 							<li>
-								<img style="width: 570px;height: 395px;" src="${imagen}"  alt="${publicacion.titulo}" />															
+								<img style="width: 570px;height: 395px;" src="${imagen}"/>															
 							</li>
 						</c:forEach>
 						<div class="slide-caption n">
