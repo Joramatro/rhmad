@@ -121,6 +121,7 @@ Descripcion: <input type="text" style="width: 433px;" id="descripcion" name="des
 Autor: <input type="text" id="autor" name="autor" size="100" maxlength="100" value="${publicacion.autor}"/><br><br>
 
 Google+: <input type="text" style="width: 433px;" id="googleAutor" name="googleAutor" size="250" maxlength="570" value="${publicacion.googleAutor}"/><br><br>	
+Estrellas: <input type="text" id="estrellas" name="estrellas" size="5" maxlength="5" value="${publicacion.estrellas}"/><br><br>	
 
 Clase1: <input type="text" id="clase1" name="clase1" size="20" maxlength="20" value="${publicacion.clase1}"/>
 Clase2: <input type="text" id="clase2" name="clase2" size="20" maxlength="20" value="${publicacion.clase2}"/>

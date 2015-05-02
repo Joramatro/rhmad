@@ -56,6 +56,7 @@ $(function(){
 	        	  "script112": $("#script112").val(),
 	        	  "script121": $("#script121").val(),
 	        	  "script122": $("#script122").val(),
+	        	  "estrellas": $("#estrellas").val(),
 	        	  "disponible": $("#disponible").val()
 	          },
 		      success: function(text){
@@ -125,6 +126,7 @@ $(function(){
 	        	  "script112": $("#script112").val(),
 	        	  "script121": $("#script121").val(),
 	        	  "script122": $("#script122").val(),
+	        	  "estrellas": $("#estrellas").val(),
 	        	  "disponible": $("#disponible").val()
 	          },
 		      success: function(text){
