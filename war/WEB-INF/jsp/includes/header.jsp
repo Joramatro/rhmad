@@ -20,7 +20,7 @@
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'EB'}">
 		<title>${publicacion.titulo} | Reservar Hotel Madrid</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="author" content="Jorge Amat" />
+		<meta name="author" content="Fran" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
@@ -45,7 +45,7 @@
 	<c:when test="${!empty publicacion && publicacion.tipo eq 'AR'}">
 		<title>${publicacion.titulo} | Reservar Hotel Madrid</title> 
 		<meta name="description" content="${publicacion.descripcion}"/>
-		<meta name="author" content="Jorge Amat" />
+		<meta name="author" content="Fran" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
@@ -256,7 +256,7 @@
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'privacidad')}">
 		<title>Política de privacidad | Reservar Hotel Madrid</title> 
 		<meta name="description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid"/>
-		<meta name="author" content="Jorge Amat" />
+		<meta name="author" content="Fran" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
 		<meta name="application-name" content="Política privacidad Reservar Hotel Madrid" />
 		<!-- start: Facebook Open Graph -->
