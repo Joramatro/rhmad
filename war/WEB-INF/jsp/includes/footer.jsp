@@ -93,7 +93,7 @@
 				<div class="span6">
 				
 					<!-- start: Follow Us -->
-					<h3>Síguenos!</h3>
+					<h3><img src="/img/logo_social.png" alt="Más">&nbsp;Síguenos!</h3>
 					<ul class="social-grid">
 						<li>
 							<div class="social-item">				
@@ -157,7 +157,7 @@
 				
 					<!-- start: Newsletter -->
 					
-					<h3>Suscríbete! &nbsp; <a href="http://www.reservarhotelmadrid.com/rssfeed" accesskey="r"><img src="/img/rssmenu.png" alt="RSS"></a></h3>
+					<h3>Suscríbete!</h3>
 					<form id="newsletter" action="//reservarhotelmadrid.us10.list-manage.com/subscribe/post?u=fa305d6ec0ab2ca194c14e92b&amp;id=d2be27c462" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">	
 						<p>Por favor, déjanos tu email para recibir las mejores ofertas para reservar hotel en Madrid.</p>
 						<label for="newsletter_input">@:</label>
