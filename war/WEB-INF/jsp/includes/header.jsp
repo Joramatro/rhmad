@@ -78,7 +78,7 @@
 		<meta property="og:description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales."/>
 		<meta property="og:type" content="sobre"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/sobre"/>
-		<meta property="og:image" content="/img/img-meta/logo_grande.jpg"/>
+		<meta property="og:image" content="/img/img-meta/logo_grande1.jpg"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
@@ -87,7 +87,7 @@
 		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Sobre nosotros en Reservar Hotel Madrid">
 		<meta name="twitter:description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales.">
-		<meta name="twitter:image" content="/img/img-meta/logo_grande.jpg">
+		<meta name="twitter:image" content="/img/img-meta/logo_grande1.jpg">
 		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
 		<link rel="canonical" href="http://www.reservarhotelmadrid.com/sobre"/>	
@@ -103,7 +103,7 @@
 		<meta property="og:description" content="Contacta con los que trabajamos en Reservar Hotel Madrid."/>
 		<meta property="og:type" content="contacto"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/contacto"/>
-		<meta property="og:image" content="/img/img-meta/logo_grande.jpg"/>
+		<meta property="og:image" content="/img/img-meta/logo_grande1.jpg"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
@@ -112,7 +112,7 @@
 		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Contacta con nosotros en Reservar Hotel Madrid">
 		<meta name="twitter:description" content="Contacta con los que trabajamos en Reservar Hotel Madrid.">
-		<meta name="twitter:image" content="/img/img-meta/logo_grande.jpg">
+		<meta name="twitter:image" content="/img/img-meta/logo_grande1.jpg">
 		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->
 		<link rel="canonical" href="http://www.reservarhotelmadrid.com/contacto"/>
@@ -286,7 +286,7 @@
 		<meta property="og:description" content="Información para buscar y reservar hotel en Madrid a través de nuestros artículos, en el centro o en las afueras de la capital y descubrir así los mejores lugares y actividades a realizar durante tu viaje."/>
 		<meta property="og:type" content="principal"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com"/>
-		<meta property="og:image" content="/img/img-meta/logo_grande.jpg"/>
+		<meta property="og:image" content="/img/img-meta/logo_grande1.jpg"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
@@ -295,7 +295,7 @@
 		<meta name="twitter:creator" content="@RHotelMadrid">
 		<meta name="twitter:title" content="Reservar Hotel Madrid - Información para reservar hotel en Madrid">
 		<meta name="twitter:description" content="Información para que puedas buscar y reservar hotel en Madrid a través de nuestros artículos, ya sea en el centro de la ciudad o en las afueras y descubrir así los mejores lugares y actividades a realizar.">
-		<meta name="twitter:image" content="/img/img-meta/logo_grande.jpg">
+		<meta name="twitter:image" content="/img/img-meta/logo_grande1.jpg">
 		<meta name="twitter:domain" content="reservarhotelmadrid.com">
 		<!-- end: Twitter tags -->				
 		<link rel="canonical" href="http://www.reservarhotelmadrid.com"/>
@@ -320,7 +320,7 @@
     <!-- start: CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive-v11.min.css" rel="stylesheet">
-    <link href="/css/parallax-sliderv10.css" rel="stylesheet">   
+    <link href="/css/parallax-sliderv11.css" rel="stylesheet">   
 	<%@ include file="/WEB-INF/jsp/includes/styles.jsp"%>
 	<!-- end: CSS -->
 
