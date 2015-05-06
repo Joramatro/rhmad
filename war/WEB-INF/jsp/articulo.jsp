@@ -122,6 +122,9 @@
 					<c:if test="${publicacion.disponible ne 'N'}">
 						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver hoteles recomendados en Madrid</a></h2>				
 					</c:if>
+					<c:if test="${publicacion.disponible eq 'N'}">
+						<br>				
+					</c:if>
 					<meta id="_articleBody7" itemprop="articleBody" content="${fn:replace(publicacion.articulo, "\"", "'")}">
 					${publicacion.articulo}				
 					<br>
