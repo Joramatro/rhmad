@@ -125,10 +125,11 @@
 					<br>
 					<!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
 					<div class="g-plusone"></div>
+					<br><br>
+					<p style="font-style: italic;">Si te ha gustado el artículo, <b>nos ayudarías mucho dándole al botón de +1 y compartiéndolo en tus redes sociales</b>. También puedes valorarlo y comentar tu opinión en la sección de <a href="#comments">comentarios</a>.</p>					
 					<br>
-					<p style="font-style: italic;">Si te ha gustado el artículo, nos ayudarías mucho dándole al botón de +1 y compartiéndolo en tus redes sociales. También puedes valorarlo y comentar tu opinión en la sección de <a href="#comments">comentarios</a>.</p>					
 					<c:if test="${publicacion.disponible ne 'N'}">
-						<br><h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver hoteles recomendados en Madrid</a></h2>
+						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch">Ver hoteles recomendados en Madrid</a></h2>
 					</c:if>
 					<br>											
 				</div>	
