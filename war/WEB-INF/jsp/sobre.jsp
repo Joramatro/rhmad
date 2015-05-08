@@ -66,7 +66,7 @@
 							<span class="dropcap dark">3</span>Nosotros venimos de una formación relacionada con la tecnología y somos apasionados por los viajes y el turismo, por lo que hemos decidido reunir aquí todos nuestros conocimientos para intentar crear la mejor web en español sobre viajes y reservas de hoteles en Madrid. Nuestro objetivo es ser honestos y aportar valor a nuestros lectores. 
 						</p>
 						<p>
-							Por fin hemos hemos lanzado nuestra propia empresa, dónde intentamos ofreceros la mejor información y las mejores opiniones sobre lugares que visitar en madrid y mejores a hoteles a reservar. Estamos aquí para ayudarte, por eso <a title="Contacto" href="/contacto">contacta</a> con nosotros cuando así lo requieras.
+							Por fin hemos decidido lanzar nuestra propia empresa, donde intentamos ofreceros la mejor información y las mejores opiniones sobre lugares que visitar en madrid y mejores a hoteles a reservar. Estamos aquí para ayudarte, por eso <a title="Contacto" href="/contacto">contacta</a> con nosotros cuando así lo requieras.
 						</p>
 					</div>	
 					<!-- end: History -->				
