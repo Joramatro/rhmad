@@ -57,7 +57,7 @@
 					<div id="history">
 						<div class="title"><h3>Historia</h3></div>
 						<p>
-							<span class="dropcap">1</span>Somos un grupo de personas cuya profesión y pasión es la tecnología y los viajes, por eso hemos decidido publicar a través de esta y otras webs nuestros conocimientos con objeto de ayudar a más gente.
+							<span class="dropcap">1</span>Somos un grupo de personas cuya profesión y pasión es la tecnología y los viajes, por eso hemos decidido publicar a través de ésta y otras webs nuestros conocimientos con objeto de ayudar a más gente.
 						</p>
 						<p>
 							<span class="dropcap color">2</span>Desde hace ya unos años, el turismo y los viajes de ocio se han convertido en algo imprescindible para nuestro tiempo de ocio y conocer nuevos lugares y ciudades como Madrid.
