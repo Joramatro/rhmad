@@ -24,7 +24,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="${publicacion.titulo} en Reservar Hotel Madrid"/>
 		<meta property="og:description" content="${publicacion.descripcion}"/>
-		<meta property="og:type" content="hotel"/>
+		<meta property="og:type" content="article"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
@@ -49,7 +49,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="${publicacion.titulo} en Reservar Hotel Madrid"/>
 		<meta property="og:description" content="${publicacion.descripcion}"/>
-		<meta property="og:type" content="articulos"/>
+		<meta property="og:type" content="article"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
@@ -74,7 +74,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Sobre Nosotros en Reservar Hotel Madrid"/>
 		<meta property="og:description" content="Toda la información sobre los que trabajamos en Reservar Hotel Madrid, su experiencia y valores profesionales."/>
-		<meta property="og:type" content="sobre"/>
+		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/sobre"/>
 		<meta property="og:image" content="/img/img-meta/logo_grande0.jpg"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
@@ -99,7 +99,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Contacta en Reservar Hotel Madrid"/>
 		<meta property="og:description" content="Contacta con los que trabajamos en Reservar Hotel Madrid."/>
-		<meta property="og:type" content="contacto"/>
+		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/contacto"/>
 		<meta property="og:image" content="/img/img-meta/logo_grande0.jpg"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
@@ -125,7 +125,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Oferta de hoteles recomendados de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/> 
 		<meta property="og:description" content="Lista y oferta de hoteles recomendados en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje a la capital española"/>		
-		<meta property="og:type" content="hotel"/>
+		<meta property="og:type" content="blog"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/ofertas"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
@@ -159,7 +159,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Oferta de hoteles recomendados en Reservar Hotel Madrid"/> 
 		<meta property="og:description" content="Lista y oferta de hoteles recomendados en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje a la capital española."/>		
-		<meta property="og:type" content="hotel"/>
+		<meta property="og:type" content="blog"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/ofertas"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
@@ -193,7 +193,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Reservar Hotel Madrid"/>
 		<meta property="og:description" content="Artículos y opinión de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> sobre los mejores lugares donde buscar y reservar un hotel en Madrid, con las actividades, atracciones y eventos que no te puedes perder durante tu estancia en la capital de España."/>
-		<meta property="og:type" content="articulo"/>
+		<meta property="og:type" content="blog"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/blog"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
@@ -227,7 +227,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Artículos sobre lugares donde reservar hotel en Reservar Hotel Madrid"/>
 		<meta property="og:description" content="Artículos y opinión sobre los mejores lugares donde buscar y reservar hotel en Madrid, con las actividades, atracciones y eventos que no te puedes perder durante tu estancia en la capital de España."/>
-		<meta property="og:type" content="articulo"/>
+		<meta property="og:type" content="blog"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/blog"/>
 		<c:if test="${!empty publicaciones}">
 			<c:if test="${!empty publicaciones[0].lImages}">
@@ -282,7 +282,7 @@
 		<!-- start: Facebook Open Graph -->
 		<meta property="og:title" content="Reservar Hotel Madrid - Información para reservar hotel en Madrid"/>
 		<meta property="og:description" content="Información para buscar y reservar hotel en Madrid a través de nuestros artículos, en el centro o en las afueras de la capital y descubrir así los mejores lugares y actividades a realizar durante tu viaje."/>
-		<meta property="og:type" content="principal"/>
+		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com"/>
 		<meta property="og:image" content="/img/img-meta/logo_grande0.jpg"/>
 		<meta property="og:email" content="hola@reservarhotelmadrid.com"/>
