@@ -48,7 +48,7 @@
 							Además de nuestros artículos y opiniones, te ofrecemos información detallada sobre los mejores hoteles que puedes reservar en Madrid. Estamos aquí para ayudarte en todo lo posible y darte la mejor información al respecto que puedas encontrar en Internet.
 						</p>
 						<p>
-							Por favor, contacta con nosotros para consultarnos cualquier duda que te surja ó darnos tu opinión sobre nuestra web, puedes usar también la sección de comentarios de cada artículo para preguntar o aportar más información o incluso valorarlo puntuándolo.
+							Por favor, contacta con nosotros para consultarnos cualquier duda que te surja o darnos tu opinión sobre nuestra web, puedes usar también la sección de comentarios de cada artículo para preguntar o aportar más información o incluso valorarlo puntuándolo.
 						</p>
 					</div>	
 					<!-- end: About Us -->
