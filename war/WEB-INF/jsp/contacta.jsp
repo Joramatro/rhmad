@@ -112,10 +112,10 @@
 					<ul class="social-bookmarks">
 						<li class="facebook"><a target="_blank" href="https://www.facebook.com/reservarhotelmadrid">facebook</a></li>
 						<li class="flickr"><a target="_blank" href="https://www.flickr.com/photos/reservarhotelmadrid/">flickr</a></li>
-						<li class="googleplus"><a target="_blank" href="https://plus.google.com/u/1/b/112598405675220307611/">googleplus</a></li>
+						<li class="googleplus"><a target="_blank" href="https://plus.google.com/+Reservarhotelmadrid">googleplus</a></li>
 						<li class="twitter"><a target="_blank" href="https://twitter.com/RHotelMadrid">twitter</a></li>
-						<li class="yelp"><a target="_blank" href="http://www.yelp.es/user_details?userid=5Kcyc9NKkJ81ZxrGmCrLXQ">yelp</a></li>
-						<li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCBN3PXHQr-jGpstTiSuqCKQ">youtube</a></li>
+						<li class="yelp"><a target="_blank" href="http://rhotelmadrid.yelp.ie">yelp</a></li>
+						<li class="youtube"><a target="_blank" href="https://www.youtube.com/c/Reservarhotelmadrid">youtube</a></li>
 					</ul>
 				</div>
 				<!-- end: Social Sites -->							
