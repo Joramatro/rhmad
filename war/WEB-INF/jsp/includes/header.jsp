@@ -115,7 +115,7 @@
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks') && not empty param.filtro}">
-		<title>Ofertas de hoteles recomendados de <%= request.getParameter("filtro").replaceAll("-", " ") %> en Madrid | Reservar Hotel Madrid</title> 
+		<title>Ofertas de hoteles recomendados de <%= request.getParameter("filtro").replaceAll("-", " ") %> | Reservar Hotel Madrid</title> 
 		<meta name="description" content="Lista y oferta de hoteles recomendados en Madrid de <%= request.getParameter("filtro").replaceAll("-", " ") %> para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje a la capital española."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
@@ -149,7 +149,7 @@
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'ebooks')}">
-		<title>Ofertas de hoteles recomendados en Madrid | Reservar Hotel Madrid</title> 
+		<title>Ofertas de hoteles recomendados | Reservar Hotel Madrid</title> 
 		<meta name="description" content="Lista y oferta de hoteles recomendados en Madrid para que puedas reservar entre la mejor selección de establecimientos hoteleros para tu viaje a la capital española."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
@@ -183,7 +183,7 @@
 	</c:when>
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog') && not empty param.filtro}">
-		<title>Artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> en Madrid | Reservar Hotel Madrid</title> 
+		<title>Artículos de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> | Reservar Hotel Madrid</title> 
 		<meta name="description" content="Artículos y opinión de tipo <%= request.getParameter("filtro").replaceAll("-", " ") %> sobre los mejores lugares donde buscar y reservar hotel en Madrid, con las actividades, atracciones y eventos que no te puedes perder durante tu estancia en la capital de España."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
@@ -217,7 +217,7 @@
 	</c:when>	
 	
 	<c:when test="${fn:contains(pageContext.request.requestURI, 'blog')}">
-		<title>Artículos y lugares donde reservar hotel en Madrid | Reservar Hotel Madrid</title> 
+		<title>Artículos y lugares donde reservar hotel | Reservar Hotel Madrid</title> 
 		<meta name="description" content="Artículos y opinión sobre los mejores lugares donde buscar y reservar hotel en Madrid, con las actividades, atracciones y eventos que no te puedes perder durante tu estancia en la capital de España."/>
 		<meta name="author" content="Reservar Hotel Madrid" />
 		<meta name="copyright" content="Reservar Hotel Madrid" />
