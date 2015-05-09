@@ -265,7 +265,6 @@
 		<meta property="og:description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/politica-de-privacidad"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid/"/>
-		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
