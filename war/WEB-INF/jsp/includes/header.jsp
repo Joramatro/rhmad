@@ -28,6 +28,7 @@
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -53,6 +54,7 @@
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/${publicacion.url}"/>
 		<meta property="og:image" content="${publicacion.lImages[0]}"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -77,6 +79,7 @@
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/sobre"/>
 		<meta property="og:image" content="http://www.reservarhotelmadrid.com/img/img-meta/logo_grande0.jpg"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -101,6 +104,7 @@
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/contacto"/>
 		<meta property="og:image" content="http://www.reservarhotelmadrid.com/img/img-meta/logo_grande0.jpg"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -131,6 +135,7 @@
 			</c:if>
 		</c:if>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -165,6 +170,7 @@
 			</c:if>
 		</c:if>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -199,6 +205,7 @@
 			</c:if>
 		</c:if>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -233,6 +240,7 @@
 			</c:if>
 		</c:if>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -259,6 +267,7 @@
 		<meta property="og:description" content="Política de privacidad y condiciones de uso de Reservar Hotel Madrid"/>
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com/politica-de-privacidad"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid/"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -283,6 +292,7 @@
 		<meta property="og:url" content="http://www.reservarhotelmadrid.com"/>
 		<meta property="og:image" content="http://www.reservarhotelmadrid.com/img/img-meta/logo_grande0.jpg"/>
 		<meta property="og:site_name" content="Reservar Hotel Madrid"/>
+		<meta property="og:publisher" content="https://www.facebook.com/reservarhotelmadrid"/>
 		<!-- end: Facebook Open Graph -->
 		<!-- start: Twitter tags -->
 		<meta name="twitter:card" content="summary_large_image">
