@@ -118,7 +118,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<div id="logo-chart"></div><a class="brand" href="/">CC<span>H</span>.</a>
+						<div id="logo-chart"></div><a class="brand" href="/">C<span>H</span>.</a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
@@ -174,7 +174,7 @@
 					
 					<h3>Sobre nosotros</h3>
 					<p>
-						Somos un equipo de personas con gran formación tecnológica y apasionadas por todo lo relacionado con ella. Poseemos una gran experiencia en el mundo de internet y te brindamos la mejor actualidad en Internet, noticias de gadget tecnológicos, software y telefonía.
+						Somos un equipo de personas con gran formación tecnológica y apasionadas por todo lo relacionado con ella. Poseemos una gran experiencia en el mundo de internet y te brindamos la mejor actualidad online.
 					</p>
 						
 				</div>
@@ -285,7 +285,7 @@
 		
 			<div class="span12">
 				<p>
-					&copy; 2014, <a href="/">CCH</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2015, <a href="/">CH</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	
