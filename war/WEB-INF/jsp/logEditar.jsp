@@ -285,7 +285,7 @@
 		
 			<div class="span12">
 				<p>
-					&copy; 2015, <a href="/">CH</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
+					&copy; 2015, <a href="/">Reservar Hotel Madrid</a><i style="margin-top: -18px;" class="ico-color ico-sun"></i>
 				</p>
 			</div>
 	
