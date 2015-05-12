@@ -96,7 +96,7 @@ Destacado: <select name="destacado" id="destacado">
 				  <option value="N">No</option>
 				  <option value="S">Si</option>
 				</select><br><br>									
-Autor: <input type="text" id="autor" name="autor" size="25" maxlength="50"/><br><br>	
+Autor: <input type="text" id="autor" name="autor" size="25" maxlength="50" value="Fran"/><br><br>	
 Google+: <input type="text" style="width: 433px;" id="googleAutor" name="googleAutor" value="https://plus.google.com/103018694195258076550?rel=author" size="250" maxlength="570"/><br><br>	
 Estrellas: <input type="text" id="estrellas" name="estrellas" size="5" maxlength="5"/><br><br>	
 	
