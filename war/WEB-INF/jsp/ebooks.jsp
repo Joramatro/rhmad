@@ -99,7 +99,7 @@
 							<div class="rateit" data-rateit-value="${publicacion.estrellas}" data-rateit-ispreset="true" data-rateit-readonly="true" title="${publicacion.estrellas} Estrellas"></div>
 							</c:if>
 							<p>
-								${fn:replace(publicacion.resumen, newLineChar, "<p/><p>")}
+								${fn:replace(publicacion.resumen, newLineChar, "</p><p>")}
 							</p>
 						</div>
 						<div class="post-meta"><span><i class="mini-ico-calendar"></i><fmt:setLocale value="es_ES" scope="session"/><fmt:formatDate type="date" dateStyle="long" value="${publicacion.fechaCreacion}"/></span><%-- <span style=""><i class="mini-ico-user"></i>  <a href="#">Jorge Amat</a></span>--%> <%-- <span><i class="mini-ico-comment"></i><a href="/${publicacion.url}/#comments">${fn:length(publicacion.lComentarios)} comentarios</a></span>--%></div>
