@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
+import javax.cache.CacheException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -28,14 +29,14 @@ public class BlogController extends PublicacionAbstract {
     @RequestMapping(value = { "/{url}" }, method = RequestMethod.GET)
     public String cargarPublicacion(ModelMap model, @PathVariable String url,
 	    HttpServletRequest request, HttpServletResponse response)
-	    throws IOException, NoSuchAlgorithmException {
+	    throws IOException, NoSuchAlgorithmException, CacheException {
 
 	return setPublicacionArticulo(url, request, model);
     }
 
     String setPublicacionArticulo(String url, HttpServletRequest request,
 	    ModelMap model) throws NoSuchAlgorithmException,
-	    UnsupportedEncodingException {
+	    UnsupportedEncodingException, CacheException {
 	String keyNormalizada = WebUtils.SHA1(url.replaceAll("-", " ")
 		.toLowerCase());
 	Publicacion publicacion = publicacionService.getPublicacion(
@@ -99,7 +100,7 @@ public class BlogController extends PublicacionAbstract {
 
     @RequestMapping(value = { "/blog" }, method = { RequestMethod.GET })
     public String getPublicaciones(ModelMap model, HttpServletRequest request,
-	    HttpServletResponse response) throws IOException {
+	    HttpServletResponse response) throws IOException, CacheException {
 
 	setPublicaciones(model, WebConstants.SessionConstants.ARTICULO);
 
@@ -108,7 +109,7 @@ public class BlogController extends PublicacionAbstract {
 
     @RequestMapping(value = { "/ofertas" }, method = { RequestMethod.GET })
     public String getPublicacionese(ModelMap model, HttpServletRequest request,
-	    HttpServletResponse response) throws IOException {
+	    HttpServletResponse response) throws IOException, CacheException {
 
 	setPublicaciones(model, WebConstants.SessionConstants.EBOOK);
 
@@ -127,7 +128,7 @@ public class BlogController extends PublicacionAbstract {
     @RequestMapping(value = { "/ofertas/{url}" }, method = { RequestMethod.GET })
     public String getVenta(ModelMap model, @PathVariable String url,
 	    HttpServletRequest request, HttpServletResponse response)
-	    throws IOException, NoSuchAlgorithmException {
+	    throws IOException, NoSuchAlgorithmException, CacheException {
 	String originalUrl = url;
 	String keybNormalizada = null;
 	if (url.endsWith("-2")) {

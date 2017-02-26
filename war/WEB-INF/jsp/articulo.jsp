@@ -116,9 +116,16 @@
 					</ul>					
 				</div>				
 				<div class="span10">				
-					<c:if test="${publicacion.disponible ne 'N'}">
-						<h2><a href="/ofertas" onClick="ga('send', 'event', 'Ofertas', '${publicacion.url}', 'Boton Oferta Hoteles');" class="button color launch" target="_blank">Ver hoteles recomendados en Madrid</a></h2>				
-					</c:if>
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Interior medio -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-3168560600423825"
+					     data-ad-slot="2809375348"
+					     data-ad-format="rectangle"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
 					<div class="g-plusone"></div> 														
 					<br><br>
 					<div id="content" itemprop="articleBody">
@@ -375,7 +382,7 @@
 
 	<div id="banAmazonHorizontal" style="position:absolute;top:950px;left:18px;color:#F57C17">
 			<div id="Amazon2art" class="iframe_wrap">
-				<ins data-lang="es" class="bookingaff" data-aid="819535" data-target_aid="819521" data-prod="nsb" data-width="210" data-height="400">
+				<ins class="bookingaff" data-aid="819535" data-target_aid="819521" data-prod="nsb" data-width="210" data-height="400">
 				    <!-- Anything inside will go away once widget is loaded. -->
 				    <a href="//www.booking.com?aid=819521">Booking.com</a>
 				</ins>
